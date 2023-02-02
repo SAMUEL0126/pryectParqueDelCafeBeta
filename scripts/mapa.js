@@ -217,9 +217,15 @@ const iceland = document.getElementById("iceland")
 const gambia = document.getElementById("gambia")
 const king_christian = document.getElementById("king christian")
 const new_ireland = document.getElementById('new ireland')
+
+    //mapas
 const mapa = document.getElementById('mapa')
+const mapa2 = document.getElementById("mapa2")
+
 const openCountry = document.getElementById("openCountry")
 const countryColombia = document.getElementById("svg3")
+const countryUsa = document.getElementById("svg4")
+
 const contentmapa = document.getElementById("contentmapa")
 const videoC = document.getElementById("videoCoffe")
 
@@ -851,10 +857,9 @@ function selecccionUsa() {
 
         ModalInfo2.classList.remove("ModalInfoOpen2")
         ModalInfo2.textContent = ""
+        // ModalInfo.classList.add("ModalInfoOpen")
+
         ModalInfo.classList.add("ModalInfoOpen")
-
-
-
         const contCancel = document.createElement("div")
         contCancel.classList.add("contCancel")
         const cancel = document.createElement("span")
