@@ -48,7 +48,30 @@
     transition: 0.9s;
     gap: 20px;
 }
-
+.openCountryUsa{
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(27, 27, 27, 0.85), rgba(0, 0, 0, 0.755)), url('./images/estadosunidos.jpg');
+    transition: 0.9s;
+    gap: 20px;
+}
+.openCountryRusia{
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(27, 27, 27, 0.85), rgba(0, 0, 0, 0.755)), url('./images/alemaniaGranosCafe.jpg');
+    transition: 0.9s;
+    gap: 20px;
+}
 .none{
     display: none;
 }
@@ -241,7 +264,22 @@ svg path {
     border-radius: 0px 60px 60px 0px;
 }
 
-
+.mapaOpenAlemania{
+    top: 0;
+    width: 460px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.8s all;
+    font-family: 'Amatic SC';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 0px 60px 60px 0px;
+    right: 0;
+}
 
 
 

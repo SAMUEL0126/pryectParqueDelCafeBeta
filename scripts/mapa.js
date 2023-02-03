@@ -221,6 +221,7 @@ const new_ireland = document.getElementById('new ireland')
     //mapas
 const mapa = document.getElementById('mapa')
 const mapa2 = document.getElementById("mapa2")
+const mapa3 = document.getElementById("mapa3")
 
 const openCountry = document.getElementById("openCountry")
 const countryColombia = document.getElementById("svg3")
@@ -868,7 +869,7 @@ function selecccionUsa() {
             ModalInfo2.textContent = ""
             // ModalInfo.classList.add("ModalInfoOpen")
 
-            openCountry.classList.add("openCountry")
+            openCountry.classList.add("openCountryUsa")
             openCountry.classList.remove("closeCountry")
             
             setTimeout(() => {
@@ -1134,204 +1135,219 @@ let changerussia = 0
 
 russia.addEventListener('click', selecccionRusia)
 function selecccionRusia() {
-    alaska.setAttribute("fill", "rgb(31,101,228")
-    albania.setAttribute("fill", "rgb(31,101,228")
-    moldova.setAttribute("fill", "rgb(31,101,228")
-    bosnia.setAttribute("fill", "rgb(31,101,228")
-    switzerland.setAttribute("fill", "rgb(31,101,228")
-    slovakia.setAttribute("fill", "rgb(31,101,228")
-    emirates.setAttribute("fill", "rgb(31,101,228")
-    path302.setAttribute("fill", "rgb(31,101,228")
-    estonia.setAttribute("fill", "rgb(31,101,228")
-    austria.setAttribute("fill", "rgb(31,101,228")
-    azerbaijan.setAttribute("fill", "rgb(31,101,228")
-    georgia.setAttribute("fill", "rgb(31,101,228")
-    hungary.setAttribute("fill", "rgb(31,101,228")
-    czech.setAttribute("fill", "rgb(31,101,228")
-    bulgaria.setAttribute("fill", "rgb(31,101,228")
-    jordan.setAttribute("fill", "rgb(31,101,228")
-    lithuania.setAttribute("fill", "rgb(31,101,228")
-    serbia.setAttribute("fill", "rgb(31,101,228")
-    syria.setAttribute("fill", "rgb(31,101,228")
-    norway.setAttribute("fill", "rgb(31,101,228")
-    oman.setAttribute("fill", "rgb(31,101,228")
-    yemen.setAttribute("fill", "rgb(31,101,228")
-    saudi.setAttribute("fill", "rgb(31,101,228")
-    belarus.setAttribute("fill", "rgb(31,101,228")
-    romania.setAttribute("fill", "rgb(31,101,228")
-    Denmark.setAttribute("fill", "rgb(31,101,228")
-    sweden.setAttribute("fill", "rgb(31,101,228")
-    finland.setAttribute("fill", "rgb(31,101,228")
-    Turkey.setAttribute("fill", "rgb(31,101,228")
-    russia.setAttribute("fill", "rgb(31,101,228")
-    Netherlands.setAttribute("fill", "rgb(31,101,228")
-    ukranie.setAttribute("fill", "rgb(31,101,228")
-    Belgium.setAttribute("fill", "rgb(31,101,228")
-    Croatia.setAttribute("fill", "rgb(31,101,228")
-    United.setAttribute("fill", "rgb(31,101,228")
-    itali.setAttribute("fill", "rgb(31,101,228")
-    portugal.setAttribute("fill", "rgb(31,101,228")
-    poland.setAttribute("fill", "rgb(31,101,228")
-    france.setAttribute("fill", "rgb(31,101,228")
-    germany.setAttribute("fill", "rgb(31,101,228")
-    spain.setAttribute("fill", "rgb(31,101,228")
-    greece.setAttribute("fill", "rgb(31,101,228")
-    armenia.setAttribute("fill", "rgb(31,101,228")
-    slovenia.setAttribute("fill", "rgb(31,101,228")
-    changerussia++
-    sumadre = 2
-    changemauretania = 2
-    changechina = 2
-    changeantarti = 2
-    changeaust = 2
-    if (changerussia == 1) {
-        ModalInfo2.classList.add("ModalInfoOpen2")
-        ModalInfo.classList.remove("ModalInfoOpen")
-        ModalInfo.textContent = ""
+    setTimeout(() => {
+        
+        alaska.setAttribute("fill", "rgb(31,101,228")
+        albania.setAttribute("fill", "rgb(31,101,228")
+        moldova.setAttribute("fill", "rgb(31,101,228")
+        bosnia.setAttribute("fill", "rgb(31,101,228")
+        switzerland.setAttribute("fill", "rgb(31,101,228")
+        slovakia.setAttribute("fill", "rgb(31,101,228")
+        emirates.setAttribute("fill", "rgb(31,101,228")
+        path302.setAttribute("fill", "rgb(31,101,228")
+        estonia.setAttribute("fill", "rgb(31,101,228")
+        austria.setAttribute("fill", "rgb(31,101,228")
+        azerbaijan.setAttribute("fill", "rgb(31,101,228")
+        georgia.setAttribute("fill", "rgb(31,101,228")
+        hungary.setAttribute("fill", "rgb(31,101,228")
+        czech.setAttribute("fill", "rgb(31,101,228")
+        bulgaria.setAttribute("fill", "rgb(31,101,228")
+        jordan.setAttribute("fill", "rgb(31,101,228")
+        lithuania.setAttribute("fill", "rgb(31,101,228")
+        serbia.setAttribute("fill", "rgb(31,101,228")
+        syria.setAttribute("fill", "rgb(31,101,228")
+        norway.setAttribute("fill", "rgb(31,101,228")
+        oman.setAttribute("fill", "rgb(31,101,228")
+        yemen.setAttribute("fill", "rgb(31,101,228")
+        saudi.setAttribute("fill", "rgb(31,101,228")
+        belarus.setAttribute("fill", "rgb(31,101,228")
+        romania.setAttribute("fill", "rgb(31,101,228")
+        Denmark.setAttribute("fill", "rgb(31,101,228")
+        sweden.setAttribute("fill", "rgb(31,101,228")
+        finland.setAttribute("fill", "rgb(31,101,228")
+        Turkey.setAttribute("fill", "rgb(31,101,228")
+        russia.setAttribute("fill", "rgb(31,101,228")
+        Netherlands.setAttribute("fill", "rgb(31,101,228")
+        ukranie.setAttribute("fill", "rgb(31,101,228")
+        Belgium.setAttribute("fill", "rgb(31,101,228")
+        Croatia.setAttribute("fill", "rgb(31,101,228")
+        United.setAttribute("fill", "rgb(31,101,228")
+        itali.setAttribute("fill", "rgb(31,101,228")
+        portugal.setAttribute("fill", "rgb(31,101,228")
+        poland.setAttribute("fill", "rgb(31,101,228")
+        france.setAttribute("fill", "rgb(31,101,228")
+        germany.setAttribute("fill", "rgb(31,101,228")
+        spain.setAttribute("fill", "rgb(31,101,228")
+        greece.setAttribute("fill", "rgb(31,101,228")
+        armenia.setAttribute("fill", "rgb(31,101,228")
+        slovenia.setAttribute("fill", "rgb(31,101,228")
+        changerussia++
+        sumadre = 2
+        changemauretania = 2
+        changechina = 2
+        changeantarti = 2
+        changeaust = 2
+        if (changerussia == 1) {
+            
+            // ModalInfo.textContent = ""
+            
+            openCountry.classList.add("openCountryRusia")
+            openCountry.classList.remove("closeCountry")
+    
+            setTimeout(() => {
+                ModalInfo2.classList.add("ModalInfoOpen2")
+            }, 1500);
 
+            const contCancel = document.createElement("div")
+            contCancel.classList.add("contCancel")
+            const cancel = document.createElement("span")
+            cancel.classList.add("material-symbols-outlined")
+            cancel.textContent = "cancel"
+            cancel.style.cursor = "pointer"
+            cancel.style.marginTop = "10px"
+            cancel.addEventListener("click", cerrarview)
+            contCancel.appendChild(cancel)
+    
+    
+            const ranquinSuramerica = document.createElement("h2")
+            ranquinSuramerica.textContent = "Ranking de Europa"
+            ranquinSuramerica.style.textAlign = "center"
+    
+    
+            const containerpaistextrussia = document.createElement("div")
+            containerpaistextrussia.style.width = "100%"
+            containerpaistextrussia.style.height = "5vh"
+            containerpaistextrussia.style.display = "flex"
+            containerpaistextrussia.style.gap = "60px"
+            containerpaistextrussia.style.marginLeft = "70px"
+            containerpaistextrussia.style.color = "yellow"
+            containerpaistextrussia.style.transform = "translate(0px , 30px)"
+            containerpaistextrussia.style.textShadow = "0px 0px 10px skyblue"
+    
+            const containernamepaisestextrussia = document.createElement("div")
+            containernamepaisestextrussia.textContent = "Paises exportadores"
+            containernamepaisestextrussia.style.fontFamily = "Amatic SC"
+            containernamepaisestextrussia.style.fontSize = "30px"
+    
+    
+            const containersacosdecaferussia = document.createElement("div")
+            containersacosdecaferussia.textContent = "Sacos de cafe año 2022."
+            containersacosdecaferussia.style.fontFamily = "Amatic SC"
+            containersacosdecaferussia.style.fontSize = "30px"
+    
+            containerpaistextrussia.appendChild(containernamepaisestextrussia)
+            containerpaistextrussia.appendChild(containersacosdecaferussia)
+    
+            const containerPandPoints = document.createElement("div")
+            containerPandPoints.classList.add("containerPandPoints")
+    
+            const paisesList = document.createElement("div")
+            paisesList.classList.add("paisesList")
+    
+            const posPais = document.createElement("p")
+            posPais.textContent = apiPaises[1][0].pais1
+    
+            const posPais2 = document.createElement("p")
+            posPais2.textContent = apiPaises[1][0].pais2
+    
+            const posPais3 = document.createElement("p")
+            posPais3.textContent = apiPaises[1][0].pais3
+    
+            const posPais4 = document.createElement("p")
+            posPais4.textContent = apiPaises[1][0].pais4
+    
+            paisesList.appendChild(posPais)
+            paisesList.appendChild(posPais2)
+            paisesList.appendChild(posPais3)
+            paisesList.appendChild(posPais4)
+    
+    
+            containerPandPoints.appendChild(paisesList)
+    
+            contentmapa.classList.add("none")
 
-        const contCancel = document.createElement("div")
-        contCancel.classList.add("contCancel")
-        const cancel = document.createElement("span")
-        cancel.classList.add("material-symbols-outlined")
-        cancel.textContent = "cancel"
-        cancel.style.cursor = "pointer"
-        cancel.style.marginTop = "10px"
-        cancel.addEventListener("click", cerrarview)
-        contCancel.appendChild(cancel)
-
-
-        const ranquinSuramerica = document.createElement("h2")
-        ranquinSuramerica.textContent = "Ranking de Europa"
-        ranquinSuramerica.style.textAlign = "center"
-
-
-        const containerpaistextrussia = document.createElement("div")
-        containerpaistextrussia.style.width = "100%"
-        containerpaistextrussia.style.height = "5vh"
-        containerpaistextrussia.style.display = "flex"
-        containerpaistextrussia.style.gap = "60px"
-        containerpaistextrussia.style.marginLeft = "70px"
-        containerpaistextrussia.style.color = "yellow"
-        containerpaistextrussia.style.transform = "translate(0px , 30px)"
-        containerpaistextrussia.style.textShadow = "0px 0px 10px skyblue"
-
-        const containernamepaisestextrussia = document.createElement("div")
-        containernamepaisestextrussia.textContent = "Paises exportadores"
-        containernamepaisestextrussia.style.fontFamily = "Amatic SC"
-        containernamepaisestextrussia.style.fontSize = "30px"
-
-
-        const containersacosdecaferussia = document.createElement("div")
-        containersacosdecaferussia.textContent = "Sacos de cafe año 2022."
-        containersacosdecaferussia.style.fontFamily = "Amatic SC"
-        containersacosdecaferussia.style.fontSize = "30px"
-
-        containerpaistextrussia.appendChild(containernamepaisestextrussia)
-        containerpaistextrussia.appendChild(containersacosdecaferussia)
-
-        const containerPandPoints = document.createElement("div")
-        containerPandPoints.classList.add("containerPandPoints")
-
-        const paisesList = document.createElement("div")
-        paisesList.classList.add("paisesList")
-
-        const posPais = document.createElement("p")
-        posPais.textContent = apiPaises[1][0].pais1
-
-        const posPais2 = document.createElement("p")
-        posPais2.textContent = apiPaises[1][0].pais2
-
-        const posPais3 = document.createElement("p")
-        posPais3.textContent = apiPaises[1][0].pais3
-
-        const posPais4 = document.createElement("p")
-        posPais4.textContent = apiPaises[1][0].pais4
-
-        paisesList.appendChild(posPais)
-        paisesList.appendChild(posPais2)
-        paisesList.appendChild(posPais3)
-        paisesList.appendChild(posPais4)
-
-
-        containerPandPoints.appendChild(paisesList)
-
-
-        const estrellasPais = document.createElement("div")
-        estrellasPais.classList.add("estrellasPais")
-
-
-        const rengStar = document.createElement("div")
-
-
-        rengStar.classList.add("rengStar")
-        const star1 = document.createElement("span")
-        star1.classList.add("colorpacascafe")
-        star1.textContent = "1.379.000"
-
-
-        rengStar.appendChild(star1)
-
-        const rengStar2 = document.createElement("div")
-        rengStar2.classList.add("rengStar")
-
-        rengStar2.classList.add("rengStar")
-        const start1 = document.createElement("span")
-        start1.classList.add("colorpacascafe")
-        start1.textContent = "728.000"
-
-
-        rengStar2.appendChild(start1)
-
-
-
-
-        const rengStar3 = document.createElement("div")
-        rengStar3.classList.add("rengStar")
-
-        rengStar3.classList.add("rengStar")
-        const starti1 = document.createElement("span")
-        starti1.classList.add("colorpacascafe")
-        starti1.textContent = "488.000"
-
-
-
-        rengStar3.appendChild(starti1)
-
-
-
-        const rengStar4 = document.createElement("div")
-        rengStar4.classList.add("rengStar")
-
-        rengStar4.classList.add("rengStar")
-        const startin1 = document.createElement("span")
-        startin1.classList.add("colorpacascafe")
-        startin1.textContent = "412.000"
-
-
-        rengStar4.appendChild(startin1)
-
-        estrellasPais.appendChild(rengStar)
-        estrellasPais.appendChild(rengStar2)
-        estrellasPais.appendChild(rengStar3)
-        estrellasPais.appendChild(rengStar4)
-
-
-        containerPandPoints.appendChild(estrellasPais)
-
-        const fotModal = document.createElement("div")
-        fotModal.classList.add("fotModal")
-
-        ModalInfo2.appendChild(contCancel)
-        ModalInfo2.appendChild(ranquinSuramerica)
-        ModalInfo2.appendChild(containerpaistextrussia)
-        ModalInfo2.appendChild(containerPandPoints)
-        ModalInfo2.appendChild(fotModal)
-        setTimeout(() => {
-            cerrarview()
-        }, 15000);
-
-    }
+            const estrellasPais = document.createElement("div")
+            estrellasPais.classList.add("estrellasPais")
+    
+    
+            const rengStar = document.createElement("div")
+    
+    
+            rengStar.classList.add("rengStar")
+            const star1 = document.createElement("span")
+            star1.classList.add("colorpacascafe")
+            star1.textContent = "1.379.000"
+    
+    
+            rengStar.appendChild(star1)
+    
+            const rengStar2 = document.createElement("div")
+            rengStar2.classList.add("rengStar")
+    
+            rengStar2.classList.add("rengStar")
+            const start1 = document.createElement("span")
+            start1.classList.add("colorpacascafe")
+            start1.textContent = "728.000"
+    
+    
+            rengStar2.appendChild(start1)
+    
+    
+    
+    
+            const rengStar3 = document.createElement("div")
+            rengStar3.classList.add("rengStar")
+    
+            rengStar3.classList.add("rengStar")
+            const starti1 = document.createElement("span")
+            starti1.classList.add("colorpacascafe")
+            starti1.textContent = "488.000"
+    
+    
+    
+            rengStar3.appendChild(starti1)
+    
+    
+    
+            const rengStar4 = document.createElement("div")
+            rengStar4.classList.add("rengStar")
+    
+            rengStar4.classList.add("rengStar")
+            const startin1 = document.createElement("span")
+            startin1.classList.add("colorpacascafe")
+            startin1.textContent = "412.000"
+    
+    
+            rengStar4.appendChild(startin1)
+    
+            estrellasPais.appendChild(rengStar)
+            estrellasPais.appendChild(rengStar2)
+            estrellasPais.appendChild(rengStar3)
+            estrellasPais.appendChild(rengStar4)
+    
+            setTimeout(() => {
+                mapa2.classList.add("mapaOpenAlemania")
+            }, 2000);
+    
+            containerPandPoints.appendChild(estrellasPais)
+    
+            const fotModal = document.createElement("div")
+            fotModal.classList.add("fotModal")
+    
+            ModalInfo2.appendChild(contCancel)
+            ModalInfo2.appendChild(ranquinSuramerica)
+            ModalInfo2.appendChild(containerpaistextrussia)
+            ModalInfo2.appendChild(containerPandPoints)
+            ModalInfo2.appendChild(fotModal)
+            setTimeout(() => {
+                cerrarview()
+            }, 15000);
+            setTimeout(() => {
+                window.location.reload()
+            }, 12500);
+            
+        }
+    }, 1500);
 }
 botswana.addEventListener('click', slectafri)
 
