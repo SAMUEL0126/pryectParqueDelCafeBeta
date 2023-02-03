@@ -816,209 +816,213 @@ let changeUsa = 0
 
 usa.addEventListener('click', selecccionUsa)
 function selecccionUsa() {
-    amund_ringnes.setAttribute("fill", "rgb(31,101,228)")
-    bathurst.setAttribute("fill", "rgb(31,101,228)")
-    ellef_ringnes.setAttribute("fill", "rgb(31,101,228)")
-    prince_patrick.setAttribute("fill", "rgb(31,101,228)")
-    prince_of_wales.setAttribute("fill", "rgb(31,101,228)")
-    southhampton.setAttribute("fill", "rgb(31,101,228)")
-    axel_heiberg.setAttribute("fill", "rgb(31,101,228)")
-    eglinton.setAttribute("fill", "rgb(31,101,228)")
-    devon.setAttribute("fill", "rgb(31,101,228)")
-    panama.setAttribute("fill", "rgb(31,101,228)")
-    costarica.setAttribute("fill", "rgb(31,101,228)")
-    nicaragua.setAttribute("fill", "rgb(31,101,228)")
-    banks.setAttribute("fill", "rgb(31,101,228)")
-    victoria.setAttribute("fill", "rgb(31,101,228)")
-    ellesmere.setAttribute("fill", "rgb(31,101,228)")
-    baffin.setAttribute("fill", "rgb(31,101,228)")
-    Dominican.setAttribute("fill", "rgb(31,101,228)")
-    Jamaica.setAttribute("fill", "rgb(31,101,228)")
-    chukotka.setAttribute("fill", "rgb(31,101,228)")
-    greenland.setAttribute("fill", "rgb(31,101,228)")
-    alaska2.setAttribute("fill", "rgb(31,101,228)")
-    mexico.setAttribute("fill", "rgb(31,101,228)")
-    canada.setAttribute("fill", "rgb(31,101,228)")
-    usa.setAttribute("fill", "rgb(31,101,228)")
-    honduras.setAttribute("fill", "rgb(31,101,228)")
-    guatemala.setAttribute("fill", "rgb(31,101,228)")
-    prescott.setAttribute("fill", "rgb(31,101,228)")
-    vancouver.setAttribute("fill", "rgb(31,101,228)")
-    bylot.setAttribute("fill", "rgb(31,101,228)")
-    newfoundland.setAttribute("fill", "rgb(31,101,228)")
-    iceland.setAttribute("fill", "rgb(31,101,228)")
-    mackenzie_king.setAttribute("fill", "rgb(31,101,228)")
-    st_lawrence_island_west.setAttribute("fill", "rgb(31,101,228)")
-    king_christian.setAttribute("fill", "rgb(31,101,228)")
-    changeColombia = 2
-    changeUsa++
 
-    if (changeUsa == 1) {
-
-        ModalInfo2.classList.remove("ModalInfoOpen2")
-        ModalInfo2.textContent = ""
-        // ModalInfo.classList.add("ModalInfoOpen")
-
-        ModalInfo.classList.add("ModalInfoOpen")
-        const contCancel = document.createElement("div")
-        contCancel.classList.add("contCancel")
-        const cancel = document.createElement("span")
-        cancel.classList.add("material-symbols-outlined")
-        cancel.textContent = "cancel"
-        cancel.style.cursor = "pointer"
-        cancel.style.marginTop = "10px"
-        cancel.addEventListener("click", cerrarview)
-        contCancel.appendChild(cancel)
-
-        const ranquinSuramerica = document.createElement("h2")
-        ranquinSuramerica.textContent = "Ranking de Norte america"
-        ranquinSuramerica.style.textAlign = "center"
-
-        const containerpaistextusa = document.createElement("div")
-        containerpaistextusa.style.width = "100%"
-        containerpaistextusa.style.height = "5vh"
-        containerpaistextusa.style.display = "flex"
-        containerpaistextusa.style.gap = "60px"
-        containerpaistextusa.style.marginLeft = "70px"
-        containerpaistextusa.style.color = "yellow"
-        containerpaistextusa.style.transform = "translate(0px , 30px)"
-        containerpaistextusa.style.textShadow = "0px 0px 10px skyblue"
-
-        const containernamepaisestextusa = document.createElement("div")
-        containernamepaisestextusa.textContent = "Paises exportadores"
-        containernamepaisestextusa.style.fontFamily = "Amatic SC"
-        containernamepaisestextusa.style.fontSize = "30px"
-
-
-        const containersacosdecafeusa = document.createElement("div")
-        containersacosdecafeusa.textContent = "Sacos de cafe año 2022."
-        containersacosdecafeusa.style.fontFamily = "Amatic SC"
-        containersacosdecafeusa.style.fontSize = "30px"
-
-        containerpaistextusa.appendChild(containernamepaisestextusa)
-        containerpaistextusa.appendChild(containersacosdecafeusa)
-
-
-        const containerPandPoints = document.createElement("div")
-        containerPandPoints.classList.add("containerPandPoints")
-
-        const paisesList = document.createElement("div")
-        paisesList.classList.add("paisesList")
-
-        const posPais = document.createElement("p")
-        posPais.textContent = apiPaises[2][0].pais1
-
-        const posPais2 = document.createElement("p")
-        posPais2.textContent = apiPaises[2][0].pais2
-
-        const posPais3 = document.createElement("p")
-        posPais3.textContent = apiPaises[2][0].pais3
-
-        const posPais4 = document.createElement("p")
-        posPais4.textContent = apiPaises[2][0].pais4
-
-        paisesList.appendChild(posPais)
-        paisesList.appendChild(posPais2)
-        paisesList.appendChild(posPais3)
-        paisesList.appendChild(posPais4)
-
-
-        containerPandPoints.appendChild(paisesList)
-
-
-        const estrellasPais = document.createElement("div")
-        estrellasPais.classList.add("estrellasPais")
-
-
-        const rengStar = document.createElement("div")
-
-
-        rengStar.classList.add("rengStar")
-        const star1 = document.createElement("span")
-        star1.classList.add("colorpacascafe")
-        star1.textContent = "4.180.000"
-
-
-
-        rengStar.appendChild(star1)
-
-        const rengStar2 = document.createElement("div")
-        rengStar2.classList.add("rengStar")
-
-        rengStar2.classList.add("rengStar")
-        const start1 = document.createElement("span")
-        start1.classList.add("colorpacascafe")
-        start1.textContent = "3.900.000"
-
-
-
-        rengStar2.appendChild(start1)
-
-
-
-        const rengStar3 = document.createElement("div")
-        rengStar3.classList.add("rengStar")
-
-        rengStar3.classList.add("rengStar")
-        const starti1 = document.createElement("span")
-        starti1.classList.add("colorpacascafe")
-        starti1.textContent = "3.400.000"
-
-
-
-        rengStar3.appendChild(starti1)
-
-        const rengStar4 = document.createElement("div")
-        rengStar4.classList.add("rengStar")
-
-        rengStar4.classList.add("rengStar")
-        const startin1 = document.createElement("span")
-        startin1.classList.add("colorpacascafe")
-        startin1.textContent = "606.000"
-
-
-
-        rengStar4.appendChild(startin1)
-
-
-
-        const rengStar5 = document.createElement("div")
-        rengStar5.classList.add("rengStar")
-
-        rengStar5.classList.add("rengStar")
-        const starting1 = document.createElement("span")
-        starting1.classList.add("colorpacascafe")
-        starting1.textContent = "500.000"
-
-
-        rengStar5.appendChild(starting1)
-
-
-
-
-        estrellasPais.appendChild(rengStar)
-        estrellasPais.appendChild(rengStar2)
-        estrellasPais.appendChild(rengStar3)
-        estrellasPais.appendChild(rengStar4)
-
-
-
-        containerPandPoints.appendChild(estrellasPais)
-
-        const fotModal = document.createElement("div")
-        fotModal.classList.add("fotModal")
-
-        ModalInfo.appendChild(contCancel)
-        ModalInfo.appendChild(ranquinSuramerica)
-        ModalInfo.appendChild(containerpaistextusa)
-        ModalInfo.appendChild(containerPandPoints)
-        ModalInfo.appendChild(fotModal)
-        setTimeout(() => {
-            cerrarview()
-        }, 15000);
-    }
-
+    setTimeout(() => {
+        amund_ringnes.setAttribute("fill", "rgb(31,101,228)")
+        bathurst.setAttribute("fill", "rgb(31,101,228)")
+        ellef_ringnes.setAttribute("fill", "rgb(31,101,228)")
+        prince_patrick.setAttribute("fill", "rgb(31,101,228)")
+        prince_of_wales.setAttribute("fill", "rgb(31,101,228)")
+        southhampton.setAttribute("fill", "rgb(31,101,228)")
+        axel_heiberg.setAttribute("fill", "rgb(31,101,228)")
+        eglinton.setAttribute("fill", "rgb(31,101,228)")
+        devon.setAttribute("fill", "rgb(31,101,228)")
+        panama.setAttribute("fill", "rgb(31,101,228)")
+        costarica.setAttribute("fill", "rgb(31,101,228)")
+        nicaragua.setAttribute("fill", "rgb(31,101,228)")
+        banks.setAttribute("fill", "rgb(31,101,228)")
+        victoria.setAttribute("fill", "rgb(31,101,228)")
+        ellesmere.setAttribute("fill", "rgb(31,101,228)")
+        baffin.setAttribute("fill", "rgb(31,101,228)")
+        Dominican.setAttribute("fill", "rgb(31,101,228)")
+        Jamaica.setAttribute("fill", "rgb(31,101,228)")
+        chukotka.setAttribute("fill", "rgb(31,101,228)")
+        greenland.setAttribute("fill", "rgb(31,101,228)")
+        alaska2.setAttribute("fill", "rgb(31,101,228)")
+        mexico.setAttribute("fill", "rgb(31,101,228)")
+        canada.setAttribute("fill", "rgb(31,101,228)")
+        usa.setAttribute("fill", "rgb(31,101,228)")
+        honduras.setAttribute("fill", "rgb(31,101,228)")
+        guatemala.setAttribute("fill", "rgb(31,101,228)")
+        prescott.setAttribute("fill", "rgb(31,101,228)")
+        vancouver.setAttribute("fill", "rgb(31,101,228)")
+        bylot.setAttribute("fill", "rgb(31,101,228)")
+        newfoundland.setAttribute("fill", "rgb(31,101,228)")
+        iceland.setAttribute("fill", "rgb(31,101,228)")
+        mackenzie_king.setAttribute("fill", "rgb(31,101,228)")
+        st_lawrence_island_west.setAttribute("fill", "rgb(31,101,228)")
+        king_christian.setAttribute("fill", "rgb(31,101,228)")
+        changeColombia = 2
+        changeUsa++
+    
+        if (changeUsa == 1) {
+    
+            ModalInfo2.classList.remove("ModalInfoOpen2")
+            ModalInfo2.textContent = ""
+            // ModalInfo.classList.add("ModalInfoOpen")
+    
+            ModalInfo.classList.add("ModalInfoOpen")
+            const contCancel = document.createElement("div")
+            contCancel.classList.add("contCancel")
+            const cancel = document.createElement("span")
+            cancel.classList.add("material-symbols-outlined")
+            cancel.textContent = "cancel"
+            cancel.style.cursor = "pointer"
+            cancel.style.marginTop = "10px"
+            cancel.addEventListener("click", cerrarview)
+            contCancel.appendChild(cancel)
+    
+            const ranquinSuramerica = document.createElement("h2")
+            ranquinSuramerica.textContent = "Ranking de Norte america"
+            ranquinSuramerica.style.textAlign = "center"
+    
+            const containerpaistextusa = document.createElement("div")
+            containerpaistextusa.style.width = "100%"
+            containerpaistextusa.style.height = "5vh"
+            containerpaistextusa.style.display = "flex"
+            containerpaistextusa.style.gap = "60px"
+            containerpaistextusa.style.marginLeft = "70px"
+            containerpaistextusa.style.color = "yellow"
+            containerpaistextusa.style.transform = "translate(0px , 30px)"
+            containerpaistextusa.style.textShadow = "0px 0px 10px skyblue"
+    
+            const containernamepaisestextusa = document.createElement("div")
+            containernamepaisestextusa.textContent = "Paises exportadores"
+            containernamepaisestextusa.style.fontFamily = "Amatic SC"
+            containernamepaisestextusa.style.fontSize = "30px"
+    
+    
+            const containersacosdecafeusa = document.createElement("div")
+            containersacosdecafeusa.textContent = "Sacos de cafe año 2022."
+            containersacosdecafeusa.style.fontFamily = "Amatic SC"
+            containersacosdecafeusa.style.fontSize = "30px"
+    
+            containerpaistextusa.appendChild(containernamepaisestextusa)
+            containerpaistextusa.appendChild(containersacosdecafeusa)
+    
+    
+            const containerPandPoints = document.createElement("div")
+            containerPandPoints.classList.add("containerPandPoints")
+    
+            const paisesList = document.createElement("div")
+            paisesList.classList.add("paisesList")
+    
+            const posPais = document.createElement("p")
+            posPais.textContent = apiPaises[2][0].pais1
+    
+            const posPais2 = document.createElement("p")
+            posPais2.textContent = apiPaises[2][0].pais2
+    
+            const posPais3 = document.createElement("p")
+            posPais3.textContent = apiPaises[2][0].pais3
+    
+            const posPais4 = document.createElement("p")
+            posPais4.textContent = apiPaises[2][0].pais4
+    
+            paisesList.appendChild(posPais)
+            paisesList.appendChild(posPais2)
+            paisesList.appendChild(posPais3)
+            paisesList.appendChild(posPais4)
+    
+    
+            containerPandPoints.appendChild(paisesList)
+    
+    
+            const estrellasPais = document.createElement("div")
+            estrellasPais.classList.add("estrellasPais")
+    
+    
+            const rengStar = document.createElement("div")
+    
+    
+            rengStar.classList.add("rengStar")
+            const star1 = document.createElement("span")
+            star1.classList.add("colorpacascafe")
+            star1.textContent = "4.180.000"
+    
+    
+    
+            rengStar.appendChild(star1)
+    
+            const rengStar2 = document.createElement("div")
+            rengStar2.classList.add("rengStar")
+    
+            rengStar2.classList.add("rengStar")
+            const start1 = document.createElement("span")
+            start1.classList.add("colorpacascafe")
+            start1.textContent = "3.900.000"
+    
+    
+    
+            rengStar2.appendChild(start1)
+    
+    
+    
+            const rengStar3 = document.createElement("div")
+            rengStar3.classList.add("rengStar")
+    
+            rengStar3.classList.add("rengStar")
+            const starti1 = document.createElement("span")
+            starti1.classList.add("colorpacascafe")
+            starti1.textContent = "3.400.000"
+    
+    
+    
+            rengStar3.appendChild(starti1)
+    
+            const rengStar4 = document.createElement("div")
+            rengStar4.classList.add("rengStar")
+    
+            rengStar4.classList.add("rengStar")
+            const startin1 = document.createElement("span")
+            startin1.classList.add("colorpacascafe")
+            startin1.textContent = "606.000"
+    
+    
+    
+            rengStar4.appendChild(startin1)
+    
+    
+    
+            const rengStar5 = document.createElement("div")
+            rengStar5.classList.add("rengStar")
+    
+            rengStar5.classList.add("rengStar")
+            const starting1 = document.createElement("span")
+            starting1.classList.add("colorpacascafe")
+            starting1.textContent = "500.000"
+    
+    
+            rengStar5.appendChild(starting1)
+    
+    
+    
+    
+            estrellasPais.appendChild(rengStar)
+            estrellasPais.appendChild(rengStar2)
+            estrellasPais.appendChild(rengStar3)
+            estrellasPais.appendChild(rengStar4)
+    
+    
+    
+            containerPandPoints.appendChild(estrellasPais)
+    
+            const fotModal = document.createElement("div")
+            fotModal.classList.add("fotModal")
+    
+            ModalInfo.appendChild(contCancel)
+            ModalInfo.appendChild(ranquinSuramerica)
+            ModalInfo.appendChild(containerpaistextusa)
+            ModalInfo.appendChild(containerPandPoints)
+            ModalInfo.appendChild(fotModal)
+            setTimeout(() => {
+                cerrarview()
+            }, 15000);
+        }
+    
+    }, 2000);
 }
+
 vietnam.addEventListener('click', selectedf)
 
 banks.addEventListener('click', selecccionUsa)
