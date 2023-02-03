@@ -218,14 +218,18 @@ const gambia = document.getElementById("gambia")
 const king_christian = document.getElementById("king christian")
 const new_ireland = document.getElementById('new ireland')
 
-    //mapas
+    //Mapas
 const mapa = document.getElementById('mapa')
 const mapa2 = document.getElementById("mapa2")
 const mapa3 = document.getElementById("mapa3")
+const mapa4 = document.getElementById("mapa4")
 
+    //Countrys
 const openCountry = document.getElementById("openCountry")
 const countryColombia = document.getElementById("svg3")
 const countryUsa = document.getElementById("svg4")
+const countryAlemania = document.getElementById("svg5")
+const countryFinland = document.getElementById("svg6")
 
 const contentmapa = document.getElementById("contentmapa")
 const videoC = document.getElementById("videoCoffe")
@@ -239,6 +243,7 @@ function cerrarview() {
     changemauretania = 0
     changechina = 0
     changeaust = 0
+    changeFiland = 0
 
     if (sumadre == 0) {
 
@@ -257,6 +262,13 @@ function cerrarview() {
 
             countryUsa.classList.add("closeColombia")
             countryUsa.classList.remove("mapaOpen")
+
+            countryAlemania.classList.add("closeColombia")
+            countryAlemania.classList.remove("mapaOpen")
+
+            countryFinland.classList.add("closeColombia")
+            countryFinland.classList.remove("mapaOpen")
+
         }, 1000);
 
 
@@ -398,7 +410,6 @@ function cerrarview() {
         mali.setAttribute("fill", "blue")
         congo.setAttribute("fill", "blue")
         burundi.setAttribute("fill", "red")
-        spain.setAttribute("fill", "blue")
         germany.setAttribute("fill", "red")
         rwanda.setAttribute("fill", "silver")
         zimbabwe.setAttribute("fill", "yellow")
@@ -1097,7 +1108,6 @@ ecuador.addEventListener('click', selectionsColombia)
 
 mexico.addEventListener('click', selecccionUsa)
 
-
 canada.addEventListener('click', selecccionUsa)
 
 greenland.addEventListener('click', selecccionUsa)
@@ -1114,8 +1124,6 @@ Turkey.addEventListener('click', selecccionRusia)
 
 poland.addEventListener('click', selecccionRusia)
 
-finland.addEventListener('click', selecccionRusia)
-
 
 france.addEventListener('click', selecccionRusia)
 
@@ -1124,9 +1132,6 @@ belarus.addEventListener('click', selecccionRusia)
 
 
 sweden.addEventListener('click', selecccionRusia)
-
-
-spain.addEventListener('click', selecccionRusia)
 
 
 alaska.addEventListener('click', selecccionRusia)
@@ -1326,7 +1331,7 @@ function selecccionRusia() {
             estrellasPais.appendChild(rengStar4)
     
             setTimeout(() => {
-                mapa2.classList.add("mapaOpenAlemania")
+                mapa3.classList.add("mapaOpenAlemania")
             }, 2000);
     
             containerPandPoints.appendChild(estrellasPais)
@@ -2030,3 +2035,277 @@ iran.addEventListener('click', selectedf)
 kazakhstan.addEventListener('click', selectedf)
 
 Pakistan.addEventListener('click', selectedf)
+
+
+finland.addEventListener('click', selecccionFiland)
+
+let changeFiland = 1
+function selecccionFiland() {
+    setTimeout(() => {
+        finland.setAttribute("fill", "rgb(31,101,228")
+
+        if (changeFiland == 1) {
+            setTimeout(() => {
+                ModalInfo.classList.add("ModalInfoOpen")        
+            }, 1500);
+
+            ModalInfo2.classList.remove("ModalInfoOpen2")
+            ModalInfo2.textContent = ""
+            colombia.style.display = "flex"
+
+            //abrir y cerrar
+            openCountry.classList.add("openCountryFinlandia")
+            openCountry.classList.remove("closeCountry")
+
+
+            setTimeout(() => {
+                countryColombia.classList.remove("closeColombia")
+                countryColombia.classList.add("mapaOpen")
+            }, 1000);
+            
+            
+
+            // lentDarkMap.classList.add("lentDarkMap")
+            // contentmapa.appendChild(lentDarkMap)
+            contentmapa.classList.add("none")
+            // videoC.classList.add("video")    
+            // openCountry.appendChild(videoC)
+
+
+            const contCancel = document.createElement("div")
+            contCancel.classList.add("contCancel")
+            const cancel = document.createElement("span")
+            cancel.classList.add("material-symbols-outlined")
+            cancel.textContent = "cancel"
+            cancel.style.cursor = "pointer"
+            cancel.style.marginTop = "10px"
+            cancel.addEventListener("click", cerrarview)
+            contCancel.appendChild(cancel)
+
+
+            const ranquinSuramerica = document.createElement("h2")
+            ranquinSuramerica.textContent = "Consumo De Cafe en Filandia"
+            ranquinSuramerica.style.textAlign = "center"
+
+            const containerpaistext = document.createElement("div")
+            containerpaistext.style.width = "100%"
+            containerpaistext.style.height = "5vh"
+            containerpaistext.style.display = "flex"
+            containerpaistext.style.gap = "60px"
+            containerpaistext.style.marginLeft = "70px"
+            containerpaistext.style.color = "yellow"
+            containerpaistext.style.textShadow = "0px 0px 10px skyblue"
+
+            const containernamepaisestext = document.createElement("div")
+            containernamepaisestext.textContent = "Paises exportadores"
+            containernamepaisestext.style.fontFamily = "Amatic SC"
+            containernamepaisestext.style.fontSize = "30px"
+
+
+            const containersacosdecafe = document.createElement("div")
+            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.style.fontFamily = "Amatic SC"
+            containersacosdecafe.style.fontSize = "30px"
+
+            containerpaistext.appendChild(containernamepaisestext)
+            containerpaistext.appendChild(containersacosdecafe)
+
+
+            const containerPandPoints = document.createElement("div")
+            containerPandPoints.classList.add("containerPandPoints")
+
+            const paisesList = document.createElement("div")
+            paisesList.classList.add("paisesList")
+
+            const posPais = document.createElement("p")
+            posPais.textContent = "Finlandia"
+
+            
+            paisesList.appendChild(posPais)
+            
+
+            containerPandPoints.appendChild(paisesList)
+
+
+            const estrellasPais = document.createElement("div")
+            estrellasPais.classList.add("estrellasPais")
+
+
+            const rengStar = document.createElement("div")
+
+
+            rengStar.classList.add("rengStar")
+            const star1 = document.createElement("span")
+            star1.classList.add("colorpacascafe")
+            star1.textContent = "43.200.000"
+            rengStar.appendChild(star1)
+
+            
+
+
+
+            estrellasPais.appendChild(rengStar)
+
+            
+            containerPandPoints.appendChild(estrellasPais)
+
+            const fotModal = document.createElement("div")
+            fotModal.classList.add("fotModal")
+
+            setTimeout(() => {
+                mapa4.classList.add("mapaOpenFinland")
+            }, 1000);
+
+
+            ModalInfo.appendChild(contCancel)
+            ModalInfo.appendChild(ranquinSuramerica)
+            ModalInfo.appendChild(containerpaistext)
+            ModalInfo.appendChild(containerPandPoints)
+            ModalInfo.appendChild(fotModal)
+            setTimeout(() => {
+                cerrarview()
+            }, 10000);
+            setTimeout(() => {
+                window.location.reload()
+            }, 12500);
+        }
+    }, 2000);
+}
+
+
+spain.addEventListener('click', selecccionEspaña)
+let changeEspaña = 1
+function selecccionEspaña() {
+    
+
+    setTimeout(() => {
+        spain.setAttribute("fill", "rgb(31,101,228")
+
+        if (changeEspaña == 1) {
+            setTimeout(() => {
+                ModalInfo.classList.add("ModalInfoOpen")        
+            }, 1500);
+
+            ModalInfo2.classList.remove("ModalInfoOpen2")
+            ModalInfo2.textContent = ""
+            colombia.style.display = "flex"
+
+            //abrir y cerrar
+            openCountry.classList.add("openCountryFinlandia")
+            openCountry.classList.remove("closeCountry")
+
+
+            setTimeout(() => {
+                countryColombia.classList.remove("closeColombia")
+                countryColombia.classList.add("mapaOpen")
+            }, 1000);
+            
+            
+
+            // lentDarkMap.classList.add("lentDarkMap")
+            // contentmapa.appendChild(lentDarkMap)
+            contentmapa.classList.add("none")
+            // videoC.classList.add("video")    
+            // openCountry.appendChild(videoC)
+
+
+            const contCancel = document.createElement("div")
+            contCancel.classList.add("contCancel")
+            const cancel = document.createElement("span")
+            cancel.classList.add("material-symbols-outlined")
+            cancel.textContent = "cancel"
+            cancel.style.cursor = "pointer"
+            cancel.style.marginTop = "10px"
+            cancel.addEventListener("click", cerrarview)
+            contCancel.appendChild(cancel)
+
+
+            const ranquinSuramerica = document.createElement("h2")
+            ranquinSuramerica.textContent = "Consumo De Cafe en Filandia"
+            ranquinSuramerica.style.textAlign = "center"
+
+            const containerpaistext = document.createElement("div")
+            containerpaistext.style.width = "100%"
+            containerpaistext.style.height = "5vh"
+            containerpaistext.style.display = "flex"
+            containerpaistext.style.gap = "60px"
+            containerpaistext.style.marginLeft = "70px"
+            containerpaistext.style.color = "yellow"
+            containerpaistext.style.textShadow = "0px 0px 10px skyblue"
+
+            const containernamepaisestext = document.createElement("div")
+            containernamepaisestext.textContent = "Paises exportadores"
+            containernamepaisestext.style.fontFamily = "Amatic SC"
+            containernamepaisestext.style.fontSize = "30px"
+
+
+            const containersacosdecafe = document.createElement("div")
+            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.style.fontFamily = "Amatic SC"
+            containersacosdecafe.style.fontSize = "30px"
+
+            containerpaistext.appendChild(containernamepaisestext)
+            containerpaistext.appendChild(containersacosdecafe)
+
+
+            const containerPandPoints = document.createElement("div")
+            containerPandPoints.classList.add("containerPandPoints")
+
+            const paisesList = document.createElement("div")
+            paisesList.classList.add("paisesList")
+
+            const posPais = document.createElement("p")
+            posPais.textContent = "Finlandia"
+
+            
+            paisesList.appendChild(posPais)
+            
+
+            containerPandPoints.appendChild(paisesList)
+
+
+            const estrellasPais = document.createElement("div")
+            estrellasPais.classList.add("estrellasPais")
+
+
+            const rengStar = document.createElement("div")
+
+
+            rengStar.classList.add("rengStar")
+            const star1 = document.createElement("span")
+            star1.classList.add("colorpacascafe")
+            star1.textContent = "43.200.000"
+            rengStar.appendChild(star1)
+
+            
+
+
+
+            estrellasPais.appendChild(rengStar)
+
+            
+            containerPandPoints.appendChild(estrellasPais)
+
+            const fotModal = document.createElement("div")
+            fotModal.classList.add("fotModal")
+
+            setTimeout(() => {
+                mapa4.classList.add("mapaOpenFinland")
+            }, 1000);
+
+
+            ModalInfo.appendChild(contCancel)
+            ModalInfo.appendChild(ranquinSuramerica)
+            ModalInfo.appendChild(containerpaistext)
+            ModalInfo.appendChild(containerPandPoints)
+            ModalInfo.appendChild(fotModal)
+            setTimeout(() => {
+                cerrarview()
+            }, 10000);
+            setTimeout(() => {
+                window.location.reload()
+            }, 12500);
+        }
+    }, 2000);
+    
+}
