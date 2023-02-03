@@ -224,6 +224,7 @@ const mapa2 = document.getElementById("mapa2")
 const mapa3 = document.getElementById("mapa3")
 const mapa4 = document.getElementById("mapa4")
 const mapa5 = document.getElementById("mapa5")
+const mapa6 = document.getElementById("mapa6")
 
     //Countrys
 const openCountry = document.getElementById("openCountry")
@@ -232,6 +233,7 @@ const countryUsa = document.getElementById("svg4")
 const countryAlemania = document.getElementById("svg5")
 const countryFinland = document.getElementById("svg6")
 const countrySpain = document.getElementById("svg7")
+const countryItaly = document.getElementById("svg8")
 
 const contentmapa = document.getElementById("contentmapa")
 const videoC = document.getElementById("videoCoffe")
@@ -273,6 +275,9 @@ function cerrarview() {
 
             countrySpain.classList.add("closeColombia")
             countrySpain.classList.remove("mapaOpen")
+
+            countryItaly.classList.add("closeColombia")
+            countryItaly.classList.remove("mapaOpen")
         }, 1000);
 
 
@@ -434,7 +439,6 @@ function cerrarview() {
         sweden.setAttribute("fill", "blue")
         syria.setAttribute("fill", "green")
         Croatia.setAttribute("fill", "gold")
-        itali.setAttribute("fill", "blue")
         china.setAttribute("fill", "yellow")
         mongolia.setAttribute("fill", "green")
         thailand.setAttribute("fill", "red")
@@ -1093,8 +1097,6 @@ iraq.addEventListener('click', selectedf)
 lithuania.addEventListener('click', selecccionRusia)
 
 germany.addEventListener('click', selecccionRusia)
-
-itali.addEventListener('click', selecccionRusia)
 
 oman.addEventListener('click', selecccionRusia)
 
@@ -2311,5 +2313,143 @@ function selecccionEspaña() {
             }, 12500);
         }
     }, 2000);
+
+}
+
+itali.addEventListener('click', selecccionItali)
+let changeItaly = 1
+function selecccionItali() {
+    
+    
+
+
+    
+    setTimeout(() => {
+        itali.setAttribute("fill", "rgb(31,101,228")
+
+        if (changeItaly == 1) {
+            setTimeout(() => {
+                ModalInfo.classList.add("ModalInfoOpen")        
+            }, 1500);
+
+            ModalInfo2.classList.remove("ModalInfoOpen2")
+            ModalInfo2.textContent = ""
+            colombia.style.display = "flex"
+
+            //abrir y cerrar
+            openCountry.classList.add("openCountryItaly")
+            openCountry.classList.remove("closeCountry")
+
+
+            setTimeout(() => {
+                countryItaly.classList.remove("closeColombia")
+                countryItaly.classList.add("mapaOpen")
+            }, 1000);
+            
+            
+
+            contentmapa.classList.add("none")
+
+
+            const contCancel = document.createElement("div")
+            contCancel.classList.add("contCancel")
+            const cancel = document.createElement("span")
+            cancel.classList.add("material-symbols-outlined")
+            cancel.textContent = "cancel"
+            cancel.style.cursor = "pointer"
+            cancel.style.marginTop = "10px"
+            cancel.addEventListener("click", cerrarview)
+            contCancel.appendChild(cancel)
+
+
+            const ranquinSuramerica = document.createElement("h2")
+            ranquinSuramerica.textContent = "Consumo De Cafe en Italia"
+            ranquinSuramerica.style.textAlign = "center"
+
+            const containerpaistext = document.createElement("div")
+            containerpaistext.style.width = "100%"
+            containerpaistext.style.height = "5vh"
+            containerpaistext.style.display = "flex"
+            containerpaistext.style.gap = "60px"
+            containerpaistext.style.marginLeft = "70px"
+            containerpaistext.style.color = "yellow"
+            containerpaistext.style.textShadow = "0px 0px 10px skyblue"
+
+            const containernamepaisestext = document.createElement("div")
+            containernamepaisestext.textContent = "Paises consumidores"
+            containernamepaisestext.style.fontFamily = "Amatic SC"
+            containernamepaisestext.style.fontSize = "30px"
+
+
+            const containersacosdecafe = document.createElement("div")
+            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.style.fontFamily = "Amatic SC"
+            containersacosdecafe.style.fontSize = "30px"
+
+            containerpaistext.appendChild(containernamepaisestext)
+            containerpaistext.appendChild(containersacosdecafe)
+
+
+            const containerPandPoints = document.createElement("div")
+            containerPandPoints.classList.add("containerPandPoints")
+
+            const paisesList = document.createElement("div")
+            paisesList.classList.add("paisesList")
+
+            const posPais = document.createElement("p")
+            posPais.textContent = "Italia"
+
+            
+            paisesList.appendChild(posPais)
+            
+
+            containerPandPoints.appendChild(paisesList)
+
+
+            const estrellasPais = document.createElement("div")
+            estrellasPais.classList.add("estrellasPais")
+
+
+            const rengStar = document.createElement("div")
+
+
+            rengStar.classList.add("rengStar")
+            const star1 = document.createElement("span")
+            star1.classList.add("colorpacascafe")
+            star1.textContent = "43.200.000"
+            rengStar.appendChild(star1)
+
+            
+
+
+
+            estrellasPais.appendChild(rengStar)
+
+            
+            containerPandPoints.appendChild(estrellasPais)
+
+            const fotModal = document.createElement("div")
+            fotModal.classList.add("fotModal")
+
+            setTimeout(() => {
+                mapa6.classList.add("mapaOpenItaly")
+            }, 1000);
+
+
+            ModalInfo.appendChild(contCancel)
+            ModalInfo.appendChild(ranquinSuramerica)
+            ModalInfo.appendChild(containerpaistext)
+            ModalInfo.appendChild(containerPandPoints)
+            ModalInfo.appendChild(fotModal)
+            setTimeout(() => {
+                cerrarview()
+            }, 10000);
+            setTimeout(() => {
+                window.location.reload()
+            }, 12500);
+        }
+    }, 2000);
+
+
 
 }
