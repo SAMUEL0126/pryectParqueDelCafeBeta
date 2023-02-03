@@ -223,6 +223,7 @@ const mapa = document.getElementById('mapa')
 const mapa2 = document.getElementById("mapa2")
 const mapa3 = document.getElementById("mapa3")
 const mapa4 = document.getElementById("mapa4")
+const mapa5 = document.getElementById("mapa5")
 
     //Countrys
 const openCountry = document.getElementById("openCountry")
@@ -230,6 +231,7 @@ const countryColombia = document.getElementById("svg3")
 const countryUsa = document.getElementById("svg4")
 const countryAlemania = document.getElementById("svg5")
 const countryFinland = document.getElementById("svg6")
+const countrySpain = document.getElementById("svg7")
 
 const contentmapa = document.getElementById("contentmapa")
 const videoC = document.getElementById("videoCoffe")
@@ -269,6 +271,8 @@ function cerrarview() {
             countryFinland.classList.add("closeColombia")
             countryFinland.classList.remove("mapaOpen")
 
+            countrySpain.classList.add("closeColombia")
+            countrySpain.classList.remove("mapaOpen")
         }, 1000);
 
 
@@ -2054,7 +2058,7 @@ function selecccionFiland() {
             colombia.style.display = "flex"
 
             //abrir y cerrar
-            openCountry.classList.add("openCountryFinlandia")
+            openCountry.classList.add("mapaOpen")
             openCountry.classList.remove("closeCountry")
 
 
@@ -2191,13 +2195,13 @@ function selecccionEspaña() {
             colombia.style.display = "flex"
 
             //abrir y cerrar
-            openCountry.classList.add("openCountryFinlandia")
+            openCountry.classList.add("openCountryEspaña")
             openCountry.classList.remove("closeCountry")
 
 
             setTimeout(() => {
-                countryColombia.classList.remove("closeColombia")
-                countryColombia.classList.add("mapaOpen")
+                countrySpain.classList.remove("closeColombia")
+                countrySpain.classList.add("mapaOpen")
             }, 1000);
             
             
@@ -2234,7 +2238,7 @@ function selecccionEspaña() {
             containerpaistext.style.textShadow = "0px 0px 10px skyblue"
 
             const containernamepaisestext = document.createElement("div")
-            containernamepaisestext.textContent = "Paises exportadores"
+            containernamepaisestext.textContent = "Paises consumidores"
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
 
@@ -2255,7 +2259,7 @@ function selecccionEspaña() {
             paisesList.classList.add("paisesList")
 
             const posPais = document.createElement("p")
-            posPais.textContent = "Finlandia"
+            posPais.textContent = "España"
 
             
             paisesList.appendChild(posPais)
@@ -2290,7 +2294,7 @@ function selecccionEspaña() {
             fotModal.classList.add("fotModal")
 
             setTimeout(() => {
-                mapa4.classList.add("mapaOpenFinland")
+                mapa5.classList.add("mapaOpenEspaña")
             }, 1000);
 
 
@@ -2307,5 +2311,5 @@ function selecccionEspaña() {
             }, 12500);
         }
     }, 2000);
-    
+
 }
