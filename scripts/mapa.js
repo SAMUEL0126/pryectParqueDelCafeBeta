@@ -253,7 +253,11 @@ function cerrarview() {
         setTimeout(() => {
             countryColombia.classList.add("closeColombia")
             countryColombia.classList.remove("mapaOpen")
+
+            countryUsa.classList.add("closeColombia")
+            countryUsa.classList.remove("mapaOpen")
         }, 1000);
+
 
         setTimeout(() => {
             openCountry.classList.add("closeCountry")
@@ -708,7 +712,11 @@ function selectionsColombia() {
             setTimeout(() => {
                 cerrarview()
             }, 10000);
-        }, 2000);
+            setTimeout(() => {
+                window.location.reload()
+            }, 12500);
+        }, 3000);
+        
     }
 }
 
@@ -856,12 +864,17 @@ function selecccionUsa() {
         changeUsa++
     
         if (changeUsa == 1) {
-    
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
             // ModalInfo.classList.add("ModalInfoOpen")
-    
-            ModalInfo.classList.add("ModalInfoOpen")
+
+            openCountry.classList.add("openCountry")
+            openCountry.classList.remove("closeCountry")
+            
+            setTimeout(() => {
+                ModalInfo.classList.add("ModalInfoOpen")
+            }, 1500);
+
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
             const cancel = document.createElement("span")
@@ -923,8 +936,18 @@ function selecccionUsa() {
             paisesList.appendChild(posPais2)
             paisesList.appendChild(posPais3)
             paisesList.appendChild(posPais4)
-    
-    
+            
+            setTimeout(() => {
+                mapa2.classList.add("mapaOpen")
+            }, 2000);
+
+            contentmapa.classList.add("none")
+
+            setTimeout(() => {
+                countryUsa.classList.remove("closeColombia")
+                countryUsa.classList.add("mapaOpen")
+            }, 1000);
+            
             containerPandPoints.appendChild(paisesList)
     
     
@@ -995,7 +1018,10 @@ function selecccionUsa() {
     
             rengStar5.appendChild(starting1)
     
-    
+            
+            setTimeout(() => {
+                mapa2.classList.add("mapaOpen")
+            }, 1000);
     
     
             estrellasPais.appendChild(rengStar)
@@ -1017,7 +1043,10 @@ function selecccionUsa() {
             ModalInfo.appendChild(fotModal)
             setTimeout(() => {
                 cerrarview()
-            }, 15000);
+            }, 10000);
+            setTimeout(() => {
+                window.location.reload()
+            }, 12500);
         }
     
     }, 2000);
