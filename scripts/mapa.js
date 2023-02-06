@@ -879,7 +879,6 @@ function selecccionUsa() {
         if (changeUsa == 1) {
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
-            // ModalInfo.classList.add("ModalInfoOpen")
 
             openCountry.classList.add("openCountryUsa")
             openCountry.classList.remove("closeCountry")
@@ -1192,9 +1191,7 @@ function selecccionRusia() {
         changeantarti = 2
         changeaust = 2
         if (changerussia == 1) {
-            
-            // ModalInfo.textContent = ""
-            
+
             openCountry.classList.add("openCountryRusia")
             openCountry.classList.remove("closeCountry")
     
