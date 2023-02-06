@@ -254,7 +254,6 @@ function cerrarview() {
 
         ModalInfo2.classList.remove("ModalInfoOpen2")
         ModalInfo2.textContent = ""
-        // mapa.classList.remove("mapaOpen")
         setTimeout(() => {
             ModalInfo.classList.remove("ModalInfoOpen")
             ModalInfo.textContent = ""
@@ -289,7 +288,6 @@ function cerrarview() {
         }, 2500);
 
 
-        // contentmapa.classList.add("contentmapa")
         colombia.setAttribute("fill", "red")
         antarctica.setAttribute("fill", "green")
         alaska2.setAttribute("fill", "green")
@@ -559,12 +557,7 @@ function selectionsColombia() {
             }, 1000);
             
             
-
-            // lentDarkMap.classList.add("lentDarkMap")
-            // contentmapa.appendChild(lentDarkMap)
             contentmapa.classList.add("none")
-            // videoC.classList.add("video")    
-            // openCountry.appendChild(videoC)
 
 
             const contCancel = document.createElement("div")
