@@ -2060,12 +2060,7 @@ function selecccionFiland() {
             }, 1000);
             
             
-
-            // lentDarkMap.classList.add("lentDarkMap")
-            // contentmapa.appendChild(lentDarkMap)
             contentmapa.classList.add("none")
-            // videoC.classList.add("video")    
-            // openCountry.appendChild(videoC)
 
 
             const contCancel = document.createElement("div")
