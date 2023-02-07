@@ -546,7 +546,6 @@ function selectionsColombia() {
             ModalInfo2.textContent = ""
             colombia.style.display = "flex"
 
-            //abrir y cerrar
             openCountry.classList.add("openCountry")
             openCountry.classList.remove("closeCountry")
 
@@ -2048,8 +2047,6 @@ function selecccionFiland() {
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
             colombia.style.display = "flex"
-
-            //abrir y cerrar
             openCountry.classList.add("mapaOpen")
             openCountry.classList.remove("closeCountry")
 
