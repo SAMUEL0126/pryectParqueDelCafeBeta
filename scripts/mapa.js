@@ -2181,7 +2181,6 @@ function selecccionEspaña() {
             ModalInfo2.textContent = ""
             colombia.style.display = "flex"
 
-            //abrir y cerrar
             openCountry.classList.add("openCountryEspaña")
             openCountry.classList.remove("closeCountry")
 
@@ -2316,7 +2315,6 @@ function selecccionItali() {
             ModalInfo2.textContent = ""
             colombia.style.display = "flex"
 
-            //abrir y cerrar
             openCountry.classList.add("openCountryItaly")
             openCountry.classList.remove("closeCountry")
 
