@@ -2204,7 +2204,7 @@ function selecccionEspaña() {
 
 
             const ranquinSuramerica = document.createElement("h2")
-            ranquinSuramerica.textContent = "Consumo De Cafe en Filandia"
+            ranquinSuramerica.textContent = "Consumo De Cafe en España"
             ranquinSuramerica.style.textAlign = "center"
 
             const containerpaistext = document.createElement("div")
