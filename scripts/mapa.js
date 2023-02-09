@@ -571,8 +571,9 @@ function selectionsColombia() {
 
 
             const ranquinSuramerica = document.createElement("h2")
-            ranquinSuramerica.textContent = "Ranking de sur america"
+            ranquinSuramerica.textContent = "Paises consumidores de cafe colombiano"
             ranquinSuramerica.style.textAlign = "center"
+            ranquinSuramerica.style.fontSize = "45px"
 
             const containerpaistext = document.createElement("div")
             containerpaistext.style.width = "100%"
@@ -584,7 +585,7 @@ function selectionsColombia() {
             containerpaistext.style.textShadow = "0px 0px 10px skyblue"
 
             const containernamepaisestext = document.createElement("div")
-            containernamepaisestext.textContent = "Paises exportadores"
+            containernamepaisestext.textContent = "Paises consumidores"
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
 
@@ -721,12 +722,12 @@ function selectionsColombia() {
             ModalInfo.appendChild(containerpaistext)
             ModalInfo.appendChild(containerPandPoints)
             ModalInfo.appendChild(fotModal)
-            setTimeout(() => {
-                cerrarview()
-            }, 10000);
-            setTimeout(() => {
-                window.location.reload()
-            }, 12500);
+            // setTimeout(() => {
+            //     cerrarview()
+            // }, 10000);
+            // setTimeout(() => {
+            //     window.location.reload()
+            // }, 12500);
         }, 3000);
         
     }
