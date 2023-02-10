@@ -2048,9 +2048,11 @@ function selecccionFiland() {
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
             colombia.style.display = "flex"
-            openCountry.classList.add("mapaOpen")
-            openCountry.classList.remove("closeCountry")
+            // openCountry.classList.add("mapaOpen")
+            // openCountry.classList.remove("closeCountry")
 
+            openCountry.classList.add("openCountryFinlandia")
+            openCountry.classList.remove("closeCountry")
 
             setTimeout(() => {
                 countryColombia.classList.remove("closeColombia")
