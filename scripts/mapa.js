@@ -260,6 +260,7 @@ function cerrarview() {
         }, 500);
 
         setTimeout(() => {
+            
             countryColombia.classList.add("closeColombia")
             countryColombia.classList.remove("mapaOpen")
 
@@ -755,37 +756,37 @@ axel_heiberg.addEventListener('click', selecccionUsa)
 
 eglinton.addEventListener('click', selecccionUsa)
 
-switzerland.addEventListener('click', selecccionRusia)
+switzerland.addEventListener('click', seleccionGermany)
 
-serbia.addEventListener('click', selecccionRusia)
+serbia.addEventListener('click', seleccionGermany)
 
-bosnia.addEventListener('click', selecccionRusia)
+bosnia.addEventListener('click', seleccionGermany)
 
-bulgaria.addEventListener('click', selecccionRusia)
+bulgaria.addEventListener('click', seleccionGermany)
 
-moldova.addEventListener('click', selecccionRusia)
+moldova.addEventListener('click', seleccionGermany)
 
-hungary.addEventListener('click', selecccionRusia)
+hungary.addEventListener('click', seleccionGermany)
 
-slovakia.addEventListener('click', selecccionRusia)
+slovakia.addEventListener('click', seleccionGermany)
 
-estonia.addEventListener('click', selecccionRusia)
+estonia.addEventListener('click', seleccionGermany)
 
-norway.addEventListener('click', selecccionRusia)
+norway.addEventListener('click', seleccionGermany)
 
-Belgium.addEventListener('click', selecccionRusia)
+Belgium.addEventListener('click', seleccionGermany)
 
-armenia.addEventListener('click', selecccionRusia)
+armenia.addEventListener('click', seleccionGermany)
 
-georgia.addEventListener('click', selecccionRusia)
+georgia.addEventListener('click', seleccionGermany)
 
-austria.addEventListener('click', selecccionRusia)
+austria.addEventListener('click', seleccionGermany)
 
-czech.addEventListener('click', selecccionRusia)
+czech.addEventListener('click', seleccionGermany)
 
-azerbaijan.addEventListener('click', selecccionRusia)
+azerbaijan.addEventListener('click', seleccionGermany)
 
-greece.addEventListener('click', selecccionRusia)
+greece.addEventListener('click', seleccionGermany)
 
 guinee.addEventListener('click', slectafri)
 
@@ -799,7 +800,7 @@ kirgizstan.addEventListener('click', selectedf)
 
 tajikistan.addEventListener('click', selectedf)
 
-kuwait.addEventListener('click', selecccionRusia)
+kuwait.addEventListener('click', seleccionGermany)
 
 bissau.addEventListener('click', slectafri)
 
@@ -807,13 +808,13 @@ casamance.addEventListener('click', slectafri)
 
 gambia.addEventListener('click', slectafri)
 
-bhutan.addEventListener('click', selecccionRusia)
+bhutan.addEventListener('click', seleccionGermany)
 
-qatar.addEventListener('click', selecccionRusia)
+qatar.addEventListener('click', seleccionGermany)
 
-Croatia.addEventListener('click', selecccionRusia)
+Croatia.addEventListener('click', seleccionGermany)
 
-slovenia.addEventListener('click', selecccionRusia)
+slovenia.addEventListener('click', seleccionGermany)
 
 alexander.addEventListener('click', selectionan)
 
@@ -831,7 +832,7 @@ Dominican.addEventListener('click', selecccionUsa)
 
 hawaii.addEventListener('click', selecccionUsa)
 
-emirates.addEventListener('click', selecccionRusia)
+emirates.addEventListener('click', seleccionGermany)
 
 let changeUsa = 0
 
@@ -1086,17 +1087,17 @@ afghanistan.addEventListener('click', selectedf)
 
 iraq.addEventListener('click', selectedf)
 
-lithuania.addEventListener('click', selecccionRusia)
+lithuania.addEventListener('click', seleccionGermany)
 
-germany.addEventListener('click', selecccionRusia)
+germany.addEventListener('click', seleccionGermany)
 
-oman.addEventListener('click', selecccionRusia)
+oman.addEventListener('click', seleccionGermany)
 
-yemen.addEventListener('click', selecccionRusia)
+yemen.addEventListener('click', seleccionGermany)
 
-romania.addEventListener('click', selecccionRusia)
+romania.addEventListener('click', seleccionGermany)
 
-portugal.addEventListener('click', selecccionRusia)
+portugal.addEventListener('click', seleccionGermany)
 
 mozambique.addEventListener('click', slectafri)
 
@@ -1116,28 +1117,29 @@ alaska2.addEventListener('click', selecccionUsa)
 
 panama.addEventListener('click', selecccionUsa)
 
-ukranie.addEventListener('click', selecccionRusia)
+ukranie.addEventListener('click', seleccionGermany)
 
-Turkey.addEventListener('click', selecccionRusia)
+Turkey.addEventListener('click', seleccionGermany)
 
-poland.addEventListener('click', selecccionRusia)
-
-
-france.addEventListener('click', selecccionRusia)
+poland.addEventListener('click', seleccionGermany)
 
 
-belarus.addEventListener('click', selecccionRusia)
+france.addEventListener('click', seleccionGermany)
 
 
-sweden.addEventListener('click', selecccionRusia)
+belarus.addEventListener('click', seleccionGermany)
 
 
-alaska.addEventListener('click', selecccionRusia)
+sweden.addEventListener('click', seleccionGermany)
+
+
+alaska.addEventListener('click', seleccionGermany)
 
 let changerussia = 0
 
-russia.addEventListener('click', selecccionRusia)
-function selecccionRusia() {
+// pendiente funcion de russia
+germany.addEventListener('click', seleccionGermany)
+function seleccionGermany() {
     setTimeout(() => {
         
         alaska.setAttribute("fill", "rgb(31,101,228")
@@ -1376,7 +1378,7 @@ liberia.addEventListener('click', slectafri)
 
 uganda.addEventListener('click', slectafri)
 
-Netherlands.addEventListener('click', selecccionRusia)
+Netherlands.addEventListener('click', seleccionGermany)
 
 somaliland.addEventListener('click', slectafri)
 
@@ -1408,9 +1410,9 @@ ivoire.addEventListener('click', slectafri)
 
 zambia.addEventListener('click', slectafri)
 
-mongolia.addEventListener('click', selecccionRusia)
+mongolia.addEventListener('click', seleccionGermany)
 
-saudi.addEventListener('click', selecccionRusia)
+saudi.addEventListener('click', seleccionGermany)
 
 antarctica.addEventListener('click', selectionan)
 function selectionan() {
@@ -1428,9 +1430,9 @@ peninsula.addEventListener('click', selectionan)
 
 cuba.addEventListener('click', selecccionUsa)
 
-britain.addEventListener('click', selecccionRusia)
+britain.addEventListener('click', seleccionGermany)
 
-syria.addEventListener('click', selecccionRusia)
+syria.addEventListener('click', seleccionGermany)
 
 guyana.addEventListener('click', selectionsColombia)
 
@@ -2048,6 +2050,12 @@ function selecccionFiland() {
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
             colombia.style.display = "flex"
+
+
+            setTimeout(() => {
+                countryFinland.classList.remove("closeColombia")
+                countryFinland.classList.add("mapaOpen")
+            }, 1000);
             // openCountry.classList.add("mapaOpen")
             // openCountry.classList.remove("closeCountry")
 

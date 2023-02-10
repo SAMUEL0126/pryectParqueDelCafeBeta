@@ -67,7 +67,7 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-image: linear-gradient(rgba(27, 27, 27, 0.85), rgba(0, 0, 0, 0.755)), url('./images/alemaniaGranosCafe.jpg');
+    background-image: linear-gradient(rgba(27, 27, 27, 0.85), rgba(0, 0, 0, 0.755)), url('./images/alemaniafondo.jpg');
     transition: 0.9s;
     gap: 20px;
 }
