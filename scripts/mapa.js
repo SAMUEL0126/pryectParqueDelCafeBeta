@@ -722,12 +722,12 @@ function selectionsColombia() {
             ModalInfo.appendChild(containerpaistext)
             ModalInfo.appendChild(containerPandPoints)
             ModalInfo.appendChild(fotModal)
-            // setTimeout(() => {
-            //     cerrarview()
-            // }, 10000);
-            // setTimeout(() => {
-            //     window.location.reload()
-            // }, 12500);
+            setTimeout(() => {
+                cerrarview()
+            }, 10000);
+            setTimeout(() => {
+                window.location.reload()
+            }, 12500);
         }, 3000);
         
     }
