@@ -260,6 +260,7 @@ function cerrarview() {
         }, 500);
 
         setTimeout(() => {
+
             
             countryColombia.classList.add("closeColombia")
             countryColombia.classList.remove("mapaOpen")
@@ -1196,7 +1197,12 @@ function seleccionGermany() {
 
             openCountry.classList.add("openCountryRusia")
             openCountry.classList.remove("closeCountry")
-    
+            
+            setTimeout(() => {
+                countryAlemania.classList.add("mapaOpen")
+                countryAlemania.classList.remove("closeColombia")
+            }, 1000);
+
             setTimeout(() => {
                 ModalInfo2.classList.add("ModalInfoOpen2")
             }, 1500);
@@ -1344,10 +1350,10 @@ function seleccionGermany() {
             ModalInfo2.appendChild(fotModal)
             setTimeout(() => {
                 cerrarview()
-            }, 15000);
+            }, 12000);
             setTimeout(() => {
                 window.location.reload()
-            }, 12500);
+            }, 15500);
             
         }
     }, 1500);
