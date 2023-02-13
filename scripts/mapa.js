@@ -2062,8 +2062,6 @@ function selecccionFiland() {
                 countryFinland.classList.remove("closeColombia")
                 countryFinland.classList.add("mapaOpen")
             }, 1000);
-            // openCountry.classList.add("mapaOpen")
-            // openCountry.classList.remove("closeCountry")
 
             openCountry.classList.add("openCountryFinlandia")
             openCountry.classList.remove("closeCountry")
