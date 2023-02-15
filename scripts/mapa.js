@@ -126,7 +126,7 @@ const devon = document.getElementById("devon")
 const eglinton = document.getElementById("eglinton")
 const axel_heiberg = document.getElementById("axel heiberg")
 const tasmania = document.getElementById("tasmania")
-const new_britain = document.getElementById("new britain")
+// const new_britain = document.getElementById("britain")
 const kalimantan = document.getElementById("kalimantan")
 const east_malaysia = document.getElementById("east malaysia")
 const sulawesi = document.getElementById("sulawesi")
@@ -235,7 +235,7 @@ const countryAlemania = document.getElementById("svg5")
 const countryFinland = document.getElementById("svg6")
 const countrySpain = document.getElementById("svg7")
 const countryItaly = document.getElementById("svg8")
-const countryJapan = document.getElementById("svg9")
+const countryReinoU = document.getElementById("svg9")
 
 const contentmapa = document.getElementById("contentmapa")
 const videoC = document.getElementById("videoCoffe")
@@ -281,6 +281,9 @@ function cerrarview() {
 
             countryItaly.classList.add("closeColombia")
             countryItaly.classList.remove("mapaOpen")
+
+            countryReinoU.classList.add("closeColombia")
+            countryReinoU.classList.remove("mapaOpen")
         }, 1000);
 
 
@@ -511,8 +514,7 @@ const apiPaises = [
     [{ pais1: "Australia" }]
 ]
 
-var sound = new Audio()
-sound.src = "/images/button-click-off-click.mp3"
+
 let sumadre = 0
 
 let changeColombia = 0
@@ -525,6 +527,22 @@ function selectionsColombia() {
 
 
         setTimeout(() => {
+
+            // tierra_del_fuego_argentina.setAttribute("fill", "rgb(31,101,228)")
+            // tierra_del_fuego_chile.setAttribute("fill", "rgb(31,101,228)")
+            // suriname.setAttribute("fill", "rgb(31,101,228)")
+            // guyana.setAttribute("fill", "rgb(31,101,228)")
+            // guyane.setAttribute("fill", "rgb(31,101,228)")
+            // paraguay.setAttribute("fill", "rgb(31,101,228)")
+            // venezuela.setAttribute("fill", "rgb(31,101,228)")
+            // bolivia.setAttribute("fill", "rgb(31,101,228)")
+            // ecuador.setAttribute("fill", "rgb(31,101,228)")
+            // chile.setAttribute("fill", "rgb(31,101,228)")
+            // uruguay.setAttribute("fill", "rgb(31,101,228)")
+            // peru.setAttribute("fill", "rgb(31,101,228)")
+            // brazil.setAttribute("fill", "rgb(31,101,228)")
+            // argentina.setAttribute("fill", "rgb(31,101,228)")
+            // colombia.setAttribute("fill", "rgb(31,101,228)")
 
             setTimeout(() => {
                 ModalInfo.classList.add("ModalInfoOpen")        
@@ -827,7 +845,40 @@ usa.addEventListener('click', selecccionUsa)
 function selecccionUsa() {
 
     setTimeout(() => {
-     
+        // amund_ringnes.setAttribute("fill", "rgb(31,101,228)")
+        // bathurst.setAttribute("fill", "rgb(31,101,228)")
+        // ellef_ringnes.setAttribute("fill", "rgb(31,101,228)")
+        // prince_patrick.setAttribute("fill", "rgb(31,101,228)")
+        // prince_of_wales.setAttribute("fill", "rgb(31,101,228)")
+        // southhampton.setAttribute("fill", "rgb(31,101,228)")
+        // axel_heiberg.setAttribute("fill", "rgb(31,101,228)")
+        // eglinton.setAttribute("fill", "rgb(31,101,228)")
+        // devon.setAttribute("fill", "rgb(31,101,228)")
+        // panama.setAttribute("fill", "rgb(31,101,228)")
+        // costarica.setAttribute("fill", "rgb(31,101,228)")
+        // nicaragua.setAttribute("fill", "rgb(31,101,228)")
+        // banks.setAttribute("fill", "rgb(31,101,228)")
+        // victoria.setAttribute("fill", "rgb(31,101,228)")
+        // ellesmere.setAttribute("fill", "rgb(31,101,228)")
+        // baffin.setAttribute("fill", "rgb(31,101,228)")
+        // Dominican.setAttribute("fill", "rgb(31,101,228)")
+        // Jamaica.setAttribute("fill", "rgb(31,101,228)")
+        // chukotka.setAttribute("fill", "rgb(31,101,228)")
+        // greenland.setAttribute("fill", "rgb(31,101,228)")
+        // alaska2.setAttribute("fill", "rgb(31,101,228)")
+        // mexico.setAttribute("fill", "rgb(31,101,228)")
+        // canada.setAttribute("fill", "rgb(31,101,228)")
+        // usa.setAttribute("fill", "rgb(31,101,228)")
+        // honduras.setAttribute("fill", "rgb(31,101,228)")
+        // guatemala.setAttribute("fill", "rgb(31,101,228)")
+        // prescott.setAttribute("fill", "rgb(31,101,228)")
+        // vancouver.setAttribute("fill", "rgb(31,101,228)")
+        // bylot.setAttribute("fill", "rgb(31,101,228)")
+        // newfoundland.setAttribute("fill", "rgb(31,101,228)")
+        // iceland.setAttribute("fill", "rgb(31,101,228)")
+        // mackenzie_king.setAttribute("fill", "rgb(31,101,228)")
+        // st_lawrence_island_west.setAttribute("fill", "rgb(31,101,228)")
+        // king_christian.setAttribute("fill", "rgb(31,101,228)")
         changeColombia = 2
         changeUsa++
     
@@ -1096,7 +1147,50 @@ germany.addEventListener('click', seleccionGermany)
 function seleccionGermany() {
     setTimeout(() => {
         
-     
+        // alaska.setAttribute("fill", "rgb(31,101,228")
+        // albania.setAttribute("fill", "rgb(31,101,228")
+        // moldova.setAttribute("fill", "rgb(31,101,228")
+        // bosnia.setAttribute("fill", "rgb(31,101,228")
+        // switzerland.setAttribute("fill", "rgb(31,101,228")
+        // slovakia.setAttribute("fill", "rgb(31,101,228")
+        // emirates.setAttribute("fill", "rgb(31,101,228")
+        // path302.setAttribute("fill", "rgb(31,101,228")
+        // estonia.setAttribute("fill", "rgb(31,101,228")
+        // austria.setAttribute("fill", "rgb(31,101,228")
+        // azerbaijan.setAttribute("fill", "rgb(31,101,228")
+        // georgia.setAttribute("fill", "rgb(31,101,228")
+        // hungary.setAttribute("fill", "rgb(31,101,228")
+        // czech.setAttribute("fill", "rgb(31,101,228")
+        // bulgaria.setAttribute("fill", "rgb(31,101,228")
+        // jordan.setAttribute("fill", "rgb(31,101,228")
+        // lithuania.setAttribute("fill", "rgb(31,101,228")
+        // serbia.setAttribute("fill", "rgb(31,101,228")
+        // syria.setAttribute("fill", "rgb(31,101,228")
+        // norway.setAttribute("fill", "rgb(31,101,228")
+        // oman.setAttribute("fill", "rgb(31,101,228")
+        // yemen.setAttribute("fill", "rgb(31,101,228")
+        // saudi.setAttribute("fill", "rgb(31,101,228")
+        // belarus.setAttribute("fill", "rgb(31,101,228")
+        // romania.setAttribute("fill", "rgb(31,101,228")
+        // Denmark.setAttribute("fill", "rgb(31,101,228")
+        // sweden.setAttribute("fill", "rgb(31,101,228")
+        // finland.setAttribute("fill", "rgb(31,101,228")
+        // Turkey.setAttribute("fill", "rgb(31,101,228")
+        // russia.setAttribute("fill", "rgb(31,101,228")
+        // Netherlands.setAttribute("fill", "rgb(31,101,228")
+        // ukranie.setAttribute("fill", "rgb(31,101,228")
+        // Belgium.setAttribute("fill", "rgb(31,101,228")
+        // Croatia.setAttribute("fill", "rgb(31,101,228")
+        // United.setAttribute("fill", "rgb(31,101,228")
+        // itali.setAttribute("fill", "rgb(31,101,228")
+        // portugal.setAttribute("fill", "rgb(31,101,228")
+        // poland.setAttribute("fill", "rgb(31,101,228")
+        // france.setAttribute("fill", "rgb(31,101,228")
+        // germany.setAttribute("fill", "rgb(31,101,228")
+        // spain.setAttribute("fill", "rgb(31,101,228")
+        // greece.setAttribute("fill", "rgb(31,101,228")
+        // armenia.setAttribute("fill", "rgb(31,101,228")
+        // slovenia.setAttribute("fill", "rgb(31,101,228")
         changerussia++
         sumadre = 2
         changemauretania = 2
@@ -1346,7 +1440,7 @@ peninsula.addEventListener('click', selectionan)
 
 cuba.addEventListener('click', selecccionUsa)
 
-britain.addEventListener('click', seleccionGermany)
+// britain.addEventListener('click', seleccionGermany)
 
 syria.addEventListener('click', seleccionGermany)
 
@@ -1378,7 +1472,15 @@ let changeaust = 0
 
 kalimantan.addEventListener('click', selectaust)
 function selectaust() {
- 
+    // sulawesi.setAttribute("fill", "rgb(31,101,228")
+    // east_malaysia.setAttribute("fill", "rgb(31,101,228")
+    // kalimantan.setAttribute("fill", "rgb(31,101,228")
+    // tasmania.setAttribute("fill", "rgb(31,101,228")
+    // irian_jaya.setAttribute("fill", "rgb(31,101,228")
+    // papua_new_guinea.setAttribute("fill", "rgb(31,101,228")
+    // newzelandN.setAttribute("fill", "rgb(31,101,228")
+    // newzelanS.setAttribute("fill", "rgb(31,101,228")
+    // australia.setAttribute("fill", "rgb(31,101,228")
     changerussia = 2
     changemauretania = 2
     changechina = 2
@@ -1491,7 +1593,58 @@ let changemauretania = 0
 
 mauretania.addEventListener('click', slectafri)
 function slectafri() {
-  
+    // rwanda.setAttribute("fill", "rgb(31,101,228")
+    // israel.setAttribute("fill", "rgb(31,101,228")
+    // swaziland.setAttribute("fill", "rgb(31,101,228")
+    // togo.setAttribute("fill", "rgb(31,101,228")
+    // lesotho.setAttribute("fill", "rgb(31,101,228")
+    // sierra.setAttribute("fill", "rgb(31,101,228")
+    // eritrea.setAttribute("fill", "rgb(31,101,228")
+    // somaliland.setAttribute("fill", "rgb(31,101,228")
+    // malawi.setAttribute("fill", "rgb(31,101,228")
+    // benin.setAttribute("fill", "rgb(31,101,228")
+    // liberia.setAttribute("fill", "rgb(31,101,228")
+    // tunisia.setAttribute("fill", "rgb(31,101,228")
+    // uganda.setAttribute("fill", "rgb(31,101,228")
+    // burkina.setAttribute("fill", "rgb(31,101,228")
+    // ghana.setAttribute("fill", "rgb(31,101,228")
+    // zimbabwe.setAttribute("fill", "rgb(31,101,228")
+    // senegal.setAttribute("fill", "rgb(31,101,228")
+    // guinee.setAttribute("fill", "rgb(31,101,228")
+    // southsudan.setAttribute("fill", "rgb(31,101,228")
+    // gabon.setAttribute("fill", "rgb(31,101,228")
+    // congo.setAttribute("fill", "rgb(31,101,228")
+    // zambia.setAttribute("fill", "rgb(31,101,228")
+    // ivoire.setAttribute("fill", "rgb(31,101,228")
+    // somalia.setAttribute("fill", "rgb(31,101,228")
+    // botswana.setAttribute("fill", "rgb(31,101,228")
+    // kenya.setAttribute("fill", "rgb(31,101,228")
+    // centrafrique.setAttribute("fill", "rgb(31,101,228")
+    // mozambique.setAttribute("fill", "rgb(31,101,228")
+    // namibia.setAttribute("fill", "rgb(31,101,228")
+    // tanzania.setAttribute("fill", "rgb(31,101,228")
+    // ethiopia.setAttribute("fill", "rgb(31,101,228")
+    // mauretania.setAttribute("fill", "rgb(31,101,228")
+    // chad.setAttribute("fill", "rgb(31,101,228")
+    // niger.setAttribute("fill", "rgb(31,101,228")
+    // sudan.setAttribute("fill", "rgb(31,101,228")
+    // mali.setAttribute("fill", "rgb(31,101,228")
+    // south.setAttribute("fill", "rgb(31,101,228")
+    // angola.setAttribute("fill", "rgb(31,101,228")
+    // drc.setAttribute("fill", "rgb(31,101,228")
+    // libya.setAttribute("fill", "rgb(31,101,228")
+    // Morocco.setAttribute("fill", "rgb(31,101,228")
+    // Nigeria.setAttribute("fill", "rgb(31,101,228")
+    // Cameroon.setAttribute("fill", "rgb(31,101,228")
+    // algeria.setAttribute("fill", "rgb(31,101,228")
+    // cabinda.setAttribute("fill", "rgb(31,101,228")
+    // Egypt.setAttribute("fill", "rgb(31,101,228")
+    // burundi.setAttribute("fill", "rgb(31,101,228")
+    // bioko.setAttribute("fill", "rgb(31,101,228")
+    // madagascar.setAttribute("fill", "rgb(31,101,228")
+    // casamance.setAttribute("fill", "rgb(31,101,228")
+    // bissau.setAttribute("fill", "rgb(31,101,228")
+    // gambia.setAttribute("fill", "rgb(31,101,228")
     changerussia = 2
     changechina = 2
     changeantarti = 2
@@ -1682,7 +1835,31 @@ let changechina = 0
 
 china.addEventListener('click', selectedf)
 function selectedf() {
-  
+    // malaysia.setAttribute("fill", "rgb(31,101,228")
+    // cambodia.setAttribute("fill", "rgb(31,101,228")
+    // bangladesh.setAttribute("fill", "rgb(31,101,228")
+    // vietnam.setAttribute("fill", "rgb(31,101,228")
+    // thailand.setAttribute("fill", "rgb(31,101,228")
+    // north_korea.setAttribute("fill", "rgb(31,101,228")
+    // laos.setAttribute("fill", "rgb(31,101,228")
+    // burma.setAttribute("fill", "rgb(31,101,228")
+    // iraq.setAttribute("fill", "rgb(31,101,228")
+    // tajikistan.setAttribute("fill", "rgb(31,101,228")
+    // kirgizstan.setAttribute("fill", "rgb(31,101,228")
+    // kazakhstan.setAttribute("fill", "rgb(31,101,228")
+    // uzbekistan.setAttribute("fill", "rgb(31,101,228")
+    // turkmenistan.setAttribute("fill", "rgb(31,101,228")
+    // afghanistan.setAttribute("fill", "rgb(31,101,228")
+    // Pakistan.setAttribute("fill", "rgb(31,101,228")
+    // south_korea.setAttribute("fill", "rgb(31,101,228")
+    // iran.setAttribute("fill", "rgb(31,101,228")
+    // india.setAttribute("fill", "rgb(31,101,228")
+    // china.setAttribute("fill", "rgb(31,101,228")
+    // nepal.setAttribute("fill", "rgb(31,101,228")
+    // bhutan.setAttribute("fill", "rgb(31,101,228")
+    // casamance.setAttribute("fill", "rgb(31,101,228")
+    // bissau.setAttribute("fill", "rgb(31,101,228")
+    // gambia.setAttribute("fill", "rgb(31,101,228")
     changerussia = 2
     changemauretania = 2
     changeantarti = 2
@@ -2268,14 +2445,18 @@ function selecccionItali() {
 
 }
 
-new_britain.addEventListener('click', selectnew_britain)
+britain.addEventListener('click', selectnew_britain)
 let change_newBritain = 0
 function selectnew_britain() {
     
-    change_newBritain = 1
-    setTimeout(() => {
+    change_newBritain++
 
-        if (change_newBritain == 1) {
+    if (change_newBritain == 1) {
+
+
+        setTimeout(() => {
+
+            
             setTimeout(() => {
                 ModalInfo.classList.add("ModalInfoOpen")        
             }, 1500);
@@ -2284,16 +2465,16 @@ function selectnew_britain() {
             ModalInfo2.textContent = ""
             colombia.style.display = "flex"
 
-            openCountry.classList.add("openCountryEspaña")
+            openCountry.classList.add("openCountryNew_britain")
             openCountry.classList.remove("closeCountry")
 
 
             setTimeout(() => {
-                countrySpain.classList.remove("closeColombia")
-                countrySpain.classList.add("mapaOpen")
+                countryReinoU.classList.remove("closeColombia")
+                countryReinoU.classList.add("mapaOpenReinoUnido")
             }, 1000);
             
-
+            
             contentmapa.classList.add("none")
 
 
@@ -2309,8 +2490,9 @@ function selectnew_britain() {
 
 
             const ranquinSuramerica = document.createElement("h2")
-            ranquinSuramerica.textContent = "Consumo De Cafe en Filandia"
+            ranquinSuramerica.textContent = "Paises consumidores de cafe colombiano"
             ranquinSuramerica.style.textAlign = "center"
+            ranquinSuramerica.style.fontSize = "45px"
 
             const containerpaistext = document.createElement("div")
             containerpaistext.style.width = "100%"
@@ -2343,11 +2525,25 @@ function selectnew_britain() {
             paisesList.classList.add("paisesList")
 
             const posPais = document.createElement("p")
-            posPais.textContent = "España"
+            posPais.textContent = apiPaises[0][0].pais1
 
-            
+            const posPais2 = document.createElement("p")
+            posPais2.textContent = apiPaises[0][0].pais2
+
+            const posPais3 = document.createElement("p")
+            posPais3.textContent = apiPaises[0][0].pais3
+
+            const posPais4 = document.createElement("p")
+            posPais4.textContent = apiPaises[0][0].pais4
+
+            const posPais5 = document.createElement("p")
+            posPais5.textContent = apiPaises[0][0].pais5
+
             paisesList.appendChild(posPais)
-            
+            paisesList.appendChild(posPais2)
+            paisesList.appendChild(posPais3)
+            paisesList.appendChild(posPais4)
+            paisesList.appendChild(posPais5)
 
             containerPandPoints.appendChild(paisesList)
 
@@ -2365,20 +2561,78 @@ function selectnew_britain() {
             star1.textContent = "43.200.000"
             rengStar.appendChild(star1)
 
-            
+            const rengStar2 = document.createElement("div")
+            rengStar2.classList.add("rengStar")
+
+
+            rengStar2.classList.add("rengStar")
+            const start1 = document.createElement("span")
+            start1.classList.add("colorpacascafe")
+            start1.textContent = "13.500.000 "
+
+
+            rengStar2.appendChild(start1)
+
+
+
+            const rengStar3 = document.createElement("div")
+            rengStar3.classList.add("rengStar")
+
+            rengStar3.classList.add("rengStar")
+            const starti1 = document.createElement("span")
+            starti1.classList.add("colorpacascafe")
+            starti1.textContent = "3.200.000"
+
+
+
+            rengStar3.appendChild(starti1)
+
+            const rengStar4 = document.createElement("div")
+            rengStar4.classList.add("rengStar")
+
+            rengStar4.classList.add("rengStar")
+            const startin1 = document.createElement("span")
+            startin1.classList.add("colorpacascafe")
+            startin1.textContent = "700.000"
+
+
+
+            rengStar4.appendChild(startin1)
+
+
+
+            const rengStar5 = document.createElement("div")
+            rengStar5.classList.add("rengStar")
+
+            rengStar5.classList.add("rengStar")
+            const starting1 = document.createElement("span")
+            starting1.classList.add("colorpacascafe")
+            starting1.textContent = "90.000"
+
+
+
+            rengStar5.appendChild(starting1)
+
 
 
 
             estrellasPais.appendChild(rengStar)
 
-            
+            estrellasPais.appendChild(rengStar2)
+
+            estrellasPais.appendChild(rengStar3)
+
+            estrellasPais.appendChild(rengStar4)
+
+            estrellasPais.appendChild(rengStar5)
+
             containerPandPoints.appendChild(estrellasPais)
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
 
             setTimeout(() => {
-                mapa5.classList.add("mapaOpenEspaña")
+                mapa7.classList.add("mapaOpen")
             }, 1000);
 
 
@@ -2393,7 +2647,8 @@ function selectnew_britain() {
             setTimeout(() => {
                 window.location.reload()
             }, 12500);
-        }
-    }, 2000);
-
+        }, 3000);
+        
+    }
+    
 }
