@@ -2471,7 +2471,7 @@ function selectnew_britain() {
 
             setTimeout(() => {
                 countryReinoU.classList.remove("closeColombia")
-                countryReinoU.classList.add("mapaOpenReinoUnido")
+                countryReinoU.classList.add("mapaOpen")
             }, 1000);
             
             
