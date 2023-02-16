@@ -328,7 +328,6 @@ function selectionsColombia() {
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
-            colombia.style.display = "flex"
 
             openCountry.classList.add("openCountry")
             openCountry.classList.remove("closeCountry")
@@ -1141,8 +1140,6 @@ peninsula.addEventListener('click', selectionan)
 
 cuba.addEventListener('click', selecccionUsa)
 
-// britain.addEventListener('click', seleccionGermany)
-
 syria.addEventListener('click', seleccionGermany)
 
 guyana.addEventListener('click', selectionsColombia)
@@ -1674,7 +1671,6 @@ function selecccionFiland() {
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
-            colombia.style.display = "flex"
 
 
             setTimeout(() => {
@@ -1810,7 +1806,6 @@ function selecccionEspaña() {
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
-            colombia.style.display = "flex"
 
             openCountry.classList.add("openCountryEspaña")
             openCountry.classList.remove("closeCountry")
@@ -1944,7 +1939,6 @@ function selecccionItali() {
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
-            colombia.style.display = "flex"
 
             openCountry.classList.add("openCountryItaly")
             openCountry.classList.remove("closeCountry")
@@ -2081,7 +2075,6 @@ function selectnew_britain() {
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
-            colombia.style.display = "flex"
 
             openCountry.classList.add("openCountryNew_britain")
             openCountry.classList.remove("closeCountry")
