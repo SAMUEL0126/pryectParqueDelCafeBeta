@@ -126,7 +126,6 @@ const devon = document.getElementById("devon")
 const eglinton = document.getElementById("eglinton")
 const axel_heiberg = document.getElementById("axel heiberg")
 const tasmania = document.getElementById("tasmania")
-// const new_britain = document.getElementById("britain")
 const kalimantan = document.getElementById("kalimantan")
 const east_malaysia = document.getElementById("east malaysia")
 const sulawesi = document.getElementById("sulawesi")
@@ -239,6 +238,8 @@ const countryReinoU = document.getElementById("svg9")
 
 const contentmapa = document.getElementById("contentmapa")
 const videoC = document.getElementById("videoCoffe")
+
+
 
 function cerrarview() {
 
