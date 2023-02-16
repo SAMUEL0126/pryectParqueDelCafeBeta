@@ -236,17 +236,6 @@ svg path {
     height: auto;
 }
 
-#contentBoxFiles {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 50px;
-    text-shadow: 0px 2px 10px;
-}
-
-
 .contentdecriptionP {
     color: white;
 }
