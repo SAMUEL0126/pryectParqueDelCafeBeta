@@ -265,19 +265,6 @@ svg path {
     background-image: linear-gradient(rgba(27, 27, 27, 0.95), rgba(0, 0, 0, 0.955)), url(./images//cafefondo2.jpg);
 }
 
-.contButtonnextp {
-    position: absolute;
-}
-
-.contButtonnextp button {
-    width: 170px;
-    height: 45px;
-    border-radius: 50px;
-    border: none;
-    background-color: rgb(255, 123, 0);
-    color: white;
-    cursor: pointer;
-}
 
 .mapa{
     position: absolute;
