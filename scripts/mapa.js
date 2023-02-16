@@ -856,7 +856,7 @@ ecuador.addEventListener('click', selectionsColombia)
 
 mexico.addEventListener('click', selecccionUsa)
 
-canada.addEventListener('click', selecccionCanada)
+canada.addEventListener('click', selecccionUsa)
 
 greenland.addEventListener('click', selecccionUsa)
 
