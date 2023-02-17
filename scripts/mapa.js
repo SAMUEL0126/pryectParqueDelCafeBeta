@@ -237,7 +237,6 @@ const countryItaly = document.getElementById("svg8")
 const countryReinoU = document.getElementById("svg9")
 
 const contentmapa = document.getElementById("contentmapa")
-const videoC = document.getElementById("videoCoffe")
 
 
 
