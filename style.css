@@ -171,7 +171,7 @@
 }
 #svg2 {
 
-    filter: drop-shadow(-30px -35px 10px black);
+    filter: drop-shadow(0px 0px 10px skyblue);
     height: 100vh;
     width: 100%;
 }
