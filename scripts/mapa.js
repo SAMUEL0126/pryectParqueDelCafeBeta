@@ -1663,7 +1663,6 @@ finland.addEventListener('click', selecccionFiland)
 let changeFiland = 1
 function selecccionFiland() {
     setTimeout(() => {
-        finland.setAttribute("fill", "rgb(31,101,228")
 
         if (changeFiland == 1) {
             setTimeout(() => {
@@ -1798,7 +1797,6 @@ function selecccionEspaña() {
     
 
     setTimeout(() => {
-        spain.setAttribute("fill", "rgb(31,101,228")
 
         if (changeEspaña == 1) {
             setTimeout(() => {
@@ -1931,7 +1929,6 @@ function selecccionItali() {
 
     
     setTimeout(() => {
-        itali.setAttribute("fill", "rgb(31,101,228")
 
         if (changeItaly == 1) {
             setTimeout(() => {
