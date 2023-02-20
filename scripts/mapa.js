@@ -622,7 +622,6 @@ usa.addEventListener('click', selecccionUsa)
 function selecccionUsa() {
 
     setTimeout(() => {
-       
         changeColombia = 2
         changeUsa++
     
@@ -885,8 +884,6 @@ sweden.addEventListener('click', seleccionGermany)
 alaska.addEventListener('click', seleccionGermany)
 
 let changerussia = 0
-
-// pendiente funcion de russia
 germany.addEventListener('click', seleccionGermany)
 function seleccionGermany() {
     setTimeout(() => {
