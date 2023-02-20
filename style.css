@@ -160,6 +160,18 @@
     filter: drop-shadow(0px 0px 8px skyblue);
 }
 
+#svg11{
+    filter: drop-shadow(0px 0px 8px skyblue);
+}
+
+#svg12{
+    filter: drop-shadow(0px 0px 8px skyblue);
+}
+
+#svg13{
+    filter: drop-shadow(0px 0px 8px skyblue);
+}
+
 .closeColombia {
     width: 0;
     transition: 0.8s;
