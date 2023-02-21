@@ -299,12 +299,17 @@ function cerrarview() {
 }
 
 const apiPaises = [
-    [{ pais1: "Brasil", pais2: "Colombia", pais3: "Bolivia", pais4: "Ecuador", pais5: "Peru" }],
-    [{ pais1: " Alemania", pais2: "Belgica", pais3: "Reino Unido", pais4: "Italia" }],
-    [{ pais1: "EEuu", pais2: "Mexico", pais3: "Guatemala", pais4: "Canada" }],
-    [{ pais1: "Vietnam", pais2: "Indonesia", pais3: "India", pais4: "China", pais5: "Japon" }],
-    [{ pais1: "Etiopia", pais2: "Argelia", pais3: "Uganda", pais4: "Marruecos" }],
-    [{ pais1: "Australia" }]
+    [{ pais1: "Colombia"}],
+    [{ pais1: "Alemania"}],
+    [{ pais1: "EEuu"}],
+    [{ pais1: "japon"}],
+    [{ pais1: "corea del sur"}],
+    [{ pais1: "finlandia"}],
+    [{ pais1: "belgica"}],
+    [{ pais1: "canada"}],
+    [{ pais1: "españa"}],
+    [{ pais1: "italia"}],
+
 ]
 
 
