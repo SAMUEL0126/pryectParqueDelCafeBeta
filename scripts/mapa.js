@@ -1128,11 +1128,6 @@ saudi.addEventListener('click', seleccionGermany)
 
 antarctica.addEventListener('click', selectionan)
 function selectionan() {
-    smyley.setAttribute("fill", "rgb(31,101,228")
-    alexander2.setAttribute("fill", "rgb(31,101,228")
-    peninsula.setAttribute("fill", "rgb(31,101,228")
-    antarctica.setAttribute("fill", "rgb(31,101,228")
-    thurston.setAttribute("fill", "rgb(31,101,228")
     ModalInfo.classList.remove("ModalInfoOpen")
     ModalInfo.textContent = ""
 }
