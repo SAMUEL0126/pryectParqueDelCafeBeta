@@ -1128,8 +1128,6 @@ saudi.addEventListener('click', seleccionGermany)
 
 antarctica.addEventListener('click', selectionan)
 function selectionan() {
-    ModalInfo.classList.remove("ModalInfoOpen")
-    ModalInfo.textContent = ""
 }
 nepal.addEventListener('click', selectedf)
 
