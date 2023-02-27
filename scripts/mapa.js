@@ -243,7 +243,6 @@ const contentmapa = document.getElementById("contentmapa")
 function cerrarview() {
 
     changerussia = 0
-    sumadre = 0
     changeColombia = 0
     changeUsa = 0
     changemauretania = 0
