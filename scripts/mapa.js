@@ -1299,11 +1299,9 @@ function slectafri() {
         cancel.addEventListener("click", cerrarview)
         contCancel.appendChild(cancel)
 
-
         const ranquinSuramerica = document.createElement("h2")
         ranquinSuramerica.textContent = "Ranking de Africa"
         ranquinSuramerica.style.textAlign = "center"
-
 
         const containerpaistextafrica = document.createElement("div")
         containerpaistextafrica.style.width = "100%"
