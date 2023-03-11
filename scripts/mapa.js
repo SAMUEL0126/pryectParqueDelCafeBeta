@@ -708,13 +708,13 @@ function selecccionUsa() {
             paisesList.classList.add("paisesList")
     
             const posPais = document.createElement("p")
-            posPais.textContent = apiPaises[2][0].pais1
+            posPais.textContent = apiPaises[2][0].pais3
     
             const posPais2 = document.createElement("p")
-            posPais2.textContent = apiPaises[2][0].pais2
+            posPais2.textContent = apiPaises[0][0].pais2
     
             const posPais3 = document.createElement("p")
-            posPais3.textContent = apiPaises[2][0].pais3
+            posPais3.textContent = apiPaises[0  ][0].pais3
     
             const posPais4 = document.createElement("p")
             posPais4.textContent = apiPaises[2][0].pais4
@@ -979,10 +979,10 @@ function seleccionGermany() {
             paisesList.classList.add("paisesList")
     
             const posPais = document.createElement("p")
-            posPais.textContent = apiPaises[1][0].pais1
+            posPais.textContent = apiPaises[1][0].pais2
     
             const posPais2 = document.createElement("p")
-            posPais2.textContent = apiPaises[1][0].pais2
+            posPais2.textContent = apiPaises[0][0].pais2
     
             const posPais3 = document.createElement("p")
             posPais3.textContent = apiPaises[1][0].pais3
@@ -2352,7 +2352,7 @@ function selectnew_canada() {
             paisesList.classList.add("paisesList")
 
             const posPais = document.createElement("p")
-            posPais.textContent = apiPaises[0][0].pais1
+            posPais.textContent = apiPaises[7][0].pais8
 
             const posPais2 = document.createElement("p")
             posPais2.textContent = apiPaises[0][0].pais2
@@ -2559,7 +2559,7 @@ function selectnew_Belgium() {
             paisesList.classList.add("paisesList")
 
             const posPais = document.createElement("p")
-            posPais.textContent = apiPaises[0][0].pais1
+            posPais.textContent = apiPaises[6][0].pais7
 
             const posPais2 = document.createElement("p")
             posPais2.textContent = apiPaises[0][0].pais2
@@ -2766,7 +2766,7 @@ function selectnew_korea() {
             paisesList.classList.add("paisesList")
 
             const posPais = document.createElement("p")
-            posPais.textContent = apiPaises[0][0].pais1
+            posPais.textContent = apiPaises[4][0].pais5
 
             const posPais2 = document.createElement("p")
             posPais2.textContent = apiPaises[0][0].pais2
@@ -2973,7 +2973,7 @@ function selectnew_honshu() {
             paisesList.classList.add("paisesList")
 
             const posPais = document.createElement("p")
-            posPais.textContent = apiPaises[0][0].pais1
+            posPais.textContent = apiPaises[3][0].pais4
 
             const posPais2 = document.createElement("p")
             posPais2.textContent = apiPaises[0][0].pais2
