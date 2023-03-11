@@ -334,6 +334,7 @@ const apiPaises = [
     [{ pais8: "canada :", description: "Colombia"}],
     [{ pais9: "españa :", description: "Colombia"}],
     [{ pais10: "italia :", description: "Colombia"}],
+    [{ pais11: "Reino Unido :", description: "Colombia"}],
 
 ]
 
@@ -2136,25 +2137,10 @@ function selectnew_britain() {
             paisesList.classList.add("paisesList")
 
             const posPais = document.createElement("p")
-            posPais.textContent = apiPaises[0][0].pais1
+            posPais.textContent = apiPaises[10][0].pais11
 
-            const posPais2 = document.createElement("p")
-            posPais2.textContent = apiPaises[0][0].pais2
-
-            const posPais3 = document.createElement("p")
-            posPais3.textContent = apiPaises[0][0].pais3
-
-            const posPais4 = document.createElement("p")
-            posPais4.textContent = apiPaises[0][0].pais4
-
-            const posPais5 = document.createElement("p")
-            posPais5.textContent = apiPaises[0][0].pais5
 
             paisesList.appendChild(posPais)
-            paisesList.appendChild(posPais2)
-            paisesList.appendChild(posPais3)
-            paisesList.appendChild(posPais4)
-            paisesList.appendChild(posPais5)
 
             containerPandPoints.appendChild(paisesList)
 
