@@ -124,6 +124,61 @@
     gap: 20px;
 }
 
+.openCountryNew_canada {
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(27, 27, 27, 0.85), rgba(0, 0, 0, 0.755)), url('./images/canadafondo.jpg');
+    transition: 0.9s;
+    gap: 20px;
+}
+
+.openCountryNew_Belgium{
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(27, 27, 27, 0.85), rgba(0, 0, 0, 0.755)), url('./images/belgicafondo.jpg');
+    transition: 0.9s;
+    gap: 20px;
+}
+
+.openCountryNew_Korea{
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(27, 27, 27, 0.85), rgba(0, 0, 0, 0.755)), url('./images/coreafondo.jpg');
+    transition: 0.9s;
+    gap: 20px;
+}
+
+.openCountryNew_Honshu{
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(27, 27, 27, 0.85), rgba(0, 0, 0, 0.755)), url('./images/japonfondo.jpg');
+    transition: 0.9s;
+    gap: 20px;
+
+}
+
+
+
 .none{
     display: none;
 }
