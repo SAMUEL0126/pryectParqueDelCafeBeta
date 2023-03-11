@@ -324,16 +324,16 @@ function cerrarview() {
 }
 
 const apiPaises = [
-    [{ pais1: "Colombia", description: "Colombia"}],
-    [{ pais2: "Alemania", description: "Colombia"}],
-    [{ pais3: "EEuu", description: "Colombia"}],
-    [{ pais4: "japon", description: "Colombia"}],
-    [{ pais5: "corea del sur", description: "Colombia"}],
-    [{ pais6: "finlandia", description: "Colombia"}],
-    [{ pais7: "belgica", description: "Colombia"}],
-    [{ pais8: "canada", description: "Colombia"}],
-    [{ pais9: "españa", description: "Colombia"}],
-    [{ pais10: "italia", description: "Colombia"}],
+    [{ pais1: "Colombia :", description: "Colombia"}],
+    [{ pais2: "Alemania :", description: "Colombia"}],
+    [{ pais3: "EEuu :", description: "Colombia"}],
+    [{ pais4: "japon :", description: "Colombia"}],
+    [{ pais5: "corea del sur :", description: "Colombia"}],
+    [{ pais6: "finlandia :", description: "Colombia"}],
+    [{ pais7: "belgica :", description: "Colombia"}],
+    [{ pais8: "canada :", description: "Colombia"}],
+    [{ pais9: "españa :", description: "Colombia"}],
+    [{ pais10: "italia :", description: "Colombia"}],
 
 ]
 
@@ -404,7 +404,7 @@ function selectionsColombia() {
 
 
             const containersacosdecafe = document.createElement("div")
-            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
 
@@ -693,7 +693,7 @@ function selecccionUsa() {
     
     
             const containersacosdecafeusa = document.createElement("div")
-            containersacosdecafeusa.textContent = "Sacos de cafe año 2022."
+            containersacosdecafeusa.textContent = "Descripcion"
             containersacosdecafeusa.style.fontFamily = "Amatic SC"
             containersacosdecafeusa.style.fontSize = "30px"
     
@@ -714,7 +714,7 @@ function selecccionUsa() {
             posPais2.textContent = apiPaises[0][0].pais2
     
             const posPais3 = document.createElement("p")
-            posPais3.textContent = apiPaises[0  ][0].pais3
+            posPais3.textContent = apiPaises[0][0].pais3
     
             const posPais4 = document.createElement("p")
             posPais4.textContent = apiPaises[2][0].pais4
@@ -965,7 +965,7 @@ function seleccionGermany() {
     
     
             const containersacosdecaferussia = document.createElement("div")
-            containersacosdecaferussia.textContent = "Sacos de cafe año 2022."
+            containersacosdecaferussia.textContent = "Descripcion"
             containersacosdecaferussia.style.fontFamily = "Amatic SC"
             containersacosdecaferussia.style.fontSize = "30px"
     
@@ -1227,7 +1227,7 @@ function selectaust() {
         containernamepaisestextaustralia.style.fontSize = "30px"
 
         const containersacosdecafeaustralia = document.createElement("div")
-        containersacosdecafeaustralia.textContent = "Sacos de cafe año 2022."
+        containersacosdecafeaustralia.textContent = "Descripcion"
         containersacosdecafeaustralia.style.fontFamily = "Amatic SC"
         containersacosdecafeaustralia.style.fontSize = "30px"
 
@@ -1340,7 +1340,7 @@ function slectafri() {
         containernamepaisestextafrica.style.fontSize = "30px"
 
         const containersacosdecafeafrica = document.createElement("div")
-        containersacosdecafeafrica.textContent = "Sacos de cafe año 2022"
+        containersacosdecafeafrica.textContent = "Descripcion"
         containersacosdecafeafrica.style.fontFamily = "Amatic SC"
         containersacosdecafeafrica.style.fontSize = "30px"
 
@@ -1528,7 +1528,7 @@ function selectedf() {
         containernamepaisestextchina.style.fontSize = "30px"
 
         const containersacosdecafechina = document.createElement("div")
-        containersacosdecafechina.textContent = "Sacos de cafe año 2022"
+        containersacosdecafechina.textContent = "Descripcion"
         containersacosdecafechina.style.fontFamily = "Amatic SC"
         containersacosdecafechina.style.fontSize = "30px"
 
@@ -1732,7 +1732,7 @@ function selecccionFiland() {
 
 
             const containersacosdecafe = document.createElement("div")
-            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
 
@@ -1747,7 +1747,7 @@ function selecccionFiland() {
             paisesList.classList.add("paisesList")
 
             const posPais = document.createElement("p")
-            posPais.textContent = "Finlandia"
+            posPais.textContent = "Finlandia :"
 
             
             paisesList.appendChild(posPais)
@@ -1861,7 +1861,7 @@ function selecccionEspaña() {
 
 
             const containersacosdecafe = document.createElement("div")
-            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
 
@@ -1876,7 +1876,7 @@ function selecccionEspaña() {
             paisesList.classList.add("paisesList")
 
             const posPais = document.createElement("p")
-            posPais.textContent = "España"
+            posPais.textContent = "España :"
 
             
             paisesList.appendChild(posPais)
@@ -1994,7 +1994,7 @@ function selecccionItali() {
 
 
             const containersacosdecafe = document.createElement("div")
-            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
 
@@ -2009,7 +2009,7 @@ function selecccionItali() {
             paisesList.classList.add("paisesList")
 
             const posPais = document.createElement("p")
-            posPais.textContent = "Italia"
+            posPais.textContent = "Italia :"
 
             
             paisesList.appendChild(posPais)
@@ -2130,7 +2130,7 @@ function selectnew_britain() {
 
 
             const containersacosdecafe = document.createElement("div")
-            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
 
@@ -2337,7 +2337,7 @@ function selectnew_canada() {
 
 
             const containersacosdecafe = document.createElement("div")
-            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
 
@@ -2544,7 +2544,7 @@ function selectnew_Belgium() {
 
 
             const containersacosdecafe = document.createElement("div")
-            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
 
@@ -2751,7 +2751,7 @@ function selectnew_korea() {
 
 
             const containersacosdecafe = document.createElement("div")
-            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
 
@@ -2958,7 +2958,7 @@ function selectnew_honshu() {
 
 
             const containersacosdecafe = document.createElement("div")
-            containersacosdecafe.textContent = "Sacos de cafe año 2022."
+            containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
 
