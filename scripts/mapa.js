@@ -697,19 +697,8 @@ function selecccionUsa() {
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[2][0].pais3
     
-            const posPais2 = document.createElement("p")
-            posPais2.textContent = apiPaises[0][0].pais2
-    
-            const posPais3 = document.createElement("p")
-            posPais3.textContent = apiPaises[0][0].pais3
-    
-            const posPais4 = document.createElement("p")
-            posPais4.textContent = apiPaises[2][0].pais4
     
             paisesList.appendChild(posPais)
-            paisesList.appendChild(posPais2)
-            paisesList.appendChild(posPais3)
-            paisesList.appendChild(posPais4)
             
             setTimeout(() => {
                 mapa2.classList.add("mapaOpen")
