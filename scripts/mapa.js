@@ -2345,23 +2345,7 @@ function selectnew_canada() {
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[7][0].pais8
 
-            const posPais2 = document.createElement("p")
-            posPais2.textContent = apiPaises[0][0].pais2
-
-            const posPais3 = document.createElement("p")
-            posPais3.textContent = apiPaises[0][0].pais3
-
-            const posPais4 = document.createElement("p")
-            posPais4.textContent = apiPaises[0][0].pais4
-
-            const posPais5 = document.createElement("p")
-            posPais5.textContent = apiPaises[0][0].pais5
-
             paisesList.appendChild(posPais)
-            paisesList.appendChild(posPais2)
-            paisesList.appendChild(posPais3)
-            paisesList.appendChild(posPais4)
-            paisesList.appendChild(posPais5)
 
             containerPandPoints.appendChild(paisesList)
 
