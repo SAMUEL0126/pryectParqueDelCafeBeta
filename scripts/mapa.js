@@ -217,7 +217,7 @@ const gambia = document.getElementById("gambia")
 const king_christian = document.getElementById("king christian")
 const new_ireland = document.getElementById('new ireland')
 
-    //Mapas
+//Mapas
 const mapa = document.getElementById('mapa')
 const mapa2 = document.getElementById("mapa2")
 const mapa3 = document.getElementById("mapa3")
@@ -231,7 +231,7 @@ const mapa10 = document.getElementById("mapa10")
 const mapa11 = document.getElementById("mapa11")
 
 
-    //Countrys
+//Countrys
 const openCountry = document.getElementById("openCountry")
 const countryColombia = document.getElementById("svg3")
 const countryUsa = document.getElementById("svg4")
@@ -264,77 +264,77 @@ function cerrarview() {
     change_newcanada = 0
     change_newhonshu = 0
 
-    // if (sumadre == 0) {
+    if (sumadre == 0) {
 
 
-    //     ModalInfo2.classList.remove("ModalInfoOpen2")
-    //     ModalInfo2.textContent = ""
-    //     setTimeout(() => {
-    //         ModalInfo.classList.remove("ModalInfoOpen")
-    //         ModalInfo.textContent = ""
-    //     }, 500);
+        ModalInfo2.classList.remove("ModalInfoOpen2")
+        ModalInfo2.textContent = ""
+        setTimeout(() => {
+            ModalInfo.classList.remove("ModalInfoOpen")
+            ModalInfo.textContent = ""
+        }, 500);
 
-    //     setTimeout(() => {
-
-            
-    //         countryColombia.classList.add("closeColombia")
-    //         countryColombia.classList.remove("mapaOpen")
-
-    //         countryUsa.classList.add("closeColombia")
-    //         countryUsa.classList.remove("mapaOpen")
-
-    //         countryAlemania.classList.add("closeColombia")
-    //         countryAlemania.classList.remove("mapaOpen")
-
-    //         countryFinland.classList.add("closeColombia")
-    //         countryFinland.classList.remove("mapaOpen")
-
-    //         countrySpain.classList.add("closeColombia")
-    //         countrySpain.classList.remove("mapaOpen")
-
-    //         countryItaly.classList.add("closeColombia")
-    //         countryItaly.classList.remove("mapaOpen")
-
-    //         countryReinoU.classList.add("closeColombia")
-    //         countryReinoU.classList.remove("mapaOpen")
-
-    //         countrycanada.classList.add("closeColombia")
-    //         countrycanada.classList.remove("mapaOpen")
-
-    //         countryBelgium.classList.add("closeColombia")
-    //         countryBelgium.classList.remove("mapaOpen")
-
-    //         countryHonshu.classList.add("closeColombia")
-    //         countryHonshu.classList.remove("mapaOpen")
-
-    //         countryKorea.classList.add("closeColombia")
-    //         countryKorea.classList.remove("mapaOpen")
-    //     }, 1000);
+        setTimeout(() => {
 
 
-    //     setTimeout(() => {
-    //         openCountry.classList.add("closeCountry")
-    //     }, 1600);
-    //     setTimeout(() => {
-    //         contentmapa.classList.remove("none")
-    //     }, 2500);
+            countryColombia.classList.add("closeColombia")
+            countryColombia.classList.remove("mapaOpen")
+
+            countryUsa.classList.add("closeColombia")
+            countryUsa.classList.remove("mapaOpen")
+
+            countryAlemania.classList.add("closeColombia")
+            countryAlemania.classList.remove("mapaOpen")
+
+            countryFinland.classList.add("closeColombia")
+            countryFinland.classList.remove("mapaOpen")
+
+            countrySpain.classList.add("closeColombia")
+            countrySpain.classList.remove("mapaOpen")
+
+            countryItaly.classList.add("closeColombia")
+            countryItaly.classList.remove("mapaOpen")
+
+            countryReinoU.classList.add("closeColombia")
+            countryReinoU.classList.remove("mapaOpen")
+
+            countrycanada.classList.add("closeColombia")
+            countrycanada.classList.remove("mapaOpen")
+
+            countryBelgium.classList.add("closeColombia")
+            countryBelgium.classList.remove("mapaOpen")
+
+            countryHonshu.classList.add("closeColombia")
+            countryHonshu.classList.remove("mapaOpen")
+
+            countryKorea.classList.add("closeColombia")
+            countryKorea.classList.remove("mapaOpen")
+        }, 1000);
 
 
-    // }
+        setTimeout(() => {
+            openCountry.classList.add("closeCountry")
+        }, 1600);
+        setTimeout(() => {
+            contentmapa.classList.remove("none")
+        }, 2500);
+
+
+    }
 }
 
 const apiPaises = [
-    [{ pais1: "Colombia", description: "Colombia"}],
-    [{ pais2: "Alemania", description: "Colombia"}],
-    [{ pais3: "EEuu", description: "Colombia"}],
-    [{ pais4: "japon", description: "Colombia"}],
-    [{ pais5: "corea del sur", description: "Colombia"}],
-    [{ pais6: "finlandia", description: "Colombia"}],
-    [{ pais7: "belgica", description: "Colombia"}],
-    [{ pais8: "canada", description: "Colombia"}],
-    [{ pais9: "españa", description: "Colombia"}],
-    [{ pais10: "italia", description: "Colombia"}],
-    [{ pais11: "Reino Unido", description: "Colombia"}],
+    [{ pais1: "Colombia", description: "Colombia" }],
+    [{ pais2: "Alemania", description: "Colombia" }],
+    [{ pais3: "EEuu", description: "Colombia" }],
+    [{ pais4: "japon", description: "Colombia" }],
+    [{ pais5: "corea del sur", description: "Colombia" }],
+    [{ pais6: "finlandia", description: "Colombia" }],
+    [{ pais7: "belgica", description: "Colombia" }],
+    [{ pais8: "canada", description: "Colombia" }],
+    [{ pais9: "españa", description: "Colombia" }],
+    [{ pais10: "italia", description: "Colombia" }],
+    [{ pais11: "Reino Unido", description: "Colombia" }],
 
 ]
 
@@ -356,12 +356,12 @@ function ejecutarDespuesDe2Segundos() {
 
 // función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente() {
-  timeoutId = setTimeout(ejecutarDespuesDe2Segundos, 2000);
+    timeoutId = setTimeout(ejecutarDespuesDe2Segundos, 2000);
 }
 
 // función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente() {
-  clearTimeout(timeoutId);
+    clearTimeout(timeoutId);
 }
 
 // obtiene el componente
@@ -379,12 +379,12 @@ function ejecutarDespuesDe2Segundos1() {
 
 // función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente1() {
-  timeoutId2 = setTimeout(ejecutarDespuesDe2Segundos1, 2000);
+    timeoutId2 = setTimeout(ejecutarDespuesDe2Segundos1, 2000);
 }
 
 // función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente1() {
-  clearTimeout(timeoutId2);
+    clearTimeout(timeoutId2);
 }
 
 // obtiene el componente
@@ -402,12 +402,12 @@ function ejecutarDespuesDe2Segundos2() {
 
 // función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente2() {
-  timeoutId3 = setTimeout(ejecutarDespuesDe2Segundos2, 2000);
+    timeoutId3 = setTimeout(ejecutarDespuesDe2Segundos2, 2000);
 }
 
 // función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente2() {
-  clearTimeout(timeoutId3);
+    clearTimeout(timeoutId3);
 }
 
 // obtiene el componente
@@ -429,7 +429,7 @@ function cursorEntraEnComponente3() {
 
 // función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente3() {
-  clearTimeout(timeoutId4);
+    clearTimeout(timeoutId4);
 }
 
 // obtiene el componente
@@ -451,7 +451,7 @@ function cursorEntraEnComponente4() {
 
 // función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente4() {
-  clearTimeout(timeoutId5);
+    clearTimeout(timeoutId5);
 }
 
 // obtiene el componente
@@ -474,7 +474,7 @@ function cursorEntraEnComponente5() {
 
 // función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente5() {
-  clearTimeout(timeoutId6);
+    clearTimeout(timeoutId6);
 }
 
 // obtiene el componente
@@ -498,7 +498,7 @@ function cursorEntraEnComponente6() {
 
 // función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente6() {
-  clearTimeout(timeoutId7);
+    clearTimeout(timeoutId7);
 }
 
 // obtiene el componente
@@ -521,7 +521,7 @@ function cursorEntraEnComponente7() {
 
 // función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente7() {
-  clearTimeout(timeoutId8);
+    clearTimeout(timeoutId8);
 }
 
 // obtiene el componente
@@ -544,7 +544,7 @@ function cursorEntraEnComponente8() {
 
 // función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente8() {
-  clearTimeout(timeoutId9);
+    clearTimeout(timeoutId9);
 }
 
 // obtiene el componente
@@ -567,7 +567,7 @@ function cursorEntraEnComponente9() {
 
 // función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente9() {
-  clearTimeout(timeoutId10);
+    clearTimeout(timeoutId10);
 }
 
 // obtiene el componente
@@ -593,9 +593,9 @@ function selectionsColombia() {
 
         setTimeout(() => {
 
-          
+
             setTimeout(() => {
-                ModalInfo.classList.add("ModalInfoOpen")        
+                ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
@@ -609,8 +609,8 @@ function selectionsColombia() {
                 countryColombia.classList.remove("closeColombia")
                 countryColombia.classList.add("mapaOpen")
             }, 1000);
-            
-            
+
+
             contentmapa.classList.add("none")
 
 
@@ -644,7 +644,7 @@ function selectionsColombia() {
             containernamepaisestext.style.textAlign = "center"
 
 
-            
+
 
             containernamepaisestext.style.color = "yellow"
             containerpaistext.style.textShadow = "0px 0px 10px skyblue"
@@ -658,7 +658,7 @@ function selectionsColombia() {
             const paisesList = document.createElement("div")
             paisesList.classList.add("paisesList")
 
-            
+
 
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[0][0].pais1
@@ -681,7 +681,7 @@ function selectionsColombia() {
             containersacosdecafe.style.textAlign = "center"
             containersacosdecafe.style.color = "yellow"
 
-            
+
             estrellasPais.textContent = 'En los años setenta del siglo XIX, el café empezó a cotizarse en las bolsas mundiales y se convirtió en la moneda internacional de los países productores, entre los cuales estaban Brasil, Salvador, Guatemala y México. Colombia emergió como exportador de café y productor mundial en la década de los noventa.'
 
             containerPandPoints.appendChild(containersacosdecafe)
@@ -707,7 +707,7 @@ function selectionsColombia() {
                 window.location.reload()
             }, 12500);
         }, 3000);
-        
+
     }
 }
 
@@ -818,14 +818,14 @@ function selecccionUsa() {
     setTimeout(() => {
         changeColombia = 2
         changeUsa++
-    
+
         if (changeUsa == 1) {
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
 
             openCountry.classList.add("openCountryUsa")
             openCountry.classList.remove("closeCountry")
-            
+
             setTimeout(() => {
                 ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
@@ -839,11 +839,11 @@ function selecccionUsa() {
             cancel.style.marginTop = "10px"
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
-    
+
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Ranking de Norte america"
             ranquinSuramerica.style.textAlign = "center"
-    
+
             const containerpaistextusa = document.createElement("div")
             containerpaistextusa.style.width = "100%"
             containerpaistextusa.style.height = "5vh"
@@ -853,7 +853,7 @@ function selecccionUsa() {
             containerpaistextusa.style.color = "yellow"
             containerpaistextusa.style.transform = "translate(0px , 30px)"
             containerpaistextusa.style.textShadow = "0px 0px 10px skyblue"
-    
+
             const containernamepaisestextusa = document.createElement("div")
             containernamepaisestextusa.textContent = "Paises exportadores"
             containernamepaisestextusa.style.fontFamily = "Amatic SC"
@@ -861,8 +861,8 @@ function selecccionUsa() {
             containernamepaisestextusa.style.color = "yellow"
             containernamepaisestextusa.style.textAlign = "center"
             containernamepaisestextusa.style.textShadow = "0px 0px 10px skyblue"
-    
-    
+
+
             const containersacosdecafeusa = document.createElement("div")
             containersacosdecafeusa.textContent = "Descripcion"
             containersacosdecafeusa.style.fontFamily = "Amatic SC"
@@ -870,9 +870,9 @@ function selecccionUsa() {
             containersacosdecafeusa.style.color = "yellow"
             containersacosdecafeusa.style.textAlign = "center"
             containersacosdecafeusa.style.textShadow = "0px 0px 10px skyblue"
-            
+
             const infoUsa = document.createElement('p')
-            infoUsa.textContent= ' Después de la Revolución, la afición por el café se impuso rápidamente en los nuevos Estados Unidos de América. Se extendió durante las décadas siguientes y cuando estalló la Guerra Civil, en 1861, el café era un producto estándar en las raciones, tanto de la Unión como de la Confederación USD 188,7 millones.'
+            infoUsa.textContent = ' Después de la Revolución, la afición por el café se impuso rápidamente en los nuevos Estados Unidos de América. Se extendió durante las décadas siguientes y cuando estalló la Guerra Civil, en 1861, el café era un producto estándar en las raciones, tanto de la Unión como de la Confederación USD 188,7 millones.'
             infoUsa.style.color = 'white'
             infoUsa.style.fontFamily = 'Amatic SC'
             infoUsa.style.fontSize = '20px'
@@ -880,21 +880,21 @@ function selecccionUsa() {
 
             containerpaistextusa.appendChild(containernamepaisestextusa)
 
-            
+
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
 
             // containerPandPoints.appendChild(containersacosdecafeusa)
-            
+
             const paisesList = document.createElement("div")
             paisesList.classList.add("paisesList")
-    
+
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[2][0].pais3
-    
+
             paisesList.appendChild(containernamepaisestextusa)
             paisesList.appendChild(posPais)
-            
+
             setTimeout(() => {
                 mapa2.classList.add("mapaOpen")
             }, 2000);
@@ -905,10 +905,10 @@ function selecccionUsa() {
                 countryUsa.classList.remove("closeColombia")
                 countryUsa.classList.add("mapaOpen")
             }, 1000);
-            
+
             containerPandPoints.appendChild(paisesList)
-    
-    
+
+
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
 
@@ -916,22 +916,22 @@ function selecccionUsa() {
 
             estrellasPais.appendChild(containersacosdecafeusa)
             estrellasPais.appendChild(infoUsa)
-    
-    
-            
+
+
+
             setTimeout(() => {
                 mapa2.classList.add("mapaOpen")
             }, 1000);
-    
-    
-    
-    
-    
+
+
+
+
+
             containerPandPoints.appendChild(estrellasPais)
-    
+
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
-    
+
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
             ModalInfo.appendChild(containerpaistextusa)
@@ -944,7 +944,7 @@ function selecccionUsa() {
                 window.location.reload()
             }, 12500);
         }
-    
+
     }, 2000);
 }
 
@@ -1020,7 +1020,7 @@ let changerussia = 0
 germany.addEventListener('click', seleccionGermany)
 function seleccionGermany() {
     setTimeout(() => {
-    
+
         changerussia++
         sumadre = 2
         changemauretania = 2
@@ -1031,7 +1031,7 @@ function seleccionGermany() {
 
             openCountry.classList.add("openCountryRusia")
             openCountry.classList.remove("closeCountry")
-            
+
             setTimeout(() => {
                 countryAlemania.classList.add("mapaOpen")
                 countryAlemania.classList.remove("closeColombia")
@@ -1050,13 +1050,13 @@ function seleccionGermany() {
             cancel.style.marginTop = "10px"
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
-    
-    
+
+
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Ranking de Europa"
             ranquinSuramerica.style.textAlign = "center"
-    
-    
+
+
             const containerpaistextrussia = document.createElement("div")
             containerpaistextrussia.style.width = "100%"
             containerpaistextrussia.style.height = "5vh"
@@ -1066,7 +1066,7 @@ function seleccionGermany() {
             containerpaistextrussia.style.color = "yellow"
             containerpaistextrussia.style.transform = "translate(0px , 30px)"
             containerpaistextrussia.style.textShadow = "0px 0px 10px skyblue"
-    
+
             const containernamepaisestextrussia = document.createElement("div")
             containernamepaisestextrussia.textContent = "Paises exportadores"
             containernamepaisestextrussia.style.fontFamily = "Amatic SC"
@@ -1076,8 +1076,8 @@ function seleccionGermany() {
             containernamepaisestextrussia.style.textShadow = "0px 0px 10px skyblue"
 
 
-    
-    
+
+
             const containersacosdecaferussia = document.createElement("div")
             containersacosdecaferussia.textContent = "Descripcion"
             containersacosdecaferussia.style.fontFamily = "Amatic SC"
@@ -1086,47 +1086,47 @@ function seleccionGermany() {
             containersacosdecaferussia.style.color = "yellow"
             const infoGermany = document.createElement('p')
             infoGermany.textContent = 'Alemania es el tercer mayor consumidor de café después de los Estados Unidos y el Brasil. Se consumen alrededor de nueve millones y medio de sacos de sesenta kilos de café verde, equivalente a 570.000 toneladas.'
-    
+
 
             containerpaistextrussia.appendChild(containersacosdecaferussia)
-    
+
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
-    
+
             const paisesList = document.createElement("div")
             paisesList.classList.add("paisesList")
             paisesList.appendChild(containernamepaisestextrussia)
 
 
-    
+
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[1][0].pais2
-    
-        
-            
+
+
+
             paisesList.appendChild(posPais)
-    
-    
-    
+
+
+
             containerPandPoints.appendChild(paisesList)
-    
+
             contentmapa.classList.add("none")
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
             estrellasPais.appendChild(containersacosdecaferussia)
             estrellasPais.appendChild(infoGermany)
-    
-        
+
+
             setTimeout(() => {
                 mapa3.classList.add("mapaOpenAlemania")
             }, 2000);
-    
+
             containerPandPoints.appendChild(estrellasPais)
-    
+
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
-    
+
             ModalInfo2.appendChild(contCancel)
             ModalInfo2.appendChild(ranquinSuramerica)
             ModalInfo2.appendChild(containerpaistextrussia)
@@ -1138,7 +1138,7 @@ function seleccionGermany() {
             setTimeout(() => {
                 window.location.reload()
             }, 15500);
-            
+
         }
     }, 1500);
 }
@@ -1243,7 +1243,7 @@ let changeaust = 0
 
 kalimantan.addEventListener('click', selectaust)
 function selectaust() {
- 
+
     changerussia = 2
     changemauretania = 2
     changechina = 2
@@ -1356,7 +1356,7 @@ let changemauretania = 0
 
 mauretania.addEventListener('click', slectafri)
 function slectafri() {
- 
+
     changerussia = 2
     changechina = 2
     changeantarti = 2
@@ -1532,7 +1532,7 @@ let changechina = 0
 
 china.addEventListener('click', selectedf)
 function selectedf() {
-   
+
     changerussia = 2
     changemauretania = 2
     changeantarti = 2
@@ -1592,7 +1592,7 @@ function selectedf() {
 
 
         paisesList.appendChild(posPais)
-        
+
         containerPandPoints.appendChild(paisesList)
 
 
@@ -1708,7 +1708,7 @@ function selecccionFiland() {
 
         if (changeFiland == 1) {
             setTimeout(() => {
-                ModalInfo.classList.add("ModalInfoOpen")        
+                ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
@@ -1727,8 +1727,8 @@ function selecccionFiland() {
                 countryColombia.classList.remove("closeColombia")
                 countryColombia.classList.add("mapaOpen")
             }, 1000);
-            
-            
+
+
             contentmapa.classList.add("none")
 
 
@@ -1784,9 +1784,9 @@ function selecccionFiland() {
             const posPais = document.createElement("p")
             posPais.textContent = "Finlandia"
 
-            
+
             paisesList.appendChild(posPais)
-            
+
 
             containerPandPoints.appendChild(paisesList)
 
@@ -1797,12 +1797,12 @@ function selecccionFiland() {
             estrellasPais.appendChild(infoFinlandia)
 
 
-            
-
-            
 
 
-            
+
+
+
+
             containerPandPoints.appendChild(estrellasPais)
 
             const fotModal = document.createElement("div")
@@ -1832,13 +1832,13 @@ function selecccionFiland() {
 spain.addEventListener('click', selecccionEspaña)
 let changeEspaña = 1
 function selecccionEspaña() {
-    
+
 
     setTimeout(() => {
 
         if (changeEspaña == 1) {
             setTimeout(() => {
-                ModalInfo.classList.add("ModalInfoOpen")        
+                ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
@@ -1852,7 +1852,7 @@ function selecccionEspaña() {
                 countrySpain.classList.remove("closeColombia")
                 countrySpain.classList.add("mapaOpen")
             }, 1000);
-            
+
 
             contentmapa.classList.add("none")
 
@@ -1910,9 +1910,9 @@ function selecccionEspaña() {
             const posPais = document.createElement("p")
             posPais.textContent = "España"
 
-            
+
             paisesList.appendChild(posPais)
-            
+
 
             containerPandPoints.appendChild(paisesList)
 
@@ -1923,7 +1923,7 @@ function selecccionEspaña() {
             estrellasPais.appendChild(infoSpain)
 
 
-            
+
             containerPandPoints.appendChild(estrellasPais)
 
             const fotModal = document.createElement("div")
@@ -1953,16 +1953,16 @@ function selecccionEspaña() {
 itali.addEventListener('click', selecccionItali)
 let changeItaly = 1
 function selecccionItali() {
-    
-    
 
 
-    
+
+
+
     setTimeout(() => {
 
         if (changeItaly == 1) {
             setTimeout(() => {
-                ModalInfo.classList.add("ModalInfoOpen")        
+                ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
@@ -1976,8 +1976,8 @@ function selecccionItali() {
                 countryItaly.classList.remove("closeColombia")
                 countryItaly.classList.add("mapaOpen")
             }, 1000);
-            
-            
+
+
 
             contentmapa.classList.add("none")
 
@@ -2034,9 +2034,9 @@ function selecccionItali() {
             const posPais = document.createElement("p")
             posPais.textContent = "Italia"
 
-            
+
             paisesList.appendChild(posPais)
-            
+
 
             containerPandPoints.appendChild(paisesList)
 
@@ -2047,9 +2047,9 @@ function selecccionItali() {
             estrellasPais.appendChild(infoItaly)
 
 
-            
 
-            
+
+
 
 
 
@@ -2084,7 +2084,7 @@ function selecccionItali() {
 britain.addEventListener('click', selectnew_britain)
 let change_newBritain = 0
 function selectnew_britain() {
-    
+
     change_newBritain++
 
     if (change_newBritain == 1) {
@@ -2092,9 +2092,9 @@ function selectnew_britain() {
 
         setTimeout(() => {
 
-            
+
             setTimeout(() => {
-                ModalInfo.classList.add("ModalInfoOpen")        
+                ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
@@ -2108,8 +2108,8 @@ function selectnew_britain() {
                 countryReinoU.classList.remove("closeColombia")
                 countryReinoU.classList.add("mapaOpen")
             }, 1000);
-            
-            
+
+
             contentmapa.classList.add("none")
 
 
@@ -2181,7 +2181,7 @@ function selectnew_britain() {
 
 
 
-            
+
 
             containerPandPoints.appendChild(estrellasPais)
 
@@ -2205,15 +2205,15 @@ function selectnew_britain() {
                 window.location.reload()
             }, 12500);
         }, 3000);
-        
+
     }
-    
+
 }
 
 canada.addEventListener('click', selectnew_canada)
 let change_newcanada = 0
 function selectnew_canada() {
-    
+
     change_newcanada++
 
     if (change_newcanada == 1) {
@@ -2221,9 +2221,9 @@ function selectnew_canada() {
 
         setTimeout(() => {
 
-            
+
             setTimeout(() => {
-                ModalInfo.classList.add("ModalInfoOpen")        
+                ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
@@ -2237,8 +2237,8 @@ function selectnew_canada() {
                 countrycanada.classList.remove("closeColombia")
                 countrycanada.classList.add("mapaOpen")
             }, 1000);
-            
-            
+
+
             contentmapa.classList.add("none")
 
 
@@ -2279,7 +2279,7 @@ function selectnew_canada() {
             containersacosdecafe.style.fontSize = "30px"
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
-            
+
             const infoCanda = document.createElement('p')
             infoCanda.textContent = 'En 2021, Canadá importó $1,34MM en Café, convirtiéndose en el importador número 7 de Café en el mundo. En el mismo año. Canadá importaciones Café principalmente de: Estados Unidos ($439M), Colombia ($249M) y Guatemala ($91,2M).'
             infoCanda.style.color = 'white'
@@ -2306,7 +2306,7 @@ function selectnew_canada() {
             estrellasPais.classList.add("estrellasPais")
             estrellasPais.appendChild(containersacosdecafe)
             estrellasPais.appendChild(infoCanda)
-            
+
 
 
 
@@ -2332,15 +2332,15 @@ function selectnew_canada() {
                 window.location.reload()
             }, 12500);
         }, 3000);
-        
+
     }
-    
+
 }
 
 Belgium.addEventListener('click', selectnew_Belgium)
 let change_newBelgium = 0
 function selectnew_Belgium() {
-    
+
     change_newBelgium++
 
     if (change_newBelgium == 1) {
@@ -2348,9 +2348,9 @@ function selectnew_Belgium() {
 
         setTimeout(() => {
 
-            
+
             setTimeout(() => {
-                ModalInfo.classList.add("ModalInfoOpen")        
+                ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
@@ -2364,8 +2364,8 @@ function selectnew_Belgium() {
                 countryBelgium.classList.remove("closeColombia")
                 countryBelgium.classList.add("mapaOpen")
             }, 1000);
-            
-            
+
+
             contentmapa.classList.add("none")
 
 
@@ -2524,15 +2524,15 @@ function selectnew_Belgium() {
                 window.location.reload()
             }, 12500);
         }, 3000);
-        
+
     }
-    
+
 }
 
 south_korea.addEventListener('click', selectnew_korea)
 let change_newKorea = 0
 function selectnew_korea() {
-    
+
     change_newKorea++
 
     if (change_newKorea == 1) {
@@ -2540,9 +2540,9 @@ function selectnew_korea() {
 
         setTimeout(() => {
 
-            
+
             setTimeout(() => {
-                ModalInfo.classList.add("ModalInfoOpen")        
+                ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
@@ -2556,8 +2556,8 @@ function selectnew_korea() {
                 countryKorea.classList.remove("closeColombia")
                 countryKorea.classList.add("mapaOpen")
             }, 1000);
-            
-            
+
+
             contentmapa.classList.add("none")
 
 
@@ -2626,7 +2626,7 @@ function selectnew_korea() {
             estrellasPais.appendChild(infokorea)
 
 
-           
+
 
             containerPandPoints.appendChild(estrellasPais)
 
@@ -2650,15 +2650,15 @@ function selectnew_korea() {
                 window.location.reload()
             }, 12500);
         }, 3000);
-        
+
     }
-    
+
 }
 
 honshu.addEventListener('click', selectnew_honshu)
 let change_newhonshu = 0
 function selectnew_honshu() {
-    
+
     change_newhonshu++
 
     if (change_newhonshu == 1) {
@@ -2666,9 +2666,9 @@ function selectnew_honshu() {
 
         setTimeout(() => {
 
-            
+
             setTimeout(() => {
-                ModalInfo.classList.add("ModalInfoOpen")        
+                ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
 
             ModalInfo2.classList.remove("ModalInfoOpen2")
@@ -2682,8 +2682,8 @@ function selectnew_honshu() {
                 countryHonshu.classList.remove("closeColombia")
                 countryHonshu.classList.add("mapaOpen")
             }, 1000);
-            
-            
+
+
             contentmapa.classList.add("none")
 
 
@@ -2726,7 +2726,7 @@ function selectnew_honshu() {
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoJapon = document.createElement('p')
             infoJapon.textContent = 'Japón, que no era un país consumidor tradicional de café, ha llegado a ser el tercer consumidor más grande entre los países importadores. Además, este país ha influenciado positivamente la transformación de la industria cafetera.'
-            
+
 
             containerpaistext.appendChild(containernamepaisestext)
 
@@ -2775,7 +2775,7 @@ function selectnew_honshu() {
                 window.location.reload()
             }, 12500);
         }, 3000);
-        
+
     }
-    
+
 }
