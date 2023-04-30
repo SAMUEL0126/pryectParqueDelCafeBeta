@@ -682,7 +682,7 @@ function selectionsColombia() {
             containersacosdecafe.style.color = "yellow"
 
             
-            estrellasPais.textContent = 'lorem de 24 de dolor orlo de l pablo emilio escobar gabiria gustavo ramires el mariachi los bombazos de medellin en el año 1980 donde michael jackson habia hecho la moda mas rara del universo entero'
+            estrellasPais.textContent = 'En los años setenta del siglo XIX, el café empezó a cotizarse en las bolsas mundiales y se convirtió en la moneda internacional de los países productores, entre los cuales estaban Brasil, Salvador, Guatemala y México. Colombia emergió como exportador de café y productor mundial en la década de los noventa.'
 
             containerPandPoints.appendChild(containersacosdecafe)
             containerPandPoints.appendChild(estrellasPais)
@@ -1062,7 +1062,7 @@ function seleccionGermany() {
             containerpaistextrussia.style.height = "5vh"
             containerpaistextrussia.style.display = "flex"
             containerpaistextrussia.style.gap = "60px"
-            containerpaistextrussia.style.marginLeft = "70px"
+            containerpaistextrussia.style.justifyContent = "center"
             containerpaistextrussia.style.color = "yellow"
             containerpaistextrussia.style.transform = "translate(0px , 30px)"
             containerpaistextrussia.style.textShadow = "0px 0px 10px skyblue"
@@ -1071,14 +1071,23 @@ function seleccionGermany() {
             containernamepaisestextrussia.textContent = "Paises exportadores"
             containernamepaisestextrussia.style.fontFamily = "Amatic SC"
             containernamepaisestextrussia.style.fontSize = "30px"
+            containernamepaisestextrussia.style.textAlign = "center"
+            containernamepaisestextrussia.style.color = "yellow"
+            containernamepaisestextrussia.style.textShadow = "0px 0px 10px skyblue"
+
+
     
     
             const containersacosdecaferussia = document.createElement("div")
             containersacosdecaferussia.textContent = "Descripcion"
             containersacosdecaferussia.style.fontFamily = "Amatic SC"
             containersacosdecaferussia.style.fontSize = "30px"
+            containersacosdecaferussia.style.textShadow = "0px 0px 10px skyblue"
+            containersacosdecaferussia.style.color = "yellow"
+            const infoGermany = document.createElement('p')
+            infoGermany.textContent = 'Alemania es el tercer mayor consumidor de café después de los Estados Unidos y el Brasil. Se consumen alrededor de nueve millones y medio de sacos de sesenta kilos de café verde, equivalente a 570.000 toneladas.'
     
-            containerpaistextrussia.appendChild(containernamepaisestextrussia)
+
             containerpaistextrussia.appendChild(containersacosdecaferussia)
     
             const containerPandPoints = document.createElement("div")
@@ -1086,6 +1095,9 @@ function seleccionGermany() {
     
             const paisesList = document.createElement("div")
             paisesList.classList.add("paisesList")
+            paisesList.appendChild(containernamepaisestextrussia)
+
+
     
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[1][0].pais2
@@ -1102,63 +1114,10 @@ function seleccionGermany() {
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
+            estrellasPais.appendChild(containersacosdecaferussia)
+            estrellasPais.appendChild(infoGermany)
     
-    
-            const rengStar = document.createElement("div")
-    
-    
-            rengStar.classList.add("rengStar")
-            const star1 = document.createElement("span")
-            star1.classList.add("colorpacascafe")
-            star1.textContent = "1.379.000"
-    
-    
-            rengStar.appendChild(star1)
-    
-            const rengStar2 = document.createElement("div")
-            rengStar2.classList.add("rengStar")
-    
-            rengStar2.classList.add("rengStar")
-            const start1 = document.createElement("span")
-            start1.classList.add("colorpacascafe")
-            start1.textContent = "728.000"
-    
-    
-            rengStar2.appendChild(start1)
-    
-    
-    
-    
-            const rengStar3 = document.createElement("div")
-            rengStar3.classList.add("rengStar")
-    
-            rengStar3.classList.add("rengStar")
-            const starti1 = document.createElement("span")
-            starti1.classList.add("colorpacascafe")
-            starti1.textContent = "488.000"
-    
-    
-    
-            rengStar3.appendChild(starti1)
-    
-    
-    
-            const rengStar4 = document.createElement("div")
-            rengStar4.classList.add("rengStar")
-    
-            rengStar4.classList.add("rengStar")
-            const startin1 = document.createElement("span")
-            startin1.classList.add("colorpacascafe")
-            startin1.textContent = "412.000"
-    
-    
-            rengStar4.appendChild(startin1)
-    
-            estrellasPais.appendChild(rengStar)
-            estrellasPais.appendChild(rengStar2)
-            estrellasPais.appendChild(rengStar3)
-            estrellasPais.appendChild(rengStar4)
-    
+        
             setTimeout(() => {
                 mapa3.classList.add("mapaOpenAlemania")
             }, 2000);
