@@ -2281,7 +2281,7 @@ function selectnew_canada() {
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             
             const infoCanda = document.createElement('p')
-            infoCanda.textContent = 'Canada envian 73.269 toneladas por dia ademas trafican cocaina como pablo escobar o hasta peor esos huelenegues'
+            infoCanda.textContent = 'En 2021, Canadá importó $1,34MM en Café, convirtiéndose en el importador número 7 de Café en el mundo. En el mismo año. Canadá importaciones Café principalmente de: Estados Unidos ($439M), Colombia ($249M) y Guatemala ($91,2M).'
             infoCanda.style.color = 'white'
             infoCanda.style.fontFamily = 'Amatic SC'
 
