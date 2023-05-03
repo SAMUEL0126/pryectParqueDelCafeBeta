@@ -487,13 +487,13 @@ componente6.addEventListener("mouseout", cursorSaleDelComponente5);
 
 
 // función que se ejecuta después de 2 segundos
-function ejecutarDespuesDe2Segundos5() {
+function ejecutarDespuesDe2Segundos7() {
     selecccionFiland()
 }
 
 // función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente6() {
-    timeoutId7 = setTimeout(ejecutarDespuesDe2Segundos5, 2000);
+    timeoutId7 = setTimeout(ejecutarDespuesDe2Segundos7, 2000);
 }
 
 // función que se ejecuta cuando el cursor sale del componente
@@ -510,13 +510,13 @@ componente7.addEventListener("mouseout", cursorSaleDelComponente6);
 
 
 // función que se ejecuta después de 2 segundos
-function ejecutarDespuesDe2Segundos5() {
+function ejecutarDespuesDe2Segundos8() {
     selectnew_britain()
 }
 
 // función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente7() {
-    timeoutId8 = setTimeout(ejecutarDespuesDe2Segundos5, 2000);
+    timeoutId8 = setTimeout(ejecutarDespuesDe2Segundos8, 2000);
 }
 
 // función que se ejecuta cuando el cursor sale del componente
@@ -533,13 +533,13 @@ componente8.addEventListener("mouseout", cursorSaleDelComponente7);
 
 
 // función que se ejecuta después de 2 segundos
-function ejecutarDespuesDe2Segundos5() {
+function ejecutarDespuesDe2Segundos9() {
     selectnew_korea()
 }
 
 // función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente8() {
-    timeoutId9 = setTimeout(ejecutarDespuesDe2Segundos5, 2000);
+    timeoutId9 = setTimeout(ejecutarDespuesDe2Segundos9, 2000);
 }
 
 // función que se ejecuta cuando el cursor sale del componente
@@ -556,13 +556,13 @@ componente9.addEventListener("mouseout", cursorSaleDelComponente8);
 
 
 // función que se ejecuta después de 2 segundos
-function ejecutarDespuesDe2Segundos5() {
+function ejecutarDespuesDe2Segundos10() {
     selectnew_honshu()
 }
 
 // función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente9() {
-    timeoutId10 = setTimeout(ejecutarDespuesDe2Segundos5, 2000);
+    timeoutId10 = setTimeout(ejecutarDespuesDe2Segundos10, 2000);
 }
 
 // función que se ejecuta cuando el cursor sale del componente
