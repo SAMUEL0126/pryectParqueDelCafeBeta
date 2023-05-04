@@ -37,7 +37,7 @@ class CountryPath {
 
 
         if (`${this.name()}` == 'colombia') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , es exportador de cafe`)
         } else if (`${this.name()}` == 'usa') {
             this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
         } else if (`${this.name()}` == 'canada') {
