@@ -37,32 +37,32 @@ class CountryPath {
 
 
         if (`${this.name()}` == 'colombia') {
-            this.setTootip(`El pais: ${this.name()} , es exportador de cafe`)
+            this.setTootip(`El pais: ${this.name()} , Es exportador de cafe.`)
         } else if (`${this.name()}` == 'usa') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         } else if (`${this.name()}` == 'canada') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }
         else if (`${this.name()}` == 'spain') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }
         else if (`${this.name()}` == 'germany') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }
         else if (`${this.name()}` == 'italy') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }
         else if (`${this.name()}` == 'finland') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         } else if (`${this.name()}` == 'britain') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         } else if (`${this.name()}` == 'honshu') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }else if (`${this.name()}` == 'south korea') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }
         else {
-            this.setTootip(`El pais: ${this.name()} , no es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , No es importador de cafe colombiano`)
         }
     }
 
