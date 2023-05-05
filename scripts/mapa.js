@@ -689,6 +689,10 @@ function selectionsColombia() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             setTimeout(() => {
                 mapa.classList.add("mapaOpen")
@@ -931,6 +935,10 @@ function selecccionUsa() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
@@ -1126,6 +1134,10 @@ function seleccionGermany() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             ModalInfo2.appendChild(contCancel)
             ModalInfo2.appendChild(ranquinSuramerica)
@@ -1328,6 +1340,10 @@ function selectaust() {
 
         const fotModal = document.createElement("div")
         fotModal.classList.add("fotModal")
+        const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
         ModalInfo2.appendChild(contCancel)
         ModalInfo2.appendChild(ranquinSuramerica)
@@ -1488,6 +1504,10 @@ function slectafri() {
 
         const fotModal = document.createElement("div")
         fotModal.classList.add("fotModal")
+        const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
         ModalInfo2.appendChild(contCancel)
         ModalInfo2.appendChild(ranquinSuramerica)
@@ -1679,6 +1699,10 @@ function selectedf() {
 
         const fotModal = document.createElement("div")
         fotModal.classList.add("fotModal")
+        const imgFotmodal = document.createElement('img')
+        imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+        fotModal.appendChild(imgFotmodal)
 
         ModalInfo2.appendChild(contCancel)
         ModalInfo2.appendChild(ranquinSuramerica)
@@ -1807,6 +1831,10 @@ function selecccionFiland() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             setTimeout(() => {
                 mapa4.classList.add("mapaOpenFinland")
@@ -1928,6 +1956,10 @@ function selecccionEspaña() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             setTimeout(() => {
                 mapa5.classList.add("mapaOpenEspaña")
@@ -2057,6 +2089,10 @@ function selecccionItali() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             setTimeout(() => {
                 mapa6.classList.add("mapaOpenItaly")
@@ -2187,6 +2223,10 @@ function selectnew_britain() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             setTimeout(() => {
                 mapa7.classList.add("mapaOpen")
@@ -2314,6 +2354,10 @@ function selectnew_canada() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             setTimeout(() => {
                 mapa8.classList.add("mapaOpen")
@@ -2506,6 +2550,10 @@ function selectnew_Belgium() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             setTimeout(() => {
                 mapa9.classList.add("mapaOpen")
@@ -2632,6 +2680,10 @@ function selectnew_korea() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             setTimeout(() => {
                 mapa10.classList.add("mapaOpen")
@@ -2757,6 +2809,10 @@ function selectnew_honshu() {
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
+            const imgFotmodal = document.createElement('img')
+            imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            fotModal.appendChild(imgFotmodal)
 
             setTimeout(() => {
                 mapa11.classList.add("mapaOpen")

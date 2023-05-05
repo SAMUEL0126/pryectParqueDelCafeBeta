@@ -93,14 +93,18 @@
     gap: 35px;
 }
 
+
 .ModalInfoOpen .fotModal {
     width: 100%;
     height: 160px;
-    background-image: url('./images/logoparquedelcafe.png');
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.ModalInfoOpen .fotModal img {
+    width: 100%;
+    height: 100px;
+}
 .ModalInfoOpen2 h2 {
     font-family: 'Amatic SC';
     font-size: 52px;
@@ -118,9 +122,6 @@
 .ModalInfoOpen2 .fotModal {
     width: 100%;
     height: 100px;
-    background-image: url('./images/logoparquedelcafe.png');
-    background-size: cover;
-    background-position: center;
 }
 .fotModal .logoPdC {
     width: 100%;
