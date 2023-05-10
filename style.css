@@ -239,7 +239,7 @@
 
 #svg2 {
 
-    filter: drop-shadow(10px 10px 0px black);
+    filter: drop-shadow(10px 10px 1px black);
     height: 100vh;
     width: 100%;
 }
