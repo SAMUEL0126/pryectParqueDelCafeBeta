@@ -715,64 +715,15 @@ function selectionsColombia() {
     }
 }
 
-north_korea.addEventListener('click', selectedf)
-
-uruguay.addEventListener('click', selectionsColombia)
-
-argentina.addEventListener('click', selectionsColombia)
-
-brazil.addEventListener('click', selectionsColombia)
-
-bolivia.addEventListener('click', selectionsColombia)
-
-chile.addEventListener('click', selectionsColombia)
-
-peru.addEventListener('click', selectionsColombia)
-
-venezuela.addEventListener('click', selectionsColombia)
-
-axel_heiberg.addEventListener('click', selecccionUsa)
-
-eglinton.addEventListener('click', selecccionUsa)
-
-
-guinee.addEventListener('click', slectafri)
-
-burkina.addEventListener('click', slectafri)
-
-laos.addEventListener('click', selectedf)
-
-prince_of_wales.addEventListener('click', selecccionUsa)
-
-kirgizstan.addEventListener('click', selectedf)
-
-tajikistan.addEventListener('click', selectedf)
 
 
 
-bissau.addEventListener('click', slectafri)
-
-casamance.addEventListener('click', slectafri)
-
-gambia.addEventListener('click', slectafri)
 
 
 
-alexander.addEventListener('click', selectionan)
 
-smyley.addEventListener('click', selectionan)
 
-thurston.addEventListener('click', selectionan)
 
-tierra_del_fuego_argentina.addEventListener('click', selectionsColombia)
-
-tierra_del_fuego_chile.addEventListener('click', selectionsColombia)
-
-lesotho.addEventListener('click', slectafri)
-
-Dominican.addEventListener('click', selecccionUsa)
-
-hawaii.addEventListener('click', selecccionUsa)
 
 
 
@@ -1090,96 +1041,13 @@ function seleccionGermany() {
         }
     }, 1500);
 }
-botswana.addEventListener('click', slectafri)
 
-cameroon.addEventListener('click', slectafri)
-
-southsudan.addEventListener('click', slectafri)
-
-morocco.addEventListener('click', slectafri)
-
-kenya.addEventListener('click', slectafri)
-
-chad.addEventListener('click', slectafri)
-
-niger.addEventListener('click', slectafri)
-
-centrafrique.addEventListener('click', slectafri)
-
-cambodia.addEventListener('click', selectedf)
-
-somalia.addEventListener('click', slectafri)
-
-tunisia.addEventListener('click', slectafri)
-
-liberia.addEventListener('click', slectafri)
-
-uganda.addEventListener('click', slectafri)
-
-somaliland.addEventListener('click', slectafri)
-
-devon.addEventListener('click', selecccionUsa)
-
-tasmania.addEventListener('click', selectaust)
-
-ghana.addEventListener('click', slectafri)
-
-senegal.addEventListener('click', slectafri)
-
-malaysia.addEventListener('click', selectedf)
-
-madagascar.addEventListener('click', slectafri)
-
-newzelanS.addEventListener('click', selectaust)
-
-newzelandN.addEventListener('click', selectaust)
-
-sulawesi.addEventListener('click', selectaust)
-
-east_malaysia.addEventListener('click', selectaust)
-
-gabon.addEventListener('click', slectafri)
-
-congo.addEventListener('click', slectafri)
-
-ivoire.addEventListener('click', slectafri)
-
-zambia.addEventListener('click', slectafri)
 
 
 
 antarctica.addEventListener('click', selectionan)
 function selectionan() {
 }
-nepal.addEventListener('click', selectedf)
-
-peninsula.addEventListener('click', selectionan)
-
-cuba.addEventListener('click', selecccionUsa)
-
-guyana.addEventListener('click', selectionsColombia)
-
-guyane.addEventListener('click', selectionsColombia)
-
-suriname.addEventListener('click', selectionsColombia)
-
-benin.addEventListener('click', slectafri)
-
-togo.addEventListener('click', slectafri)
-
-sierra.addEventListener('click', slectafri)
-
-nicaragua.addEventListener('click', selecccionUsa)
-
-guatemala.addEventListener('click', selecccionUsa)
-
-honduras.addEventListener('click', selecccionUsa)
-
-costarica.addEventListener('click', selecccionUsa)
-
-panama.addEventListener('click', selecccionUsa)
-
-new_ireland.addEventListener('click', selectaust)
 
 let changeaust = 0
 
@@ -1190,11 +1058,6 @@ function selectaust() {
 }
 
 
-australia.addEventListener('click', selectaust)
-
-irian_jaya.addEventListener('click', selectaust)
-
-papua_new_guinea.addEventListener('click', selectaust)
 
 
 
@@ -1206,30 +1069,7 @@ function slectafri() {
 }
 
 
-Egypt.addEventListener('click', slectafri)
 
-ethiopia.addEventListener('click', slectafri)
-
-tanzania.addEventListener('click', slectafri)
-
-nigeria.addEventListener('click', slectafri)
-
-algeria.addEventListener('click', slectafri)
-
-namibia.addEventListener('click', slectafri)
-
-
-angola.addEventListener('click', slectafri)
-
-drc.addEventListener('click', slectafri)
-
-libya.addEventListener('click', slectafri)
-
-sudan.addEventListener('click', slectafri)
-
-mali.addEventListener('click', slectafri)
-
-south.addEventListener('click', slectafri)
 
 let changechina = 0
 
@@ -1238,13 +1078,6 @@ function selectedf() {
 
    
 }
-india.addEventListener('click', selectedf)
-
-iran.addEventListener('click', selectedf)
-
-kazakhstan.addEventListener('click', selectedf)
-
-Pakistan.addEventListener('click', selectedf)
 
 
 finland.addEventListener('click', selecccionFiland)
