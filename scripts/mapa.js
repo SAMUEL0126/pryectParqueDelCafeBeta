@@ -715,18 +715,6 @@ function selectionsColombia() {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*========== U S A ============*/
 
 let changeUsa = 0
@@ -803,8 +791,6 @@ function selecccionUsa() {
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
 
-            // containerPandPoints.appendChild(containersacosdecafeusa)
-
             const paisesList = document.createElement("div")
             paisesList.classList.add("paisesList")
 
@@ -870,45 +856,6 @@ function selecccionUsa() {
 
     }, 2000);
 }
-
-vietnam.addEventListener('click', selectedf)
-
-banks.addEventListener('click', selecccionUsa)
-
-victoria.addEventListener('click', selecccionUsa)
-
-ellesmere.addEventListener('click', selecccionUsa)
-
-baffin.addEventListener('click', selecccionUsa)
-
-burma.addEventListener('click', selectedf)
-
-thailand.addEventListener('click', selectedf)
-
-uzbekistan.addEventListener('click', selectedf)
-
-turkmenistan.addEventListener('click', selectedf)
-
-afghanistan.addEventListener('click', selectedf)
-
-iraq.addEventListener('click', selectedf)
-
-
-mozambique.addEventListener('click', slectafri)
-
-paraguay.addEventListener('click', selectionsColombia)
-
-ecuador.addEventListener('click', selectionsColombia)
-
-mexico.addEventListener('click', selecccionUsa)
-
-greenland.addEventListener('click', selecccionUsa)
-
-chukotka.addEventListener('click', selecccionUsa)
-
-alaska2.addEventListener('click', selecccionUsa)
-
-panama.addEventListener('click', selecccionUsa)
 
 
 let changerussia = 0
@@ -1042,9 +989,6 @@ function seleccionGermany() {
     }, 1500);
 }
 
-
-
-
 antarctica.addEventListener('click', selectionan)
 function selectionan() {
 }
@@ -1054,12 +998,7 @@ let changeaust = 0
 kalimantan.addEventListener('click', selectaust)
 function selectaust() {
 
-
 }
-
-
-
-
 
 let changemauretania = 0
 
@@ -1068,17 +1007,12 @@ function slectafri() {
 
 }
 
-
-
-
 let changechina = 0
 
 china.addEventListener('click', selectedf)
 function selectedf() {
 
-   
 }
-
 
 finland.addEventListener('click', selecccionFiland)
 
@@ -1164,24 +1098,14 @@ function selecccionFiland() {
             const posPais = document.createElement("p")
             posPais.textContent = "Finlandia"
 
-
             paisesList.appendChild(posPais)
 
-
             containerPandPoints.appendChild(paisesList)
-
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
             estrellasPais.appendChild(containersacosdecafe)
             estrellasPais.appendChild(infoFinlandia)
-
-
-
-
-
-
-
 
             containerPandPoints.appendChild(estrellasPais)
 
@@ -1195,7 +1119,6 @@ function selecccionFiland() {
             setTimeout(() => {
                 mapa4.classList.add("mapaOpenFinland")
             }, 1000);
-
 
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
@@ -1211,7 +1134,6 @@ function selecccionFiland() {
         }
     }, 2000);
 }
-
 
 spain.addEventListener('click', selecccionEspaña)
 let changeEspaña = 1
@@ -1280,10 +1202,7 @@ function selecccionEspaña() {
             const infoSpain = document.createElement('p')
             infoSpain.textContent = 'España fue uno de los países europeos más tardíos en su consumo, sin embargo, llegó a contar con una de las mejores materias primas , gracias a las colonias americanas, que resultaron ser, y damos fe porque lo son hoy en día, una excelente zona de cultivo.15 jun 2019'
 
-
             containerpaistext.appendChild(containernamepaisestext)
-
-
 
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
@@ -1294,19 +1213,14 @@ function selecccionEspaña() {
             const posPais = document.createElement("p")
             posPais.textContent = "España"
 
-
             paisesList.appendChild(posPais)
 
-
             containerPandPoints.appendChild(paisesList)
-
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
             estrellasPais.appendChild(containersacosdecafe)
             estrellasPais.appendChild(infoSpain)
-
-
 
             containerPandPoints.appendChild(estrellasPais)
 
@@ -1320,7 +1234,6 @@ function selecccionEspaña() {
             setTimeout(() => {
                 mapa5.classList.add("mapaOpenEspaña")
             }, 1000);
-
 
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
@@ -1361,10 +1274,7 @@ function selecccionItali() {
                 countryItaly.classList.add("mapaOpen")
             }, 1000);
 
-
-
             contentmapa.classList.add("none")
-
 
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
@@ -1375,7 +1285,6 @@ function selecccionItali() {
             cancel.style.marginTop = "10px"
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
-
 
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Consumo De Cafe en Italia"
@@ -1395,7 +1304,6 @@ function selecccionItali() {
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
 
-
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
@@ -1406,8 +1314,6 @@ function selecccionItali() {
             infoItaly.textContent = 'Venecia fue uno de los primeros puertos europeos en importar granos de café en el siglo XVI. Trieste, uno de los primeros centros del comercio del café, es conocida como “la ciudad del café” y Nápoles es considerada por muchos como la capital mundial de la cultura del café.'
 
             containerpaistext.appendChild(containernamepaisestext)
-            // containerpaistext.appendChild(containersacosdecafe)
-
 
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
@@ -1418,12 +1324,9 @@ function selecccionItali() {
             const posPais = document.createElement("p")
             posPais.textContent = "Italia"
 
-
             paisesList.appendChild(posPais)
 
-
             containerPandPoints.appendChild(paisesList)
-
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
@@ -1443,7 +1346,6 @@ function selecccionItali() {
                 mapa6.classList.add("mapaOpenItaly")
             }, 1000);
 
-
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
             ModalInfo.appendChild(containerpaistext)
@@ -1457,8 +1359,6 @@ function selecccionItali() {
             }, 12500);
         }
     }, 2000);
-
-
 
 }
 
@@ -1535,8 +1435,6 @@ function selectnew_britain() {
             infoBritain.textContent = "En 2021, Reino Unido importó $1,06MM en Café, convirtiéndose en el importador número 10 de Café en el mundo. En el mismo año, Café fue el producto número 119 más importado en Reino Unido. Reino Unido importaciones Café principalmente de: Suiza ($186M), Alemania ($144M), Brasil ($122M), Colombia ($79M), y Italia ($78,8M)."
 
             containerpaistext.appendChild(containernamepaisestext)
-            // containerpaistext.appendChild(containersacosdecafe)
-
 
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
