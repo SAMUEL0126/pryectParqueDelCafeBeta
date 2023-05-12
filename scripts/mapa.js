@@ -311,7 +311,6 @@ function cerrarview() {
             contentmapa.classList.remove("none")
         }, 2500);
 
-
     }
 }
 
@@ -684,7 +683,6 @@ function selectionsColombia() {
                 window.location.reload()
             }, 12500);
         }, 3000);
-
     }
 }
 
@@ -817,7 +815,6 @@ function selecccionUsa() {
 
     }, 2000);
 }
-
 
 let changerussia = 0
 germany.addEventListener('click', seleccionGermany)
