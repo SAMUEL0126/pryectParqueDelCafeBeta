@@ -241,7 +241,6 @@ const countrycanada = document.getElementById("svg10")
 const countryBelgium = document.getElementById("svg11")
 const countryKorea = document.getElementById("svg12")
 const countryHonshu = document.getElementById("svg13")
-
 const contentmapa = document.getElementById("contentmapa")
 
 function cerrarview() {
@@ -326,7 +325,6 @@ const apiPaises = [
     [{ pais9: "españa", description: "Colombia" }],
     [{ pais10: "italia", description: "Colombia" }],
     [{ pais11: "Reino Unido", description: "Colombia" }],
-
 ]
 
 var timeoutId2
@@ -362,7 +360,6 @@ var componente = document.getElementById("colombia");
 componente.addEventListener("mouseover", cursorEntraEnComponente);
 componente.addEventListener("mouseout", cursorSaleDelComponente);
 
-
 // función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos1() {
     selecccionUsa()
@@ -384,7 +381,6 @@ var componente2 = document.getElementById("usa");
 // agrega los eventos de mouseover y mouseout al componente
 componente2.addEventListener("mouseover", cursorEntraEnComponente1);
 componente2.addEventListener("mouseout", cursorSaleDelComponente1);
-
 
 // función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos2() {
@@ -452,7 +448,6 @@ var componente5 = document.getElementById("italy");
 componente5.addEventListener("mouseover", cursorEntraEnComponente4);
 componente5.addEventListener("mouseout", cursorSaleDelComponente4);
 
-
 // función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos5() {
     seleccionGermany()
@@ -474,8 +469,6 @@ var componente6 = document.getElementById("germany");
 // agrega los eventos de mouseover y mouseout al componente
 componente6.addEventListener("mouseover", cursorEntraEnComponente5);
 componente6.addEventListener("mouseout", cursorSaleDelComponente5);
-
-
 
 // función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos7() {
@@ -499,7 +492,6 @@ var componente7 = document.getElementById("finland");
 componente7.addEventListener("mouseover", cursorEntraEnComponente6);
 componente7.addEventListener("mouseout", cursorSaleDelComponente6);
 
-
 // función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos8() {
     selectnew_britain()
@@ -522,7 +514,6 @@ var componente8 = document.getElementById("britain");
 componente8.addEventListener("mouseover", cursorEntraEnComponente7);
 componente8.addEventListener("mouseout", cursorSaleDelComponente7);
 
-
 // función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos9() {
     selectnew_korea()
@@ -544,7 +535,6 @@ var componente9 = document.getElementById("south korea");
 // agrega los eventos de mouseover y mouseout al componente
 componente9.addEventListener("mouseover", cursorEntraEnComponente8);
 componente9.addEventListener("mouseout", cursorSaleDelComponente8);
-
 
 // función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos10() {
