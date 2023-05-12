@@ -230,7 +230,6 @@ const mapa9 = document.getElementById("mapa9")
 const mapa10 = document.getElementById("mapa10")
 const mapa11 = document.getElementById("mapa11")
 
-
 //Countrys
 const openCountry = document.getElementById("openCountry")
 const countryColombia = document.getElementById("svg3")
@@ -246,8 +245,6 @@ const countryKorea = document.getElementById("svg12")
 const countryHonshu = document.getElementById("svg13")
 
 const contentmapa = document.getElementById("contentmapa")
-
-
 
 function cerrarview() {
 
@@ -266,7 +263,6 @@ function cerrarview() {
 
     if (sumadre == 0) {
 
-
         ModalInfo2.classList.remove("ModalInfoOpen2")
         ModalInfo2.textContent = ""
         setTimeout(() => {
@@ -275,7 +271,6 @@ function cerrarview() {
         }, 500);
 
         setTimeout(() => {
-
 
             countryColombia.classList.add("closeColombia")
             countryColombia.classList.remove("mapaOpen")
@@ -310,7 +305,6 @@ function cerrarview() {
             countryKorea.classList.add("closeColombia")
             countryKorea.classList.remove("mapaOpen")
         }, 1000);
-
 
         setTimeout(() => {
             openCountry.classList.add("closeCountry")
@@ -624,7 +618,6 @@ function selectionsColombia() {
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
 
-
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Paises consumidores de cafe colombiano"
             ranquinSuramerica.style.textAlign = "center"
@@ -643,14 +636,9 @@ function selectionsColombia() {
             containernamepaisestext.style.fontSize = "30px"
             containernamepaisestext.style.textAlign = "center"
 
-
-
-
             containernamepaisestext.style.color = "yellow"
             containerpaistext.style.textShadow = "0px 0px 10px skyblue"
             containerpaistext.appendChild(containernamepaisestext)
-
-
 
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
@@ -658,21 +646,16 @@ function selectionsColombia() {
             const paisesList = document.createElement("div")
             paisesList.classList.add("paisesList")
 
-
-
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[0][0].pais1
 
             paisesList.appendChild(containernamepaisestext)
             paisesList.appendChild(posPais)
 
-
             containerPandPoints.appendChild(paisesList)
-
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
-
 
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
@@ -680,7 +663,6 @@ function selectionsColombia() {
             containersacosdecafe.style.fontSize = "30px"
             containersacosdecafe.style.textAlign = "center"
             containersacosdecafe.style.color = "yellow"
-
 
             estrellasPais.textContent = 'En los años setenta del siglo XIX, el café empezó a cotizarse en las bolsas mundiales y se convirtió en la moneda internacional de los países productores, entre los cuales estaban Brasil, Salvador, Guatemala y México. Colombia emergió como exportador de café y productor mundial en la década de los noventa.'
 
@@ -769,7 +751,6 @@ function selecccionUsa() {
             containernamepaisestextusa.style.textAlign = "center"
             containernamepaisestextusa.style.textShadow = "0px 0px 10px skyblue"
 
-
             const containersacosdecafeusa = document.createElement("div")
             containersacosdecafeusa.textContent = "Descripcion"
             containersacosdecafeusa.style.fontFamily = "Amatic SC"
@@ -784,9 +765,7 @@ function selecccionUsa() {
             infoUsa.style.fontFamily = 'Amatic SC'
             infoUsa.style.fontSize = '20px'
 
-
             containerpaistextusa.appendChild(containernamepaisestextusa)
-
 
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
@@ -813,24 +792,15 @@ function selecccionUsa() {
 
             containerPandPoints.appendChild(paisesList)
 
-
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
-
-
 
             estrellasPais.appendChild(containersacosdecafeusa)
             estrellasPais.appendChild(infoUsa)
 
-
-
             setTimeout(() => {
                 mapa2.classList.add("mapaOpen")
             }, 1000);
-
-
-
-
 
             containerPandPoints.appendChild(estrellasPais)
 
@@ -893,11 +863,9 @@ function seleccionGermany() {
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
 
-
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Ranking de Europa"
             ranquinSuramerica.style.textAlign = "center"
-
 
             const containerpaistextrussia = document.createElement("div")
             containerpaistextrussia.style.width = "100%"
@@ -917,9 +885,6 @@ function seleccionGermany() {
             containernamepaisestextrussia.style.color = "yellow"
             containernamepaisestextrussia.style.textShadow = "0px 0px 10px skyblue"
 
-
-
-
             const containersacosdecaferussia = document.createElement("div")
             containersacosdecaferussia.textContent = "Descripcion"
             containersacosdecaferussia.style.fontFamily = "Amatic SC"
@@ -928,7 +893,6 @@ function seleccionGermany() {
             containersacosdecaferussia.style.color = "yellow"
             const infoGermany = document.createElement('p')
             infoGermany.textContent = 'Alemania es el tercer mayor consumidor de café después de los Estados Unidos y el Brasil. Se consumen alrededor de nueve millones y medio de sacos de sesenta kilos de café verde, equivalente a 570.000 toneladas.'
-
 
             containerpaistextrussia.appendChild(containersacosdecaferussia)
 
@@ -939,16 +903,10 @@ function seleccionGermany() {
             paisesList.classList.add("paisesList")
             paisesList.appendChild(containernamepaisestextrussia)
 
-
-
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[1][0].pais2
 
-
-
             paisesList.appendChild(posPais)
-
-
 
             containerPandPoints.appendChild(paisesList)
 
@@ -958,7 +916,6 @@ function seleccionGermany() {
             estrellasPais.classList.add("estrellasPais")
             estrellasPais.appendChild(containersacosdecaferussia)
             estrellasPais.appendChild(infoGermany)
-
 
             setTimeout(() => {
                 mapa3.classList.add("mapaOpenAlemania")
@@ -1075,7 +1032,6 @@ function selecccionFiland() {
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
 
-
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
@@ -1086,8 +1042,6 @@ function selecccionFiland() {
             infoFinlandia.textContent = "Aunque países como Italia destacan por su cultura del café, es en realidad Finlandia el país europeo que más café consume. Diferentes estudios señalan que los finlandeses consumen una media de cinco o seis tazas al día, lo que los convierte en el país con un mayor consumo de café per cápita de todo el mundo."
 
             containerpaistext.appendChild(containernamepaisestext)
-
-
 
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
@@ -1384,15 +1338,12 @@ function selectnew_britain() {
             openCountry.classList.add("openCountryNew_britain")
             openCountry.classList.remove("closeCountry")
 
-
             setTimeout(() => {
                 countryReinoU.classList.remove("closeColombia")
                 countryReinoU.classList.add("mapaOpen")
             }, 1000);
 
-
             contentmapa.classList.add("none")
-
 
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
@@ -1585,9 +1536,6 @@ function selectnew_canada() {
             estrellasPais.appendChild(containersacosdecafe)
             estrellasPais.appendChild(infoCanda)
 
-
-
-
             containerPandPoints.appendChild(estrellasPais)
 
             const fotModal = document.createElement("div")
@@ -1649,7 +1597,6 @@ function selectnew_Belgium() {
 
 
             contentmapa.classList.add("none")
-
 
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
@@ -1753,11 +1700,7 @@ function selectnew_Belgium() {
             startin1.classList.add("colorpacascafe")
             startin1.textContent = "700.000"
 
-
-
             rengStar4.appendChild(startin1)
-
-
 
             const rengStar5 = document.createElement("div")
             rengStar5.classList.add("rengStar")
@@ -1767,11 +1710,7 @@ function selectnew_Belgium() {
             starting1.classList.add("colorpacascafe")
             starting1.textContent = "90.000"
 
-
-
             rengStar5.appendChild(starting1)
-
-
 
 
             estrellasPais.appendChild(rengStar)
@@ -1837,7 +1776,6 @@ function selectnew_korea() {
             openCountry.classList.add("openCountryNew_Korea")
             openCountry.classList.remove("closeCountry")
 
-
             setTimeout(() => {
                 countryKorea.classList.remove("closeColombia")
                 countryKorea.classList.add("mapaOpen")
@@ -1845,7 +1783,6 @@ function selectnew_korea() {
 
 
             contentmapa.classList.add("none")
-
 
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
@@ -1856,7 +1793,6 @@ function selectnew_korea() {
             cancel.style.marginTop = "10px"
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
-
 
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Paises consumidores de cafe colombiano"
@@ -1890,7 +1826,6 @@ function selectnew_korea() {
             containerpaistext.appendChild(containernamepaisestext)
 
 
-
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
 
@@ -1910,9 +1845,6 @@ function selectnew_korea() {
             estrellasPais.classList.add("estrellasPais")
             estrellasPais.appendChild(containersacosdecafe)
             estrellasPais.appendChild(infokorea)
-
-
-
 
             containerPandPoints.appendChild(estrellasPais)
 
@@ -2040,9 +1972,7 @@ function selectnew_honshu() {
             estrellasPais.classList.add("estrellasPais")
             estrellasPais.appendChild(containersacosdecafe)
             estrellasPais.appendChild(infoJapon)
-
-
-
+            
             containerPandPoints.appendChild(estrellasPais)
 
             const fotModal = document.createElement("div")
