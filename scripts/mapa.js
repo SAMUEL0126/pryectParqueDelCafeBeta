@@ -216,7 +216,6 @@ const iceland = document.getElementById("iceland")
 const gambia = document.getElementById("gambia")
 const king_christian = document.getElementById("king christian")
 const new_ireland = document.getElementById('new ireland')
-
 //Mapas
 const mapa = document.getElementById('mapa')
 const mapa2 = document.getElementById("mapa2")
@@ -229,7 +228,6 @@ const mapa8 = document.getElementById("mapa8")
 const mapa9 = document.getElementById("mapa9")
 const mapa10 = document.getElementById("mapa10")
 const mapa11 = document.getElementById("mapa11")
-
 //Countrys
 const openCountry = document.getElementById("openCountry")
 const countryColombia = document.getElementById("svg3")
@@ -571,7 +569,6 @@ var componente10 = document.getElementById("honshu");
 componente10.addEventListener("mouseover", cursorEntraEnComponente9);
 componente10.addEventListener("mouseout", cursorSaleDelComponente9);
 
-
 /* ============ colombia ============ */
 
 let sumadre = 0
@@ -584,9 +581,7 @@ function selectionsColombia() {
     changeColombia++
     if (changeColombia == 1) {
 
-
         setTimeout(() => {
-
 
             setTimeout(() => {
                 ModalInfo.classList.add("ModalInfoOpen")
@@ -598,15 +593,12 @@ function selectionsColombia() {
             openCountry.classList.add("openCountry")
             openCountry.classList.remove("closeCountry")
 
-
             setTimeout(() => {
                 countryColombia.classList.remove("closeColombia")
                 countryColombia.classList.add("mapaOpen")
             }, 1000);
 
-
             contentmapa.classList.add("none")
-
 
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
@@ -679,7 +671,6 @@ function selectionsColombia() {
             setTimeout(() => {
                 mapa.classList.add("mapaOpen")
             }, 1000);
-
 
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
@@ -985,7 +976,6 @@ function selecccionFiland() {
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
 
-
             setTimeout(() => {
                 countryFinland.classList.remove("closeColombia")
                 countryFinland.classList.add("mapaOpen")
@@ -999,9 +989,7 @@ function selecccionFiland() {
                 countryColombia.classList.add("mapaOpen")
             }, 1000);
 
-
             contentmapa.classList.add("none")
-
 
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
@@ -1012,7 +1000,6 @@ function selecccionFiland() {
             cancel.style.marginTop = "10px"
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
-
 
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Consumo De Cafe en Filandia"
@@ -1093,7 +1080,6 @@ spain.addEventListener('click', selecccionEspaña)
 let changeEspaña = 1
 function selecccionEspaña() {
 
-
     setTimeout(() => {
 
         if (changeEspaña == 1) {
@@ -1107,15 +1093,12 @@ function selecccionEspaña() {
             openCountry.classList.add("openCountryEspaña")
             openCountry.classList.remove("closeCountry")
 
-
             setTimeout(() => {
                 countrySpain.classList.remove("closeColombia")
                 countrySpain.classList.add("mapaOpen")
             }, 1000);
 
-
             contentmapa.classList.add("none")
-
 
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
@@ -1126,7 +1109,6 @@ function selecccionEspaña() {
             cancel.style.marginTop = "10px"
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
-
 
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Consumo De Cafe en Filandia"
@@ -1145,7 +1127,6 @@ function selecccionEspaña() {
             containernamepaisestext.textContent = "Paises consumidores"
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
-
 
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
@@ -1221,7 +1202,6 @@ function selecccionItali() {
 
             openCountry.classList.add("openCountryItaly")
             openCountry.classList.remove("closeCountry")
-
 
             setTimeout(() => {
                 countryItaly.classList.remove("closeColombia")
@@ -1324,9 +1304,7 @@ function selectnew_britain() {
 
     if (change_newBritain == 1) {
 
-
         setTimeout(() => {
-
 
             setTimeout(() => {
                 ModalInfo.classList.add("ModalInfoOpen")
@@ -1355,7 +1333,6 @@ function selectnew_britain() {
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
 
-
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Paises consumidores de cafe colombiano"
             ranquinSuramerica.style.textAlign = "center"
@@ -1375,7 +1352,6 @@ function selectnew_britain() {
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
 
-
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
@@ -1393,15 +1369,12 @@ function selectnew_britain() {
             const paisesList = document.createElement("div")
             paisesList.classList.add("paisesList")
 
-
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[10][0].pais11
-
 
             paisesList.appendChild(posPais)
 
             containerPandPoints.appendChild(paisesList)
-
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
@@ -1420,7 +1393,6 @@ function selectnew_britain() {
             setTimeout(() => {
                 mapa7.classList.add("mapaOpen")
             }, 1000);
-
 
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
@@ -1447,9 +1419,7 @@ function selectnew_canada() {
 
     if (change_newcanada == 1) {
 
-
         setTimeout(() => {
-
 
             setTimeout(() => {
                 ModalInfo.classList.add("ModalInfoOpen")
@@ -1461,15 +1431,12 @@ function selectnew_canada() {
             openCountry.classList.add("openCountryNew_canada")
             openCountry.classList.remove("closeCountry")
 
-
             setTimeout(() => {
                 countrycanada.classList.remove("closeColombia")
                 countrycanada.classList.add("mapaOpen")
             }, 1000);
 
-
             contentmapa.classList.add("none")
-
 
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
@@ -1501,7 +1468,6 @@ function selectnew_canada() {
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
 
-
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
@@ -1513,7 +1479,6 @@ function selectnew_canada() {
             infoCanda.textContent = 'En 2021, Canadá importó $1,34MM en Café, convirtiéndose en el importador número 7 de Café en el mundo. En el mismo año. Canadá importaciones Café principalmente de: Estados Unidos ($439M), Colombia ($249M) y Guatemala ($91,2M).'
             infoCanda.style.color = 'white'
             infoCanda.style.fontFamily = 'Amatic SC'
-
 
             containerpaistext.appendChild(containernamepaisestext)
 
@@ -1529,7 +1494,6 @@ function selectnew_canada() {
             paisesList.appendChild(posPais)
 
             containerPandPoints.appendChild(paisesList)
-
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
@@ -1548,7 +1512,6 @@ function selectnew_canada() {
             setTimeout(() => {
                 mapa8.classList.add("mapaOpen")
             }, 1000);
-
 
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
@@ -1575,9 +1538,7 @@ function selectnew_Belgium() {
 
     if (change_newBelgium == 1) {
 
-
         setTimeout(() => {
-
 
             setTimeout(() => {
                 ModalInfo.classList.add("ModalInfoOpen")
@@ -1589,12 +1550,10 @@ function selectnew_Belgium() {
             openCountry.classList.add("openCountryNew_Belgium")
             openCountry.classList.remove("closeCountry")
 
-
             setTimeout(() => {
                 countryBelgium.classList.remove("closeColombia")
                 countryBelgium.classList.add("mapaOpen")
             }, 1000);
-
 
             contentmapa.classList.add("none")
 
@@ -1607,7 +1566,6 @@ function selectnew_Belgium() {
             cancel.style.marginTop = "10px"
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
-
 
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Paises consumidores de cafe colombiano"
@@ -1628,7 +1586,6 @@ function selectnew_Belgium() {
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
 
-
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
@@ -1636,7 +1593,6 @@ function selectnew_Belgium() {
 
             containerpaistext.appendChild(containernamepaisestext)
             containerpaistext.appendChild(containersacosdecafe)
-
 
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
@@ -1647,18 +1603,14 @@ function selectnew_Belgium() {
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[6][0].pais7
 
-
             paisesList.appendChild(posPais)
 
             containerPandPoints.appendChild(paisesList)
 
-
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
 
-
             const rengStar = document.createElement("div")
-
 
             rengStar.classList.add("rengStar")
             const star1 = document.createElement("span")
@@ -1669,16 +1621,12 @@ function selectnew_Belgium() {
             const rengStar2 = document.createElement("div")
             rengStar2.classList.add("rengStar")
 
-
             rengStar2.classList.add("rengStar")
             const start1 = document.createElement("span")
             start1.classList.add("colorpacascafe")
             start1.textContent = "13.500.000 "
 
-
             rengStar2.appendChild(start1)
-
-
 
             const rengStar3 = document.createElement("div")
             rengStar3.classList.add("rengStar")
@@ -1687,8 +1635,6 @@ function selectnew_Belgium() {
             const starti1 = document.createElement("span")
             starti1.classList.add("colorpacascafe")
             starti1.textContent = "3.200.000"
-
-
 
             rengStar3.appendChild(starti1)
 
@@ -1712,7 +1658,6 @@ function selectnew_Belgium() {
 
             rengStar5.appendChild(starting1)
 
-
             estrellasPais.appendChild(rengStar)
 
             estrellasPais.appendChild(rengStar2)
@@ -1735,7 +1680,6 @@ function selectnew_Belgium() {
             setTimeout(() => {
                 mapa9.classList.add("mapaOpen")
             }, 1000);
-
 
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
@@ -1762,9 +1706,7 @@ function selectnew_korea() {
 
     if (change_newKorea == 1) {
 
-
         setTimeout(() => {
-
 
             setTimeout(() => {
                 ModalInfo.classList.add("ModalInfoOpen")
@@ -1780,7 +1722,6 @@ function selectnew_korea() {
                 countryKorea.classList.remove("closeColombia")
                 countryKorea.classList.add("mapaOpen")
             }, 1000);
-
 
             contentmapa.classList.add("none")
 
@@ -1813,7 +1754,6 @@ function selectnew_korea() {
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
 
-
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
@@ -1825,7 +1765,6 @@ function selectnew_korea() {
 
             containerpaistext.appendChild(containernamepaisestext)
 
-
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
 
@@ -1835,11 +1774,9 @@ function selectnew_korea() {
             const posPais = document.createElement("p")
             posPais.textContent = apiPaises[4][0].pais5
 
-
             paisesList.appendChild(posPais)
 
             containerPandPoints.appendChild(paisesList)
-
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
@@ -1858,7 +1795,6 @@ function selectnew_korea() {
             setTimeout(() => {
                 mapa10.classList.add("mapaOpen")
             }, 1000);
-
 
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
@@ -1885,9 +1821,7 @@ function selectnew_honshu() {
 
     if (change_newhonshu == 1) {
 
-
         setTimeout(() => {
-
 
             setTimeout(() => {
                 ModalInfo.classList.add("ModalInfoOpen")
@@ -1899,15 +1833,12 @@ function selectnew_honshu() {
             openCountry.classList.add("openCountryNew_Honshu")
             openCountry.classList.remove("closeCountry")
 
-
             setTimeout(() => {
                 countryHonshu.classList.remove("closeColombia")
                 countryHonshu.classList.add("mapaOpen")
             }, 1000);
 
-
             contentmapa.classList.add("none")
-
 
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
@@ -1918,7 +1849,6 @@ function selectnew_honshu() {
             cancel.style.marginTop = "10px"
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
-
 
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Paises consumidores de cafe colombiano"
@@ -1939,7 +1869,6 @@ function selectnew_honshu() {
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
 
-
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
@@ -1949,10 +1878,7 @@ function selectnew_honshu() {
             const infoJapon = document.createElement('p')
             infoJapon.textContent = 'Japón, que no era un país consumidor tradicional de café, ha llegado a ser el tercer consumidor más grande entre los países importadores. Además, este país ha influenciado positivamente la transformación de la industria cafetera.'
 
-
             containerpaistext.appendChild(containernamepaisestext)
-
-
 
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
@@ -1972,7 +1898,7 @@ function selectnew_honshu() {
             estrellasPais.classList.add("estrellasPais")
             estrellasPais.appendChild(containersacosdecafe)
             estrellasPais.appendChild(infoJapon)
-            
+
             containerPandPoints.appendChild(estrellasPais)
 
             const fotModal = document.createElement("div")
@@ -1985,7 +1911,6 @@ function selectnew_honshu() {
             setTimeout(() => {
                 mapa11.classList.add("mapaOpen")
             }, 1000);
-
 
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
