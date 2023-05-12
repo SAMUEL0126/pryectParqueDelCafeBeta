@@ -1,6 +1,5 @@
 TEN_MILLONS = 10000000
 ONE_HUNDRED_MILLIONS = 100000000
-
 class CountryPathColletion {
 
     constructor(items) {
@@ -27,8 +26,6 @@ class CountryPathColletion {
         });
     }
 }
-
-
 
 class CountryPath {
 
@@ -89,7 +86,6 @@ class CountryPath {
     }
 
 }
-
 class Response {
     constructor(object) {
 
@@ -108,7 +104,6 @@ class Response {
         return this.object.area
     }
 }
-
 class CountryAPI {
     static async findByName(name) {
         const response = await fetch(`https://restcountries.com/v3.1/name/${name}`)
@@ -125,8 +120,6 @@ CountryPathColletion.get().for(async countryPath => {
 
     const response = await CountryAPI.findByName(countryPath.name())
 
-
-
     if (response.area() < TEN_MILLONS) {
 
         return
@@ -139,7 +132,6 @@ CountryPathColletion.get().for(async countryPath => {
 
 
 })
-
 
 const countryPath2027 = CountryPath.findByName("svg2")
 countryPath2027.fill("red")
