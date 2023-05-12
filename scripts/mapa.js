@@ -1445,7 +1445,6 @@ function selectnew_canada() {
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
 
-
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Paises consumidores de cafe colombiano"
             ranquinSuramerica.style.textAlign = "center"
@@ -1889,7 +1888,6 @@ function selectnew_honshu() {
             paisesList.appendChild(posPais)
 
             containerPandPoints.appendChild(paisesList)
-
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
