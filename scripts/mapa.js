@@ -932,21 +932,18 @@ let changeaust = 0
 
 kalimantan.addEventListener('click', selectaust)
 function selectaust() {
-
 }
 
 let changemauretania = 0
 
 mauretania.addEventListener('click', slectafri)
 function slectafri() {
-
 }
 
 let changechina = 0
 
 china.addEventListener('click', selectedf)
 function selectedf() {
-
 }
 
 finland.addEventListener('click', selecccionFiland)
