@@ -338,223 +338,176 @@ var timeoutId8
 var timeoutId9
 var timeoutId10
 
-// función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos() {
     selectionsColombia()
 }
 
-// función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente() {
     timeoutId = setTimeout(ejecutarDespuesDe2Segundos, 2000);
 }
 
-// función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente() {
     clearTimeout(timeoutId);
 }
 
-// obtiene el componente
 var componente = document.getElementById("colombia");
 
-// agrega los eventos de mouseover y mouseout al componente
 componente.addEventListener("mouseover", cursorEntraEnComponente);
 componente.addEventListener("mouseout", cursorSaleDelComponente);
 
-// función que se ejecuta después de 2 segundos
+
 function ejecutarDespuesDe2Segundos1() {
     selecccionUsa()
 }
 
-// función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente1() {
     timeoutId2 = setTimeout(ejecutarDespuesDe2Segundos1, 2000);
 }
 
-// función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente1() {
     clearTimeout(timeoutId2);
 }
 
-// obtiene el componente
+
 var componente2 = document.getElementById("usa");
 
-// agrega los eventos de mouseover y mouseout al componente
+
 componente2.addEventListener("mouseover", cursorEntraEnComponente1);
 componente2.addEventListener("mouseout", cursorSaleDelComponente1);
 
-// función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos2() {
     selectnew_canada()
 }
 
-// función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente2() {
     timeoutId3 = setTimeout(ejecutarDespuesDe2Segundos2, 2000);
 }
 
-// función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente2() {
     clearTimeout(timeoutId3);
 }
 
-// obtiene el componente
 var componente3 = document.getElementById("canada");
 
-// agrega los eventos de mouseover y mouseout al componente
 componente3.addEventListener("mouseover", cursorEntraEnComponente2);
 componente3.addEventListener("mouseout", cursorSaleDelComponente2);
 
-// función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos3() {
     selecccionEspaña()
 }
 
-// función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente3() {
     timeoutId4 = setTimeout(ejecutarDespuesDe2Segundos3, 2000);
 }
 
-// función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente3() {
     clearTimeout(timeoutId4);
 }
 
-// obtiene el componente
 var componente4 = document.getElementById("spain");
 
-// agrega los eventos de mouseover y mouseout al componente
 componente4.addEventListener("mouseover", cursorEntraEnComponente3);
 componente4.addEventListener("mouseout", cursorSaleDelComponente3);
 
-// función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos4() {
     selecccionItali()
 }
 
-// función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente4() {
     timeoutId5 = setTimeout(ejecutarDespuesDe2Segundos4, 2000);
 }
 
-// función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente4() {
     clearTimeout(timeoutId5);
 }
 
-// obtiene el componente
 var componente5 = document.getElementById("italy");
 
-// agrega los eventos de mouseover y mouseout al componente
 componente5.addEventListener("mouseover", cursorEntraEnComponente4);
 componente5.addEventListener("mouseout", cursorSaleDelComponente4);
 
-// función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos5() {
     seleccionGermany()
 }
 
-// función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente5() {
     timeoutId6 = setTimeout(ejecutarDespuesDe2Segundos5, 2000);
 }
 
-// función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente5() {
     clearTimeout(timeoutId6);
 }
 
-// obtiene el componente
 var componente6 = document.getElementById("germany");
 
-// agrega los eventos de mouseover y mouseout al componente
 componente6.addEventListener("mouseover", cursorEntraEnComponente5);
 componente6.addEventListener("mouseout", cursorSaleDelComponente5);
 
-// función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos7() {
     selecccionFiland()
 }
 
-// función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente6() {
     timeoutId7 = setTimeout(ejecutarDespuesDe2Segundos7, 2000);
 }
 
-// función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente6() {
     clearTimeout(timeoutId7);
 }
 
-// obtiene el componente
 var componente7 = document.getElementById("finland");
 
-// agrega los eventos de mouseover y mouseout al componente
 componente7.addEventListener("mouseover", cursorEntraEnComponente6);
 componente7.addEventListener("mouseout", cursorSaleDelComponente6);
 
-// función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos8() {
     selectnew_britain()
 }
 
-// función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente7() {
     timeoutId8 = setTimeout(ejecutarDespuesDe2Segundos8, 2000);
 }
 
-// función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente7() {
     clearTimeout(timeoutId8);
 }
 
-// obtiene el componente
 var componente8 = document.getElementById("britain");
 
-// agrega los eventos de mouseover y mouseout al componente
 componente8.addEventListener("mouseover", cursorEntraEnComponente7);
 componente8.addEventListener("mouseout", cursorSaleDelComponente7);
 
-// función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos9() {
     selectnew_korea()
 }
 
-// función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente8() {
     timeoutId9 = setTimeout(ejecutarDespuesDe2Segundos9, 2000);
 }
 
-// función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente8() {
     clearTimeout(timeoutId9);
 }
 
-// obtiene el componente
 var componente9 = document.getElementById("south korea");
 
-// agrega los eventos de mouseover y mouseout al componente
 componente9.addEventListener("mouseover", cursorEntraEnComponente8);
 componente9.addEventListener("mouseout", cursorSaleDelComponente8);
 
-// función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos10() {
     selectnew_honshu()
 }
 
-// función que se ejecuta cuando el cursor entra en el componente
 function cursorEntraEnComponente9() {
     timeoutId10 = setTimeout(ejecutarDespuesDe2Segundos10, 2000);
 }
 
-// función que se ejecuta cuando el cursor sale del componente
 function cursorSaleDelComponente9() {
     clearTimeout(timeoutId10);
 }
 
-// obtiene el componente
 var componente10 = document.getElementById("honshu");
 
-// agrega los eventos de mouseover y mouseout al componente
 componente10.addEventListener("mouseover", cursorEntraEnComponente9);
 componente10.addEventListener("mouseout", cursorSaleDelComponente9);
 
