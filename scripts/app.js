@@ -32,7 +32,6 @@ class CountryPath {
     constructor(element) {
         this.element = element
 
-
         if (`${this.name()}` == 'colombia') {
             this.setTootip(`El pais: ${this.name()} , Es exportador de cafe.`)
         } else if (`${this.name()}` == 'usa') {
@@ -131,8 +130,6 @@ CountryPathColletion.get().for(async countryPath => {
 
         return
     }
-
-
 })
 
 const countryPath2027 = CountryPath.findByName("svg2")
