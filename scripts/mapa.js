@@ -1314,7 +1314,6 @@ function selecccionEspaña() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoSpain = document.createElement('p')
-            // infoSpain.textContent = 'España fue uno de los países europeos más tardíos en su consumo, sin embargo, llegó a contar con una de las mejores materias primas , gracias a las colonias americanas, que resultaron ser, y damos fe porque lo son hoy en día, una excelente zona de cultivo.15 jun 2019'
             
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
@@ -1482,7 +1481,7 @@ function selecccionItali() {
                     fetch('/scripts/descripcion.txt')
                     .then(response => response.text())
                     .then(data => {
-                        // Divide el contenido en párrafos
+                     
                         const descripciones = data.split('\n')
 
 
@@ -1651,7 +1650,7 @@ function selectnew_britain() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoBritain = document.createElement('p')
-            // infoBritain.textContent = "En 2021, Reino Unido importó $1,06MM en Café, convirtiéndose en el importador número 10 de Café en el mundo. En el mismo año, Café fue el producto número 119 más importado en Reino Unido. Reino Unido importaciones Café principalmente de: Suiza ($186M), Alemania ($144M), Brasil ($122M), Colombia ($79M), y Italia ($78,8M)."
+         
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
                     fetch('/scripts/descripcion.txt')
@@ -1827,7 +1826,6 @@ function selectnew_canada() {
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
 
             const infoCanda = document.createElement('p')
-            // infoCanda.textContent = 'En 2021, Canadá importó $1,34MM en Café, convirtiéndose en el importador número 7 de Café en el mundo. En el mismo año. Canadá importaciones Café principalmente de: Estados Unidos ($439M), Colombia ($249M) y Guatemala ($91,2M).'
             infoCanda.style.color = 'white'
             infoCanda.style.fontFamily = 'Amatic SC'
 
@@ -2025,7 +2023,6 @@ function selectnew_Belgium() {
             rengStar.classList.add("rengStar")
             const star1 = document.createElement("span")
             star1.classList.add("colorpacascafe")
-            // star1.textContent = " Bélgica, conocida por su pasión por el café, ha demostrado un creciente interés en el café colombiano de alta calidad. Los belgas aprecian las características únicas del café colombiano, como su sabor suave, su aroma cautivador y su acidez equilibrada. El café colombiano ha ganado popularidad en Bélgica debido a su perfil distintivo y a la dedicación de los productores colombianos a la calidad y sostenibilidad. Los consumidores belgas disfrutan de una taza de café colombiano como un placer diario, valorando su rica historia y la experiencia sensorial que ofrece. El café colombiano se ha convertido en una elección frecuente en los hogares, cafeterías y restaurantes de Bélgica, reflejando la creciente demanda de esta exquisita bebida."
             star1.style.color = "#fff"
             rengStar.appendChild(star1)
             document.addEventListener('keyup', function (e) {
@@ -2184,7 +2181,6 @@ function selectnew_korea() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infokorea = document.createElement('p')
-            // infokorea.textContent = "Las importaciones de café en Corea del Sur aumentaron un 24,2 % interanual por valor de 916,5 millones de dólares en 2021 -respecto a los 823 millones de 2020- hasta alcanzar un récord de importaciones debido al crecimiento de la popularidad del café en el país."
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
                     fetch('/scripts/descripcion.txt')
@@ -2358,7 +2354,6 @@ function selectnew_honshu() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoJapon = document.createElement('p')
-            // infoJapon.textContent = 'Japón, que no era un país consumidor tradicional de café, ha llegado a ser el tercer consumidor más grande entre los países importadores. Además, este país ha influenciado positivamente la transformación de la industria cafetera.'
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
                     fetch('/scripts/descripcion.txt')
