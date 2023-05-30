@@ -151,3 +151,67 @@
     flex-direction: column;
     gap: 38px; 
 }
+
+
+.formAddhidden {
+    /* visibility: hidden; */
+    display: none;
+    z-index: 0;
+  }
+  
+  .formAddquestion {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    z-index: 100;
+    width: 35rem;
+    height: 20rem;
+    background-color: white;
+    z-index: 1000;
+  }
+  .formAddquestion .bannerCoffe {
+    width: 100%;
+    height: 3rem;
+    background-color: #43b141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    gap: 130px;
+  }
+  .bannerCoffe span {
+    margin-right: -170px;
+    cursor: pointer;
+  }
+  .formAddquestion .contInfoBox {
+    width: 100%;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .contInfoBox label{
+    text-transform: uppercase;
+  }
+  .contInfoBox label input {
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+    border: solid 1px black;
+    padding-left: 5px;
+  }
+  .contInfoBox button{
+    width: 130px;
+    height: 40px;
+    border: none;
+    background-color: #43b141;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  .contInfoBox button:hover {
+    background-color: lime;
+  }

@@ -531,6 +531,99 @@ var componente10 = document.getElementById("honshu");
 componente10.addEventListener("mouseover", cursorEntraEnComponente9);
 componente10.addEventListener("mouseout", cursorSaleDelComponente9);
 
+
+
+let descripcionCo = document.getElementsByClassName('estrellasPais')
+
+document.addEventListener('keyup', function (event) {
+    // Verifica si la tecla presionada es "Enter" (código 13)
+    if (event.keyCode === 13) {
+        // Llama a tu función aquí
+        formPut.classList.remove('formAddhidden')
+        formPut.classList.add('formAddquestion')
+    }
+});
+
+const closeModal = document.getElementById('closeModal')
+closeModal.addEventListener('click', function () {
+    formPut.classList.toggle('formAddquestion')
+    formPut.classList.toggle('formAddhidden')
+})
+
+
+confirmModal.addEventListener('click', () => {
+    if (inputName.value == user && inputPassword.value == password) {
+
+        formPut.classList.toggle('formAddhidden')
+        formPut.classList.toggle('formAddquestion')
+
+
+    // pendiente de pasar este consumo de archivo de texto
+    //a otro archivo js
+    fetch('/scripts/descripcion.txt')
+        .then(response => response.text())
+        .then(data => {
+            // Divide el contenido en párrafos
+            const descripciones = data.split('\n')
+
+            
+            descripcionCo.textContent = preguntas[1]
+
+
+
+            document.cookie = "descripcionCo=" + encodeURIComponent(descripcionCo.innerHTML)
+
+            //Asigna los parrafos
+            console.log(descripciones[0]);
+
+        })
+        .catch(error => {
+            console.error('Error al obtener el archivo de texto:', error);
+        })
+    }
+})
+
+
+function getCookie(nombre) {
+    var cookieName = nombre + "=";
+    var cookies = document.cookie.split(";");
+  
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+  
+      if (cookie.indexOf(cookieName) === 0) {
+        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+      }
+    }
+  
+    return null;
+  }
+
+  window.onload = function() {
+    let cookieCo = getCookie("descripcionCo")
+
+    if (cookieCo) {
+        descripcionCo.innerHTML = cookieCo
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ============ colombia ============ */
 
 let sumadre = 0
