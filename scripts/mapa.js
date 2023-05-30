@@ -1707,9 +1707,7 @@ function selectnew_britain() {
                 window.location.reload()
             }, 12500);
         }, 3000);
-
     }
-
 }
 
 canada.addEventListener('click', selectnew_canada)
