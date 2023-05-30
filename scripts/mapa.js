@@ -545,7 +545,8 @@ let password = 'parque2020'
 
 const confirmModal = document.getElementById('confirmModal')
 
-let descripcionCo = document.getElementsByClassName('estrellasPais')
+let descripcionCo = document.getElementById('descripcionCo')
+
 
 document.addEventListener('keyup', function (event) {
     // Verifica si la tecla presionada es "Enter" (código 13)
@@ -570,38 +571,38 @@ confirmModal.addEventListener('click', () => {
         formPut.classList.toggle('formAddquestion')
 
 
-    // pendiente de pasar este consumo de archivo de texto
-    //a otro archivo js
-    fetch('/scripts/descripcion.txt')
-        .then(response => response.text())
-        .then(data => {
-            // Divide el contenido en párrafos
-            const descripciones = data.split('\n')
-
-            
-            descripcionCo.textContent = preguntas[1]
+        // pendiente de pasar este consumo de archivo de texto
+        //a otro archivo js
+        fetch('/scripts/descripcion.txt')
+            .then(response => response.text())
+            .then(data => {
+                // Divide el contenido en párrafos
+                const descripciones = data.split('\n')
 
 
+                descripcionCo.textContent = descripciones[1]
 
-            document.cookie = "descripcionCo=" + encodeURIComponent(descripcionCo.innerHTML)
 
 
-            setTimeout(() => {
-                Swal.fire({
-                    position: 'center',
-                    icon: 'success',
-                    title: 'haz actualizado las preguntas correactamente',
-                    showConfirmButton: false,
-                    timer: 2000
-                })
-            }, 1000);
-            //Asigna los parrafos
-            console.log(descripciones[0]);
+                document.cookie = "descripcionCo=" + encodeURIComponent(descripcionCo.innerHTML)
 
-        })
-        .catch(error => {
-            console.error('Error al obtener el archivo de texto:', error);
-        })
+
+                setTimeout(() => {
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'haz actualizado las preguntas correactamente',
+                        showConfirmButton: false,
+                        timer: 2000
+                    })
+                }, 1000);
+                //Asigna los parrafos
+                console.log(descripcionCo);
+
+            })
+            .catch(error => {
+                console.error('Error al obtener el archivo de texto:', error);
+            })
     }
 })
 
@@ -609,25 +610,25 @@ confirmModal.addEventListener('click', () => {
 function getCookie(nombre) {
     var cookieName = nombre + "=";
     var cookies = document.cookie.split(";");
-  
-    for (var i = 0; i < cookies.length; i++) {
-      var cookie = cookies[i].trim();
-  
-      if (cookie.indexOf(cookieName) === 0) {
-        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
-      }
-    }
-  
-    return null;
-  }
 
-  window.onload = function() {
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+
+        if (cookie.indexOf(cookieName) === 0) {
+            return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+        }
+    }
+
+    return null;
+}
+
+window.onload = function () {
     let cookieCo = getCookie("descripcionCo")
 
     if (cookieCo) {
         descripcionCo.innerHTML = cookieCo
     }
-  }
+}
 
 
 
@@ -725,6 +726,10 @@ function selectionsColombia() {
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
+            estrellasPais.id = "descripcionCo"
+
+
+            
 
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
@@ -734,7 +739,7 @@ function selectionsColombia() {
             containersacosdecafe.style.color = "yellow"
 
             estrellasPais.textContent = 'En los años setenta del siglo XIX, el café empezó a cotizarse en las bolsas mundiales y se convirtió en la moneda internacional de los países productores, entre los cuales estaban Brasil, Salvador, Guatemala y México. Colombia emergió como exportador de café y productor mundial en la década de los noventa.'
-
+            console.log(estrellasPais);
             containerPandPoints.appendChild(containersacosdecafe)
             containerPandPoints.appendChild(estrellasPais)
 
@@ -1657,7 +1662,7 @@ function selectnew_Belgium() {
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
-            
+
 
 
 
