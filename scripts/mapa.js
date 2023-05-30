@@ -585,6 +585,16 @@ confirmModal.addEventListener('click', () => {
 
             document.cookie = "descripcionCo=" + encodeURIComponent(descripcionCo.innerHTML)
 
+
+            setTimeout(() => {
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'haz actualizado las preguntas correactamente',
+                    showConfirmButton: false,
+                    timer: 2000
+                })
+            }, 1000);
             //Asigna los parrafos
             console.log(descripciones[0]);
 
