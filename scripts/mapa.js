@@ -631,7 +631,7 @@ function selectionsColombia() {
                             Swal.fire({
                                 position: 'center',
                                 icon: 'success',
-                                title: 'haz actualizado las preguntas correactamente',
+                                title: 'la info ah sido actualizada exitosamente',
                                 showConfirmButton: false,
                                 timer: 2000
                             })
@@ -808,9 +808,6 @@ function selecccionUsa() {
             const estrellasPaisUsa = document.createElement("div")
             estrellasPaisUsa.classList.add("estrellasPais")
 
-            // estrellasPais.appendChild(containersacosdecafeusa)
-            // estrellasPais.appendChild(infoUsa)
-
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
                     fetch('/scripts/descripcion.txt')
@@ -819,7 +816,7 @@ function selecccionUsa() {
 
                         const descripcion = data.split('\n')
 
-                        estrellasPaisUsa.textContent = descripcion[15]
+                        estrellasPaisUsa.textContent = descripcion[9]
 
 
                         document.cookie = "descripcionUsa=" + encodeURIComponent(estrellasPaisUsa.innerHTML)
@@ -830,7 +827,7 @@ function selecccionUsa() {
                             Swal.fire({
                                 position: 'center',
                                 icon: 'success',
-                                title: 'haz actualizado las preguntas correactamente',
+                                title: 'la info ah sido actualizada exitosamente',
                                 showConfirmButton: false,
                                 timer: 2000
                             })
@@ -963,9 +960,69 @@ function seleccionGermany() {
             containersacosdecaferussia.style.textShadow = "0px 0px 10px skyblue"
             containersacosdecaferussia.style.color = "yellow"
             const infoGermany = document.createElement('p')
-            infoGermany.textContent = 'Alemania es el tercer mayor consumidor de café después de los Estados Unidos y el Brasil. Se consumen alrededor de nueve millones y medio de sacos de sesenta kilos de café verde, equivalente a 570.000 toneladas.'
 
-            containerpaistextrussia.appendChild(containersacosdecaferussia)
+
+             document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Divide el contenido en párrafos
+                        const descripciones = data.split('\n')
+
+
+                        infoGermany.textContent = descripciones[5]
+
+
+
+                        document.cookie = "descripcionAle=" + encodeURIComponent(infoGermany.innerHTML)
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'la info ah sido actualizada exitosamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+                
+            })
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function infoAle() {
+                let cookieCo = getCookie("descripcionAle")
+                console.log('u madreeeeeeeeeeeeeeeeeeeeeeeee');
+
+                if (cookieCo) {
+                    infoGermany.innerHTML = cookieCo
+                }
+            }
+
+            infoAle()
+
 
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
@@ -982,26 +1039,13 @@ function seleccionGermany() {
             containerPandPoints.appendChild(paisesList)
 
             contentmapa.classList.add("none")
-
-            const estrellasPais = document.createElement("div")
-            estrellasPais.classList.add("estrellasPais")
-            estrellasPais.appendChild(containersacosdecaferussia)
-            estrellasPais.appendChild(infoGermany)
-
+         
             setTimeout(() => {
                 mapa3.classList.add("mapaOpenAlemania")
             }, 2000);
 
-            containerPandPoints.appendChild(estrellasPais)
+            containerPandPoints.appendChild(infoGermany)
 
-            // const fotModal = document.createElement("div")
-            // fotModal.classList.add("fotModal")
-            // const imgFotmodal = document.createElement('img')
-            // imgFotmodal.src = '../images/logoparquedelcafe.png'
-
-            
-
-            // fotModal.appendChild(imgFotmodal)
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
@@ -1129,13 +1173,72 @@ function selecccionFiland() {
             paisesList.appendChild(posPais)
 
             containerPandPoints.appendChild(paisesList)
+           
+            const estrellasPaisFin = document.createElement("div")
+            estrellasPaisFin.classList.add("estrellasPais")
+          
 
-            const estrellasPais = document.createElement("div")
-            estrellasPais.classList.add("estrellasPais")
-            estrellasPais.appendChild(containersacosdecafe)
-            estrellasPais.appendChild(infoFinlandia)
+            document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Divide el contenido en párrafos
+                        const descripciones = data.split('\n')
 
-            containerPandPoints.appendChild(estrellasPais)
+
+                        estrellasPaisFin.textContent = descripciones[19]
+
+
+
+                        document.cookie = "descripcionFin=" + encodeURIComponent(estrellasPaisFin.innerHTML)
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'la info ah sido actualizada exitosamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+                
+            })
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function infoFin() {
+                let cookieCo = getCookie("descripcionFin")
+                console.log('u madreeeeeeeeeeeeeeeeeeeeeeeee');
+
+                if (cookieCo) {
+                    estrellasPaisFin.innerHTML = cookieCo
+                }
+            }
+
+            infoFin()
+            containerPandPoints.appendChild(estrellasPaisFin)
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
@@ -1166,27 +1269,20 @@ function selecccionFiland() {
 spain.addEventListener('click', selecccionEspaña)
 let changeEspaña = 1
 function selecccionEspaña() {
-
     setTimeout(() => {
-
         if (changeEspaña == 1) {
             setTimeout(() => {
                 ModalInfo.classList.add("ModalInfoOpen")
             }, 1500);
-
             ModalInfo2.classList.remove("ModalInfoOpen2")
             ModalInfo2.textContent = ""
-
             openCountry.classList.add("openCountryEspaña")
             openCountry.classList.remove("closeCountry")
-
             setTimeout(() => {
                 countrySpain.classList.remove("closeColombia")
                 countrySpain.classList.add("mapaOpen")
             }, 1000);
-
             contentmapa.classList.add("none")
-
             const contCancel = document.createElement("div")
             contCancel.classList.add("contCancel")
             const cancel = document.createElement("span")
@@ -1196,11 +1292,9 @@ function selecccionEspaña() {
             cancel.style.marginTop = "10px"
             cancel.addEventListener("click", cerrarview)
             contCancel.appendChild(cancel)
-
             const ranquinSuramerica = document.createElement("h2")
             ranquinSuramerica.textContent = "Consumo De Cafe en Filandia"
             ranquinSuramerica.style.textAlign = "center"
-
             const containerpaistext = document.createElement("div")
             containerpaistext.style.width = "100%"
             containerpaistext.style.height = "5vh"
@@ -1209,12 +1303,10 @@ function selecccionEspaña() {
             containerpaistext.style.justifyContent = "center"
             containerpaistext.style.color = "yellow"
             containerpaistext.style.textShadow = "0px 0px 10px skyblue"
-
             const containernamepaisestext = document.createElement("div")
             containernamepaisestext.textContent = "Paises consumidores"
             containernamepaisestext.style.fontFamily = "Amatic SC"
             containernamepaisestext.style.fontSize = "30px"
-
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
@@ -1222,41 +1314,92 @@ function selecccionEspaña() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoSpain = document.createElement('p')
-            infoSpain.textContent = 'España fue uno de los países europeos más tardíos en su consumo, sin embargo, llegó a contar con una de las mejores materias primas , gracias a las colonias americanas, que resultaron ser, y damos fe porque lo son hoy en día, una excelente zona de cultivo.15 jun 2019'
+            // infoSpain.textContent = 'España fue uno de los países europeos más tardíos en su consumo, sin embargo, llegó a contar con una de las mejores materias primas , gracias a las colonias americanas, que resultaron ser, y damos fe porque lo son hoy en día, una excelente zona de cultivo.15 jun 2019'
+            
+            document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Divide el contenido en párrafos
+                        const descripciones = data.split('\n')
 
+
+                        infoSpain.textContent = descripciones[3]
+
+
+
+                        document.cookie = "descripcionEspaña=" + encodeURIComponent(infoSpain.innerHTML)
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'la info ah sido actualizada exitosamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+                
+            })
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function infoSpain2() {
+                let cookieCo = getCookie("descripcionEspaña")
+                console.log('u madreeeeeeeeeeeeeeeeeeeeeeeee');
+
+                if (cookieCo) {
+                    infoSpain.innerHTML = cookieCo
+                }
+            }
+
+            infoSpain2()
+            
+            
             containerpaistext.appendChild(containernamepaisestext)
-
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
-
             const paisesList = document.createElement("div")
             paisesList.classList.add("paisesList")
-
             const posPais = document.createElement("p")
             posPais.textContent = "España"
-
             paisesList.appendChild(posPais)
-
             containerPandPoints.appendChild(paisesList)
-
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
             estrellasPais.appendChild(containersacosdecafe)
             estrellasPais.appendChild(infoSpain)
-
             containerPandPoints.appendChild(estrellasPais)
-
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
             const imgFotmodal = document.createElement('img')
             imgFotmodal.src = '../images/logoparquedelcafe.png'
-
             fotModal.appendChild(imgFotmodal)
-
             setTimeout(() => {
                 mapa5.classList.add("mapaOpenEspaña")
             }, 1000);
-
             ModalInfo.appendChild(contCancel)
             ModalInfo.appendChild(ranquinSuramerica)
             ModalInfo.appendChild(containerpaistext)
@@ -1332,7 +1475,69 @@ function selecccionItali() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoItaly = document.createElement('p')
-            infoItaly.textContent = 'Venecia fue uno de los primeros puertos europeos en importar granos de café en el siglo XVI. Trieste, uno de los primeros centros del comercio del café, es conocida como “la ciudad del café” y Nápoles es considerada por muchos como la capital mundial de la cultura del café.'
+
+            
+            document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Divide el contenido en párrafos
+                        const descripciones = data.split('\n')
+
+
+                        infoItaly.textContent = descripciones[11]
+
+
+
+                        document.cookie = "descripcionItali=" + encodeURIComponent(infoItaly.innerHTML)
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'la info ah sido actualizada exitosamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+                
+            })
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function infotali() {
+                let cookieCo = getCookie("descripcionItali")
+                console.log('u madreeeeeeeeeeeeeeeeeeeeeeeee');
+
+                if (cookieCo) {
+                    infoItaly.innerHTML = cookieCo
+                }
+            }
+
+            infotali()
+
 
             containerpaistext.appendChild(containernamepaisestext)
 
@@ -1446,8 +1651,68 @@ function selectnew_britain() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoBritain = document.createElement('p')
-            infoBritain.textContent = "En 2021, Reino Unido importó $1,06MM en Café, convirtiéndose en el importador número 10 de Café en el mundo. En el mismo año, Café fue el producto número 119 más importado en Reino Unido. Reino Unido importaciones Café principalmente de: Suiza ($186M), Alemania ($144M), Brasil ($122M), Colombia ($79M), y Italia ($78,8M)."
+            // infoBritain.textContent = "En 2021, Reino Unido importó $1,06MM en Café, convirtiéndose en el importador número 10 de Café en el mundo. En el mismo año, Café fue el producto número 119 más importado en Reino Unido. Reino Unido importaciones Café principalmente de: Suiza ($186M), Alemania ($144M), Brasil ($122M), Colombia ($79M), y Italia ($78,8M)."
+            document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Divide el contenido en párrafos
+                        const descripciones = data.split('\n')
 
+
+                        infoBritain.textContent = descripciones[7]
+
+
+
+                        document.cookie = "descripcionBri=" + encodeURIComponent(infoBritain.innerHTML)
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'la info ah sido actualizada exitosamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+                
+            })
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function infoBritain2() {
+                let cookieCo = getCookie("descripcionBri")
+                console.log('u madreeeeeeeeeeeeeeeeeeeeeeeee');
+
+                if (cookieCo) {
+                    infoBritain.innerHTML = cookieCo
+                }
+            }
+
+            infoBritain2()
+            
             containerpaistext.appendChild(containernamepaisestext)
 
             const containerPandPoints = document.createElement("div")
@@ -1562,9 +1827,70 @@ function selectnew_canada() {
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
 
             const infoCanda = document.createElement('p')
-            infoCanda.textContent = 'En 2021, Canadá importó $1,34MM en Café, convirtiéndose en el importador número 7 de Café en el mundo. En el mismo año. Canadá importaciones Café principalmente de: Estados Unidos ($439M), Colombia ($249M) y Guatemala ($91,2M).'
+            // infoCanda.textContent = 'En 2021, Canadá importó $1,34MM en Café, convirtiéndose en el importador número 7 de Café en el mundo. En el mismo año. Canadá importaciones Café principalmente de: Estados Unidos ($439M), Colombia ($249M) y Guatemala ($91,2M).'
             infoCanda.style.color = 'white'
             infoCanda.style.fontFamily = 'Amatic SC'
+
+            document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Divide el contenido en párrafos
+                        const descripciones = data.split('\n')
+
+
+                        infoCanda.textContent = descripciones[21]
+
+
+
+                        document.cookie = "descripcioncanada=" + encodeURIComponent(infoCanda.innerHTML)
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'la info ah sido actualizada exitosamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+                
+            })
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function infoCanada2() {
+                let cookieCo = getCookie("descripcioncanada")
+                console.log('u madreeeeeeeeeeeeeeeeeeeeeeeee');
+
+                if (cookieCo) {
+                    infoCanda.innerHTML = cookieCo
+                }
+            }
+
+            infoCanada2()
 
             containerpaistext.appendChild(containernamepaisestext)
 
@@ -1699,10 +2025,69 @@ function selectnew_Belgium() {
             rengStar.classList.add("rengStar")
             const star1 = document.createElement("span")
             star1.classList.add("colorpacascafe")
-            star1.textContent = " Bélgica, conocida por su pasión por el café, ha demostrado un creciente interés en el café colombiano de alta calidad. Los belgas aprecian las características únicas del café colombiano, como su sabor suave, su aroma cautivador y su acidez equilibrada. El café colombiano ha ganado popularidad en Bélgica debido a su perfil distintivo y a la dedicación de los productores colombianos a la calidad y sostenibilidad. Los consumidores belgas disfrutan de una taza de café colombiano como un placer diario, valorando su rica historia y la experiencia sensorial que ofrece. El café colombiano se ha convertido en una elección frecuente en los hogares, cafeterías y restaurantes de Bélgica, reflejando la creciente demanda de esta exquisita bebida."
+            // star1.textContent = " Bélgica, conocida por su pasión por el café, ha demostrado un creciente interés en el café colombiano de alta calidad. Los belgas aprecian las características únicas del café colombiano, como su sabor suave, su aroma cautivador y su acidez equilibrada. El café colombiano ha ganado popularidad en Bélgica debido a su perfil distintivo y a la dedicación de los productores colombianos a la calidad y sostenibilidad. Los consumidores belgas disfrutan de una taza de café colombiano como un placer diario, valorando su rica historia y la experiencia sensorial que ofrece. El café colombiano se ha convertido en una elección frecuente en los hogares, cafeterías y restaurantes de Bélgica, reflejando la creciente demanda de esta exquisita bebida."
             star1.style.color = "#fff"
             rengStar.appendChild(star1)
+            document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Divide el contenido en párrafos
+                        const descripciones = data.split('\n')
 
+
+                        star1.textContent = descripciones[13]
+
+
+
+                        document.cookie = "descripcionbel=" + encodeURIComponent(star1.innerHTML)
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'la info ah sido actualizada exitosamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+                
+            })
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function infobalgica() {
+                let cookieCo = getCookie("descripcionbel")
+                console.log('u madreeeeeeeeeeeeeeeeeeeeeeeee');
+
+                if (cookieCo) {
+                    star1.innerHTML = cookieCo
+                }
+            }
+
+            infobalgica()
 
             estrellasPais.appendChild(rengStar)
 
@@ -1799,8 +2184,67 @@ function selectnew_korea() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infokorea = document.createElement('p')
-            infokorea.textContent = "Las importaciones de café en Corea del Sur aumentaron un 24,2 % interanual por valor de 916,5 millones de dólares en 2021 -respecto a los 823 millones de 2020- hasta alcanzar un récord de importaciones debido al crecimiento de la popularidad del café en el país."
+            // infokorea.textContent = "Las importaciones de café en Corea del Sur aumentaron un 24,2 % interanual por valor de 916,5 millones de dólares en 2021 -respecto a los 823 millones de 2020- hasta alcanzar un récord de importaciones debido al crecimiento de la popularidad del café en el país."
+            document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Divide el contenido en párrafos
+                        const descripciones = data.split('\n')
 
+
+                        infokorea.textContent = descripciones[17]
+
+
+
+                        document.cookie = "descripcionSouthcorea=" + encodeURIComponent(infokorea.innerHTML)
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'la info ah sido actualizada exitosamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+                
+            })
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function infoCorea() {
+                let cookieCo = getCookie("descripcionSouthcorea")
+                console.log('u madreeeeeeeeeeeeeeeeeeeeeeeee');
+
+                if (cookieCo) {
+                    infokorea.innerHTML = cookieCo
+                }
+            }
+
+            infoCorea()
             containerpaistext.appendChild(containernamepaisestext)
 
             const containerPandPoints = document.createElement("div")
@@ -1914,8 +2358,67 @@ function selectnew_honshu() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoJapon = document.createElement('p')
-            infoJapon.textContent = 'Japón, que no era un país consumidor tradicional de café, ha llegado a ser el tercer consumidor más grande entre los países importadores. Además, este país ha influenciado positivamente la transformación de la industria cafetera.'
+            // infoJapon.textContent = 'Japón, que no era un país consumidor tradicional de café, ha llegado a ser el tercer consumidor más grande entre los países importadores. Además, este país ha influenciado positivamente la transformación de la industria cafetera.'
+            document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Divide el contenido en párrafos
+                        const descripciones = data.split('\n')
 
+
+                        infoJapon.textContent = descripciones[15]
+
+
+
+                        document.cookie = "descripcionhonshu=" + encodeURIComponent(infoJapon.innerHTML)
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'la info ah sido actualizada exitosamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+                
+            })
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function infoHonshu() {
+                let cookieCo = getCookie("descripcionhonshu")
+                console.log('u madreeeeeeeeeeeeeeeeeeeeeeeee');
+
+                if (cookieCo) {
+                    infoJapon.innerHTML = cookieCo
+                }
+            }
+
+            infoHonshu()
             containerpaistext.appendChild(containernamepaisestext)
 
             const containerPandPoints = document.createElement("div")
