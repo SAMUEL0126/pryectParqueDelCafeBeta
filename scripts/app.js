@@ -28,7 +28,6 @@ class CountryPathColletion {
 }
 
 class CountryPath {
-
     constructor(element) {
         this.element = element
 
