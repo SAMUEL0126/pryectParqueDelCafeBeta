@@ -371,6 +371,26 @@ var componente = document.getElementById("colombia");
 componente.addEventListener("mouseover", cursorEntraEnComponente);
 componente.addEventListener("mouseout", cursorSaleDelComponente);
 
+function ejecutarDespuesDe2Segundos11() {
+    selectnew_Belgium()
+}
+
+// función que se ejecuta cuando el cursor entra en el componente
+function cursorEntraEnComponente11() {
+    timeoutId = setTimeout(ejecutarDespuesDe2Segundos11, 2000);
+}
+
+// función que se ejecuta cuando el cursor sale del componente
+function cursorSaleDelComponente11() {
+    clearTimeout(timeoutId);
+}
+
+// obtiene el componente
+var componente = document.getElementById("belgium");
+
+// agrega los eventos de mouseover y mouseout al componente
+componente.addEventListener("mouseover", cursorEntraEnComponente11);
+componente.addEventListener("mouseout", cursorSaleDelComponente11);
 
 // función que se ejecuta después de 2 segundos
 function ejecutarDespuesDe2Segundos1() {
