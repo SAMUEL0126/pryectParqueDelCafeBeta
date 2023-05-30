@@ -291,6 +291,9 @@ countryPath423451235.fill("green")
 const countryPath423451234 = CountryPath.findByName("belize")
 countryPath423451234.fill("green")
 
+const countryPath4234512345 = CountryPath.findByName("belgium")
+countryPath4234512345.fill("green")
+
 const countryPath42 = CountryPath.findByName("path7462")
 countryPath42.fill("darkblue")
 
