@@ -826,7 +826,6 @@ function selecccionUsa() {
                 }
             })
 
-
             function getCookie(nombre) {
                 var cookieName = nombre + "=";
                 var cookies = document.cookie.split(";");
@@ -1154,7 +1153,6 @@ function selecccionFiland() {
             const estrellasPaisFin = document.createElement("div")
             estrellasPaisFin.classList.add("estrellasPais")
           
-
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
                     fetch('/scripts/descripcion.txt')
