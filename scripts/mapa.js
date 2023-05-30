@@ -610,7 +610,6 @@ function selectionsColombia() {
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
 
-
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
                     fetch('/scripts/descripcion.txt')
@@ -619,13 +618,9 @@ function selectionsColombia() {
                         // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
-
                         estrellasPais.textContent = descripciones[1]
 
-
-
                         document.cookie = "descripcionCo=" + encodeURIComponent(estrellasPais.innerHTML)
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -636,8 +631,6 @@ function selectionsColombia() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
-
                     })
                     .catch(error => {
                         console.error('Error al obtener el archivo de texto:', error);
@@ -818,10 +811,7 @@ function selecccionUsa() {
 
                         estrellasPaisUsa.textContent = descripcion[9]
 
-
                         document.cookie = "descripcionUsa=" + encodeURIComponent(estrellasPaisUsa.innerHTML)
-
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -832,7 +822,6 @@ function selecccionUsa() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
                     })
                     .catch(error => {
                         console.error('Error al obtener el archivo de texto:', error);
@@ -970,13 +959,9 @@ function seleccionGermany() {
                         // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
-
                         infoGermany.textContent = descripciones[5]
 
-
-
                         document.cookie = "descripcionAle=" + encodeURIComponent(infoGermany.innerHTML)
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -987,8 +972,6 @@ function seleccionGermany() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
-
                     })
                     .catch(error => {
                         console.error('Error al obtener el archivo de texto:', error);
@@ -1186,13 +1169,9 @@ function selecccionFiland() {
                         // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
-
                         estrellasPaisFin.textContent = descripciones[19]
 
-
-
                         document.cookie = "descripcionFin=" + encodeURIComponent(estrellasPaisFin.innerHTML)
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -1323,13 +1302,9 @@ function selecccionEspaña() {
                         // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
-
                         infoSpain.textContent = descripciones[3]
 
-
-
                         document.cookie = "descripcionEspaña=" + encodeURIComponent(infoSpain.innerHTML)
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -1340,8 +1315,6 @@ function selecccionEspaña() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
-
                     })
                     .catch(error => {
                         console.error('Error al obtener el archivo de texto:', error);
@@ -1484,13 +1457,9 @@ function selecccionItali() {
                      
                         const descripciones = data.split('\n')
 
-
                         infoItaly.textContent = descripciones[11]
 
-
-
                         document.cookie = "descripcionItali=" + encodeURIComponent(infoItaly.innerHTML)
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -1501,8 +1470,6 @@ function selecccionItali() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
-
                     })
                     .catch(error => {
                         console.error('Error al obtener el archivo de texto:', error);
@@ -1659,13 +1626,9 @@ function selectnew_britain() {
                         // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
-
                         infoBritain.textContent = descripciones[7]
 
-
-
                         document.cookie = "descripcionBri=" + encodeURIComponent(infoBritain.innerHTML)
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -1676,8 +1639,6 @@ function selectnew_britain() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
-
                     })
                     .catch(error => {
                         console.error('Error al obtener el archivo de texto:', error);
@@ -1837,13 +1798,9 @@ function selectnew_canada() {
                         // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
-
                         infoCanda.textContent = descripciones[21]
 
-
-
                         document.cookie = "descripcioncanada=" + encodeURIComponent(infoCanda.innerHTML)
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -1854,8 +1811,6 @@ function selectnew_canada() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
-
                     })
                     .catch(error => {
                         console.error('Error al obtener el archivo de texto:', error);
@@ -1990,15 +1945,10 @@ function selectnew_Belgium() {
             containerpaistext.style.color = "yellow"
             containerpaistext.style.textShadow = "0px 0px 10px skyblue"
 
-
-
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
-
-
-
 
             containerpaistext.appendChild(containersacosdecafe)
 
@@ -2033,13 +1983,9 @@ function selectnew_Belgium() {
                         // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
-
                         star1.textContent = descripciones[13]
 
-
-
                         document.cookie = "descripcionbel=" + encodeURIComponent(star1.innerHTML)
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -2050,8 +1996,6 @@ function selectnew_Belgium() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
-
                     })
                     .catch(error => {
                         console.error('Error al obtener el archivo de texto:', error);
@@ -2189,13 +2133,9 @@ function selectnew_korea() {
                         // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
-
                         infokorea.textContent = descripciones[17]
 
-
-
                         document.cookie = "descripcionSouthcorea=" + encodeURIComponent(infokorea.innerHTML)
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -2206,8 +2146,6 @@ function selectnew_korea() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
-
                     })
                     .catch(error => {
                         console.error('Error al obtener el archivo de texto:', error);
@@ -2362,13 +2300,9 @@ function selectnew_honshu() {
                         // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
-
                         infoJapon.textContent = descripciones[15]
 
-
-
                         document.cookie = "descripcionhonshu=" + encodeURIComponent(infoJapon.innerHTML)
-
 
                         setTimeout(() => {
                             Swal.fire({
@@ -2379,8 +2313,6 @@ function selectnew_honshu() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
-
                     })
                     .catch(error => {
                         console.error('Error al obtener el archivo de texto:', error);
