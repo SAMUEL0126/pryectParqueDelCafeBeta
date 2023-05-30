@@ -388,9 +388,7 @@ function cursorSaleDelComponente1() {
     clearTimeout(timeoutId2);
 }
 
-
 var componente2 = document.getElementById("usa");
-
 
 componente2.addEventListener("mouseover", cursorEntraEnComponente1);
 componente2.addEventListener("mouseout", cursorSaleDelComponente1);
@@ -2286,7 +2284,7 @@ function selectnew_honshu() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoJapon = document.createElement('p')
-            
+
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
                     fetch('/scripts/descripcion.txt')
