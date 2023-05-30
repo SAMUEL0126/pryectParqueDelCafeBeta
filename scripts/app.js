@@ -1,6 +1,5 @@
 TEN_MILLONS = 10000000
 ONE_HUNDRED_MILLIONS = 100000000
-
 class CountryPathColletion {
 
     constructor(items) {
@@ -28,8 +27,6 @@ class CountryPathColletion {
     }
 }
 
-
-
 class CountryPath {
 
     constructor(element) {
@@ -37,32 +34,32 @@ class CountryPath {
 
 
         if (`${this.name()}` == 'colombia') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es exportador de cafe.`)
         } else if (`${this.name()}` == 'usa') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         } else if (`${this.name()}` == 'canada') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }
         else if (`${this.name()}` == 'spain') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }
         else if (`${this.name()}` == 'germany') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }
         else if (`${this.name()}` == 'italy') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }
         else if (`${this.name()}` == 'finland') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         } else if (`${this.name()}` == 'britain') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         } else if (`${this.name()}` == 'honshu') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }else if (`${this.name()}` == 'south korea') {
-            this.setTootip(`El pais: ${this.name()} , es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , Es importador de cafe colombiano`)
         }
         else {
-            this.setTootip(`El pais: ${this.name()} , no es importador de cafe colombiano`)
+            this.setTootip(`El pais: ${this.name()} , No es importador de cafe colombiano`)
         }
     }
 
@@ -89,7 +86,6 @@ class CountryPath {
     }
 
 }
-
 class Response {
     constructor(object) {
 
@@ -108,7 +104,6 @@ class Response {
         return this.object.area
     }
 }
-
 class CountryAPI {
     static async findByName(name) {
         const response = await fetch(`https://restcountries.com/v3.1/name/${name}`)
@@ -125,8 +120,6 @@ CountryPathColletion.get().for(async countryPath => {
 
     const response = await CountryAPI.findByName(countryPath.name())
 
-
-
     if (response.area() < TEN_MILLONS) {
 
         return
@@ -140,13 +133,11 @@ CountryPathColletion.get().for(async countryPath => {
 
 })
 
-
 const countryPath2027 = CountryPath.findByName("svg2")
 countryPath2027.fill("red")
 
 const countryPath202 = CountryPath.findByName("colombia")
 countryPath202.fill("red")
-
 
 const countryPath = CountryPath.findByName("east antarctica")
 countryPath.fill("green")
@@ -159,7 +150,6 @@ countryPath4.fill("yellow")
 
 const countryPath5 = CountryPath.findByName("guinee")
 countryPath5.fill("red")
-
 
 const countryPath6 = CountryPath.findByName("south_sudan")
 countryPath6.fill("red")
@@ -235,7 +225,6 @@ countryPath9090.fill("red")
 
 const countryPath9092 = CountryPath.findByName("ulster")
 countryPath9092.fill("yellow")
-
 
 const countryPath9095 = CountryPath.findByName("haiti")
 countryPath9095.fill("yellow")
@@ -333,8 +322,6 @@ countryPath49.fill("silver")
 const countryPath2987 = CountryPath.findByName("north korea")
 countryPath2987.fill("white")
 
-
-
 const countryPath50 = CountryPath.findByName("novaya sibir")
 countryPath50.fill("silver")
 
@@ -410,18 +397,14 @@ countryPath1002.fill("red")
 const countryPath1003 = CountryPath.findByName("bell")
 countryPath1003.fill("red")
 
-
 const countryPath1004 = CountryPath.findByName("salisbury")
 countryPath1004.fill("red")
-
 
 const countryPath1005 = CountryPath.findByName("new caledonia")
 countryPath1005.fill("red")
 
-
 const countryPath1006 = CountryPath.findByName("wilczek")
 countryPath1006.fill("red")
-
 
 const countryPath69 = CountryPath.findByName("smyley")
 countryPath69.fill("gold")
@@ -510,10 +493,8 @@ countryPath91.fill("violet")
 const countryPath92 = CountryPath.findByName("costa rica")
 countryPath92.fill("green")
 
-
 const countryPath93 = CountryPath.findByName("honduras")
 countryPath93.fill("darkblue")
-
 
 const countryPath94 = CountryPath.findByName("panama")
 countryPath94.fill("darkred")
@@ -536,422 +517,317 @@ countryPath99.fill("orange")
 const countryPath100 = CountryPath.findByName("drc")
 countryPath100.fill("green")
 
-
 const countryPath101 = CountryPath.findByName("ethiopia")
 countryPath101.fill("blue")
-
 
 const countryPath102 = CountryPath.findByName("zambia")
 countryPath102.fill("violet")
 
-
 const countryPath103 = CountryPath.findByName("morocco")
 countryPath103.fill("green")
-
 
 const countryPath104 = CountryPath.findByName("cameroon")
 countryPath104.fill("red")
 
-
 const countryPath105 = CountryPath.findByName("chad")
 countryPath105.fill("blue")
-
 
 const countryPath107 = CountryPath.findByName("libya")
 countryPath107.fill("darkblue")
 
-
 const countryPath108 = CountryPath.findByName("namibia")
 countryPath108.fill("brown")
-
 
 const countryPath109 = CountryPath.findByName("saudi")
 countryPath109.fill("orange")
 
-
 const countryPath110 = CountryPath.findByName("central africa")
 countryPath110.fill("blue")
-
 
 const countryPath111 = CountryPath.findByName("angola")
 countryPath111.fill("silver")
 
-
 const countryPath112 = CountryPath.findByName("somalia")
 countryPath112.fill("white")
-
 
 const countryPath113 = CountryPath.findByName("kenya")
 countryPath113.fill("green")
 
-
 const countryPath114 = CountryPath.findByName("gabon")
 countryPath114.fill("violet")
-
 
 const countryPath115 = CountryPath.findByName("nigeria")
 countryPath115.fill("yellow")
 
-
 const countryPath116 = CountryPath.findByName("botswana")
 countryPath116.fill("red")
-
 
 const countryPath117 = CountryPath.findByName("tanzania")
 countryPath117.fill("darkblue")
 
-
 const countryPath118 = CountryPath.findByName("tunisia")
 countryPath118.fill("darkblue")
-
 
 const countryPath119 = CountryPath.findByName("bioko")
 countryPath119.fill("red")
 
-
 const countryPath120 = CountryPath.findByName("eritrea")
 countryPath120.fill("white")
-
 
 const countryPath121 = CountryPath.findByName("uganda")
 countryPath121.fill("gold")
 
-
 const countryPath122 = CountryPath.findByName("yemen")
 countryPath122.fill("brown")
-
 
 const countryPath123 = CountryPath.findByName("togo")
 countryPath123.fill("green")
 
-
 const countryPath124 = CountryPath.findByName("benin")
 countryPath124.fill("green")
-
 
 const countryPath125 = CountryPath.findByName("burkina")
 countryPath125.fill("red")
 
-
 const countryPath126 = CountryPath.findByName("ghana")
 countryPath126.fill("yellow")
-
 
 const countryPath127 = CountryPath.findByName("mali")
 countryPath127.fill("blue")
 
-
 const countryPath128 = CountryPath.findByName("congo")
 countryPath128.fill("blue")
-
 
 const countryPath129 = CountryPath.findByName("burundi")
 countryPath129.fill("red")
 
-
 const countryPath130 = CountryPath.findByName("rwanda")
 countryPath130.fill("silver")
-
 
 const countryPath131 = CountryPath.findByName("zimbabwe")
 countryPath131.fill("yellow")
 
-
 const countryPath132 = CountryPath.findByName("spain")
 countryPath132.fill("blue")
-
 
 const countryPath133 = CountryPath.findByName("germany")
 countryPath133.fill("red")
 
-
 const countryPath134 = CountryPath.findByName("russia")
 countryPath134.fill("red")
-
 
 const countryPath135 = CountryPath.findByName("poland")
 countryPath135.fill("green")
 
-
 const countryPath136 = CountryPath.findByName("ukraine")
 countryPath136.fill("pink")
-
 
 const countryPath138 = CountryPath.findByName("finland")
 countryPath138.fill("green")
 
-
 const countryPath139 = CountryPath.findByName("france")
 countryPath139.fill("brown")
-
 
 const countryPath140 = CountryPath.findByName("norway")
 countryPath140.fill("purple")
 
-
 const countryPath141 = CountryPath.findByName("bulgaria")
 countryPath141.fill("violet")
-
 
 const countryPath142 = CountryPath.findByName("turkey")
 countryPath142.fill("orange")
 
-
 const countryPath143 = CountryPath.findByName("lithuania")
 countryPath143.fill("yellow")
-
 
 const countryPath144 = CountryPath.findByName("albania")
 countryPath144.fill("blue")
 
-
 const countryPath145 = CountryPath.findByName("hungary")
 countryPath145.fill("white")
-
 
 const countryPath146 = CountryPath.findByName("netherlands")
 countryPath146.fill("orange")
 
-
 const countryPath147 = CountryPath.findByName("belarus")
 countryPath147.fill("blue")
-
 
 const countryPath148 = CountryPath.findByName("romania")
 countryPath148.fill("yellow")
 
-
 const countryPath149 = CountryPath.findByName("sweden")
 countryPath149.fill("blue")
-
 
 const countryPath150 = CountryPath.findByName("syria")
 countryPath150.fill("green")
 
-
 const countryPath151 = CountryPath.findByName("croatia")
 countryPath151.fill("gold")
-
 
 const countryPath152 = CountryPath.findByName("italy")
 countryPath152.fill("blue")
 
-
 const countryPath153 = CountryPath.findByName("china")
 countryPath153.fill("yellow")
-
 
 const countryPath154 = CountryPath.findByName("mongolia")
 countryPath154.fill("green")
 
-
 const countryPath155 = CountryPath.findByName("thailand")
 countryPath155.fill("red")
-
 
 const countryPath156 = CountryPath.findByName("burma")
 countryPath156.fill("green")
 
-
 const countryPath157 = CountryPath.findByName("nepal")
 countryPath157.fill("green")
-
 
 const countryPath158 = CountryPath.findByName("uzbekistan")
 countryPath158.fill("green")
 
-
 const countryPath159 = CountryPath.findByName("afghanistan")
 countryPath159.fill("red")
-
 
 const countryPath190 = CountryPath.findByName("turkmenistan")
 countryPath190.fill("white")
 
-
 const countryPath191 = CountryPath.findByName("pakistan")
 countryPath191.fill("pink")
-
 
 const countryPath192 = CountryPath.findByName("iran")
 countryPath192.fill("brown")
 
-
 const countryPath193 = CountryPath.findByName("india")
 countryPath193.fill("red")
-
 
 const countryPath194 = CountryPath.findByName("kazakhstan")
 countryPath194.fill("violet")
 
-
 const countryPath195 = CountryPath.findByName("vietnam")
 countryPath195.fill("blue")
-
 
 const countryPath196 = CountryPath.findByName("laos")
 countryPath196.fill("white")
 
-
 const countryPath198 = CountryPath.findByName("south korea")
 countryPath198.fill("blue")
-
 
 const countryPath199 = CountryPath.findByName("oman")
 countryPath199.fill("green")
 
-
 const countryPath200 = CountryPath.findByName("emirates")
 countryPath200.fill("red")
-
 
 const countryPath201 = CountryPath.findByName("mozambique")
 countryPath201.fill("red")
 
-
 const countryPath203 = CountryPath.findByName("malawi")
 countryPath203.fill("yellow")
-
 
 const countryPath204 = CountryPath.findByName("ivoire")
 countryPath204.fill("white")
 
-
 const countryPath205 = CountryPath.findByName("senegal")
 countryPath205.fill("white")
-
 
 const countryPath206 = CountryPath.findByName("tajikistan")
 countryPath206.fill("white")
 
-
 const countryPath207 = CountryPath.findByName("bangladesh")
 countryPath207.fill("yellow")
-
 
 const countryPath208 = CountryPath.findByName("bhutan")
 countryPath208.fill("yellow")
 
-
 const countryPath209 = CountryPath.findByName("cambodia")
 countryPath209.fill("yellow")
-
 
 const countryPath210 = CountryPath.findByName("madagascar")
 countryPath210.fill("green")
 
-
 const countryPath211 = CountryPath.findByName("lesotho")
 countryPath211.fill("red")
-
 
 const countryPath212 = CountryPath.findByName("swaziland")
 countryPath212.fill("yellow")
 
-
 const countryPath213 = CountryPath.findByName("greece")
 countryPath213.fill("red")
-
 
 const countryPath214 = CountryPath.findByName("azerbaijan")
 countryPath214.fill("green")
 
-
 const countryPath215 = CountryPath.findByName("georgia")
 countryPath215.fill("yellow")
-
 
 const countryPath216 = CountryPath.findByName("armenia")
 countryPath216.fill("blue")
 
-
 const countryPath217 = CountryPath.findByName("iraq")
 countryPath217.fill("red")
-
 
 const countryPath218 = CountryPath.findByName("portugal")
 countryPath218.fill("red")
 
-
 const countryPath219 = CountryPath.findByName("britain")
 countryPath219.fill("blue")
-
 
 const countryPath220 = CountryPath.findByName("ireland")
 countryPath220.fill("red")
 
-
 const countryPath221 = CountryPath.findByName("papua new guinea")
 countryPath221.fill("red")
-
 
 const countryPath222 = CountryPath.findByName("serbia")
 countryPath222.fill("red")
 
-
 const countryPath223 = CountryPath.findByName("moldova")
 countryPath223.fill("red")
-
 
 const countryPath224 = CountryPath.findByName("malaysia")
 countryPath224.fill("blue")
 
-
 const countryPath225 = CountryPath.findByName("iceland")
 countryPath225.fill("red")
-
 
 const countryPath227 = CountryPath.findByName("liberia")
 countryPath227.fill("blue")
 
-
 const countryPath228 = CountryPath.findByName("sierra leone")
 countryPath228.fill("orange")
-
 
 const countryPath229 = CountryPath.findByName("switzerland")
 countryPath229.fill("green")
 
-
 const countryPath230 = CountryPath.findByName("slovenia")
 countryPath230.fill("orange")
-
 
 const countryPath231 = CountryPath.findByName("austria")
 countryPath231.fill("yellow")
 
-
 const countryPath232 = CountryPath.findByName("czech")
 countryPath232.fill("orange")
-
 
 const countryPath233 = CountryPath.findByName("slovakia")
 countryPath233.fill("blue")
 
-
 const countryPath234 = CountryPath.findByName("estonia")
 countryPath234.fill("blue")
-
 
 const countryPath235 = CountryPath.findByName("denmark")
 countryPath235.fill("orange")
 
-
 const countryPath236 = CountryPath.findByName("bosnia")
 countryPath236.fill("green")
-
 
 const countryPath237 = CountryPath.findByName("jordan")
 countryPath237.fill("blue")
 
-
 const countryPath238 = CountryPath.findByName("israel")
 countryPath238.fill("red")
 
-
 const countryPath239 = CountryPath.findByName("sri lanka")
 countryPath239.fill("green")
-
 
 const countryPath240 = CountryPath.findByName("taiwan")
 countryPath240.fill("green")

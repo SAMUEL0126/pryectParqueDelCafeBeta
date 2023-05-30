@@ -236,6 +236,7 @@
     height: 0;
     transition: 0.8s;
 }
+
 #svg2 {
 
     filter: drop-shadow(10px 10px 1px black);
