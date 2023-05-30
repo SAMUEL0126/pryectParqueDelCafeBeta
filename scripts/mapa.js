@@ -672,7 +672,6 @@ function selectionsColombia() {
             containersacosdecafe.style.textAlign = "center"
             containersacosdecafe.style.color = "yellow"
 
-
             console.log(estrellasPais);
             containerPandPoints.appendChild(containersacosdecafe)
             containerPandPoints.appendChild(estrellasPais)
@@ -950,7 +949,6 @@ function seleccionGermany() {
             containersacosdecaferussia.style.color = "yellow"
             const infoGermany = document.createElement('p')
 
-
              document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
                     fetch('/scripts/descripcion.txt')
@@ -1006,7 +1004,6 @@ function seleccionGermany() {
 
             infoAle()
 
-
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
 
@@ -1028,7 +1025,6 @@ function seleccionGermany() {
             }, 2000);
 
             containerPandPoints.appendChild(infoGermany)
-
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
@@ -1349,7 +1345,6 @@ function selecccionEspaña() {
 
             infoSpain2()
             
-            
             containerpaistext.appendChild(containernamepaisestext)
             const containerPandPoints = document.createElement("div")
             containerPandPoints.classList.add("containerPandPoints")
@@ -1447,7 +1442,6 @@ function selecccionItali() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoItaly = document.createElement('p')
-
             
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
@@ -1503,7 +1497,6 @@ function selecccionItali() {
             }
 
             infotali()
-
 
             containerpaistext.appendChild(containernamepaisestext)
 
@@ -1975,6 +1968,7 @@ function selectnew_Belgium() {
             star1.classList.add("colorpacascafe")
             star1.style.color = "#fff"
             rengStar.appendChild(star1)
+
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
                     fetch('/scripts/descripcion.txt')
@@ -2292,6 +2286,7 @@ function selectnew_honshu() {
             containersacosdecafe.style.color = "yellow"
             containersacosdecafe.style.textShadow = "0px 0px 10px skyblue"
             const infoJapon = document.createElement('p')
+            
             document.addEventListener('keyup', function (e) {
                 if (e.keyCode === 13) {
                     fetch('/scripts/descripcion.txt')
