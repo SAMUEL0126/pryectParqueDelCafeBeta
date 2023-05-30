@@ -531,7 +531,19 @@ var componente10 = document.getElementById("honshu");
 componente10.addEventListener("mouseover", cursorEntraEnComponente9);
 componente10.addEventListener("mouseout", cursorSaleDelComponente9);
 
+window.addEventListener('load', () => {
+    formPut.classList.toggle('formAddhidden')
+})
 
+let inputName = document.getElementById('inputName')
+
+let inputPassword = document.getElementById('inputPassword')
+
+let user = 'juan david'
+
+let password = 'parque2020'
+
+const confirmModal = document.getElementById('confirmModal')
 
 let descripcionCo = document.getElementsByClassName('estrellasPais')
 
