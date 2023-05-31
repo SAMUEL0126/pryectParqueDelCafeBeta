@@ -531,126 +531,9 @@ var componente10 = document.getElementById("honshu");
 componente10.addEventListener("mouseover", cursorEntraEnComponente9);
 componente10.addEventListener("mouseout", cursorSaleDelComponente9);
 
-window.addEventListener('load', () => {
-    formPut.classList.toggle('formAddhidden')
-})
-
-let inputName = document.getElementById('inputName')
-
-let inputPassword = document.getElementById('inputPassword')
-
-let user = 'juan david'
-
-let password = 'parque2020'
-
-const confirmModal = document.getElementById('confirmModal')
-
-let descripcionCo = document.getElementById('descripcionCo')
-
-
-document.addEventListener('keyup', function (event) {
-    // Verifica si la tecla presionada es "Enter" (código 13)
-    if (event.keyCode === 13) {
-        // Llama a tu función aquí
-        formPut.classList.remove('formAddhidden')
-        formPut.classList.add('formAddquestion')
-    }
-});
-
-const closeModal = document.getElementById('closeModal')
-closeModal.addEventListener('click', function () {
-    formPut.classList.toggle('formAddquestion')
-    formPut.classList.toggle('formAddhidden')
-})
-
-
-confirmModal.addEventListener('click', () => {
-    if (inputName.value == user && inputPassword.value == password) {
-
-        formPut.classList.toggle('formAddhidden')
-        formPut.classList.toggle('formAddquestion')
-
-
-        // pendiente de pasar este consumo de archivo de texto
-        //a otro archivo js
-        fetch('/scripts/descripcion.txt')
-            .then(response => response.text())
-            .then(data => {
-                // Divide el contenido en párrafos
-                const descripciones = data.split('\n')
-
-
-                descripcionCo.textContent = descripciones[1]
-
-
-
-                document.cookie = "descripcionCo=" + encodeURIComponent(descripcionCo.innerHTML)
-
-
-                setTimeout(() => {
-                    Swal.fire({
-                        position: 'center',
-                        icon: 'success',
-                        title: 'haz actualizado las preguntas correactamente',
-                        showConfirmButton: false,
-                        timer: 2000
-                    })
-                }, 1000);
-                //Asigna los parrafos
-                console.log(descripcionCo);
-
-            })
-            .catch(error => {
-                console.error('Error al obtener el archivo de texto:', error);
-            })
-    }
-})
-
-
-function getCookie(nombre) {
-    var cookieName = nombre + "=";
-    var cookies = document.cookie.split(";");
-
-    for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i].trim();
-
-        if (cookie.indexOf(cookieName) === 0) {
-            return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
-        }
-    }
-
-    return null;
-}
-
-window.onload = function () {
-    let cookieCo = getCookie("descripcionCo")
-
-    if (cookieCo) {
-        descripcionCo.innerHTML = cookieCo
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ============ colombia ============ */
 
 let sumadre = 0
-
 let changeColombia = 0
 colombia.addEventListener('click', selectionsColombia)
 function selectionsColombia() {
@@ -726,10 +609,68 @@ function selectionsColombia() {
 
             const estrellasPais = document.createElement("div")
             estrellasPais.classList.add("estrellasPais")
-            estrellasPais.id = "descripcionCo"
 
 
-            
+            document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Divide el contenido en párrafos
+                        const descripciones = data.split('\n')
+
+
+                        estrellasPais.textContent = descripciones[1]
+
+
+
+                        document.cookie = "descripcionCo=" + encodeURIComponent(estrellasPais.innerHTML)
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'haz actualizado las preguntas correactamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+                
+            })
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function nasisame() {
+                let cookieCo = getCookie("descripcionCo")
+                console.log('u madreeeeeeeeeeeeeeeeeeeeeeeee');
+
+                if (cookieCo) {
+                    estrellasPais.innerHTML = cookieCo
+                }
+            }
+
+            nasisame()
 
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
@@ -738,7 +679,7 @@ function selectionsColombia() {
             containersacosdecafe.style.textAlign = "center"
             containersacosdecafe.style.color = "yellow"
 
-            estrellasPais.textContent = 'En los años setenta del siglo XIX, el café empezó a cotizarse en las bolsas mundiales y se convirtió en la moneda internacional de los países productores, entre los cuales estaban Brasil, Salvador, Guatemala y México. Colombia emergió como exportador de café y productor mundial en la década de los noventa.'
+
             console.log(estrellasPais);
             containerPandPoints.appendChild(containersacosdecafe)
             containerPandPoints.appendChild(estrellasPais)
@@ -864,17 +805,76 @@ function selecccionUsa() {
 
             containerPandPoints.appendChild(paisesList)
 
-            const estrellasPais = document.createElement("div")
-            estrellasPais.classList.add("estrellasPais")
+            const estrellasPaisUsa = document.createElement("div")
+            estrellasPaisUsa.classList.add("estrellasPais")
 
-            estrellasPais.appendChild(containersacosdecafeusa)
-            estrellasPais.appendChild(infoUsa)
+            // estrellasPais.appendChild(containersacosdecafeusa)
+            // estrellasPais.appendChild(infoUsa)
+
+            document.addEventListener('keyup', function (e) {
+                if (e.keyCode === 13) {
+                    fetch('/scripts/descripcion.txt')
+                    .then(response => response.text())
+                    .then(data => {
+
+                        const descripcion = data.split('\n')
+
+                        estrellasPaisUsa.textContent = descripcion[15]
+
+
+                        document.cookie = "descripcionUsa=" + encodeURIComponent(estrellasPaisUsa.innerHTML)
+
+
+
+                        setTimeout(() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'haz actualizado las preguntas correactamente',
+                                showConfirmButton: false,
+                                timer: 2000
+                            })
+                        }, 1000);
+                        //Asigna los parrafos
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el archivo de texto:', error);
+                    })
+                }
+            })
+
+
+            function getCookie(nombre) {
+                var cookieName = nombre + "=";
+                var cookies = document.cookie.split(";");
+
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+
+                    if (cookie.indexOf(cookieName) === 0) {
+                        return decodeURIComponent(cookie.substring(cookieName.length, cookie.length));
+                    }
+                }
+
+                return null;
+            }
+
+            function loadusa() {
+                let cookieUsa = getCookie("descripcionUsa")
+                console.log(estrellasPaisUsa);
+
+                if (cookieUsa) {
+                    estrellasPaisUsa.innerHTML = cookieUsa
+                }
+            }
+
+            loadusa()
 
             setTimeout(() => {
                 mapa2.classList.add("mapaOpen")
             }, 1000);
 
-            containerPandPoints.appendChild(estrellasPais)
+            containerPandPoints.appendChild(estrellasPaisUsa)
 
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
