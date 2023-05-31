@@ -1647,22 +1647,20 @@ function selectnew_Belgium() {
             containerpaistext.style.width = "100%"
             containerpaistext.style.height = "5vh"
             containerpaistext.style.display = "flex"
-            containerpaistext.style.gap = "60px"
-            containerpaistext.style.marginLeft = "70px"
+            containerpaistext.style.justifyContent = "center"
             containerpaistext.style.color = "yellow"
             containerpaistext.style.textShadow = "0px 0px 10px skyblue"
 
-            const containernamepaisestext = document.createElement("div")
-            containernamepaisestext.textContent = "Paises consumidores"
-            containernamepaisestext.style.fontFamily = "Amatic SC"
-            containernamepaisestext.style.fontSize = "30px"
+
 
             const containersacosdecafe = document.createElement("div")
             containersacosdecafe.textContent = "Descripcion"
             containersacosdecafe.style.fontFamily = "Amatic SC"
             containersacosdecafe.style.fontSize = "30px"
+            
 
-            containerpaistext.appendChild(containernamepaisestext)
+
+
             containerpaistext.appendChild(containersacosdecafe)
 
             const containerPandPoints = document.createElement("div")
@@ -1686,58 +1684,12 @@ function selectnew_Belgium() {
             rengStar.classList.add("rengStar")
             const star1 = document.createElement("span")
             star1.classList.add("colorpacascafe")
-            star1.textContent = "43.200.000"
+            star1.textContent = " Bélgica, conocida por su pasión por el café, ha demostrado un creciente interés en el café colombiano de alta calidad. Los belgas aprecian las características únicas del café colombiano, como su sabor suave, su aroma cautivador y su acidez equilibrada. El café colombiano ha ganado popularidad en Bélgica debido a su perfil distintivo y a la dedicación de los productores colombianos a la calidad y sostenibilidad. Los consumidores belgas disfrutan de una taza de café colombiano como un placer diario, valorando su rica historia y la experiencia sensorial que ofrece. El café colombiano se ha convertido en una elección frecuente en los hogares, cafeterías y restaurantes de Bélgica, reflejando la creciente demanda de esta exquisita bebida."
+            star1.style.color = "#fff"
             rengStar.appendChild(star1)
 
-            const rengStar2 = document.createElement("div")
-            rengStar2.classList.add("rengStar")
-
-            rengStar2.classList.add("rengStar")
-            const start1 = document.createElement("span")
-            start1.classList.add("colorpacascafe")
-            start1.textContent = "13.500.000 "
-
-            rengStar2.appendChild(start1)
-
-            const rengStar3 = document.createElement("div")
-            rengStar3.classList.add("rengStar")
-
-            rengStar3.classList.add("rengStar")
-            const starti1 = document.createElement("span")
-            starti1.classList.add("colorpacascafe")
-            starti1.textContent = "3.200.000"
-
-            rengStar3.appendChild(starti1)
-
-            const rengStar4 = document.createElement("div")
-            rengStar4.classList.add("rengStar")
-
-            rengStar4.classList.add("rengStar")
-            const startin1 = document.createElement("span")
-            startin1.classList.add("colorpacascafe")
-            startin1.textContent = "700.000"
-
-            rengStar4.appendChild(startin1)
-
-            const rengStar5 = document.createElement("div")
-            rengStar5.classList.add("rengStar")
-
-            rengStar5.classList.add("rengStar")
-            const starting1 = document.createElement("span")
-            starting1.classList.add("colorpacascafe")
-            starting1.textContent = "90.000"
-
-            rengStar5.appendChild(starting1)
 
             estrellasPais.appendChild(rengStar)
-
-            estrellasPais.appendChild(rengStar2)
-
-            estrellasPais.appendChild(rengStar3)
-
-            estrellasPais.appendChild(rengStar4)
-
-            estrellasPais.appendChild(rengStar5)
 
             containerPandPoints.appendChild(estrellasPais)
 
