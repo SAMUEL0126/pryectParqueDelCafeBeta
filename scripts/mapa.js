@@ -994,10 +994,20 @@ function seleccionGermany() {
 
             containerPandPoints.appendChild(estrellasPais)
 
+            // const fotModal = document.createElement("div")
+            // fotModal.classList.add("fotModal")
+            // const imgFotmodal = document.createElement('img')
+            // imgFotmodal.src = '../images/logoparquedelcafe.png'
+
+            
+
+            // fotModal.appendChild(imgFotmodal)
+
             const fotModal = document.createElement("div")
             fotModal.classList.add("fotModal")
             const imgFotmodal = document.createElement('img')
             imgFotmodal.src = '../images/logoparquedelcafe.png'
+            imgFotmodal.classList.add('imgGermany')
 
             fotModal.appendChild(imgFotmodal)
 
