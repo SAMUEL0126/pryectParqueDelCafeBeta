@@ -613,7 +613,6 @@ function selectionsColombia() {
                     fetch('/scripts/descripcion.txt')
                     .then(response => response.text())
                     .then(data => {
-                        // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
                         estrellasPais.textContent = descripciones[1]
@@ -951,7 +950,6 @@ function seleccionGermany() {
                     fetch('/scripts/descripcion.txt')
                     .then(response => response.text())
                     .then(data => {
-                        // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
                         infoGermany.textContent = descripciones[5]
@@ -1158,7 +1156,6 @@ function selecccionFiland() {
                     fetch('/scripts/descripcion.txt')
                     .then(response => response.text())
                     .then(data => {
-                        // Divide el contenido en párrafos
                         const descripciones = data.split('\n')
 
                         estrellasPaisFin.textContent = descripciones[19]
