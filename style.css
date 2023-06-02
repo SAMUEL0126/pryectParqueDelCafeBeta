@@ -176,8 +176,6 @@
 
 }
 
-
-
 .none{
     display: none;
 }
@@ -300,7 +298,6 @@ svg path {
     opacity: 0.5;
     mix-blend-mode: overlay;
 }
-
 
 .ancla {
     text-decoration: none;
