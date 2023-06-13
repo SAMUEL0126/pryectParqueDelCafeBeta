@@ -1167,7 +1167,6 @@ function selecccionFiland() {
                                 timer: 2000
                             })
                         }, 1000);
-                        //Asigna los parrafos
 
                     })
                     .catch(error => {
